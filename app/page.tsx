@@ -44,8 +44,8 @@ export default function MrFloatLanding() {
 
       {/* Hero Section */}
       <section id="home" className="relative h-[600px] bg-gray-100 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          <img src="/modern-city-road-at-sunset.jpg" alt="City transport" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 opacity-80">
+          <img src="/hero.jpg" alt="City transport" className="w-full h-full object-cover" />
         </div>
         <div className="relative max-w-7xl mx-auto px-8 h-full flex items-center justify-center text-center">
           <div className="max-w-3xl">

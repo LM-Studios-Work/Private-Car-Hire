@@ -1,7 +1,16 @@
-[00:00:04.486] Server  LOG      ✓ Ready in 3s
-[00:00:16.222] Server  LOG      ○ Compiling / ...
-[00:00:22.492] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:23.007] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:07.009] Server  LOG      ✓ Ready in 5.4s
+[00:00:12.142] Server  LOG      ○ Compiling / ...
+[00:00:17.879] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:18.375] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:18.375] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:18.375] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764611888434}
+[00:16:17.978] Server  LOG      ✓ Compiled in 640ms
+[00:16:20.822] Server  LOG      ✓ Compiled in 113ms
+[00:16:40.930] Server  LOG      ✓ Compiled in 137ms
+[00:16:42.138] Server  LOG      ✓ Compiled in 176ms
+[00:16:44.169] Server  LOG      ✓ Compiled in 212ms
+[00:19:38.779] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:39.243] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -22,571 +31,112 @@ It can also happen if the client has a browser extension installed which messes 
               <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
                 <RedirectBoundary>
                   <RedirectErrorBoundary router={{...}}>
-                    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-                      <SegmentViewNode type="page" pagePath="page.tsx">
-                        <SegmentTrieNode>
-                        <ClientPageRoot Component={function MrFloatLanding} serverProvidedParams={{...}}>
-                          <MrFloatLanding params={Promise} searchParams={Promise}>
-                            <div className="min-w-full">
-                              <header className="absolute t...">
-                                <nav className="flex items...">
-                                  <div>
-                                  <div className="hidden md:...">
-                                    <a>
-                                    <a>
-                                    <a>
-                                    <a>
-                                    <a>
-                                    <Button className="bg-[#A4C63..." onClick={function onClick}>
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
-                                        onClick={function onClick}
--                                       fdprocessedid="r2dmi"
-                                      >
-+                                       Online Booking
-                              ...
-                                <div className="max-w-3xl">
-                                  <h1>
-                                  <p>
-                                  <div className="flex gap-4...">
-                                    <Button size="lg" className="bg-[#A4C63..." onClick={function onClick}>
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
-                                        onClick={function onClick}
--                                       fdprocessedid="fxxby4"
-                                      >
-                                    <Button size="lg" variant="outline" className="border-2 b..." ...>
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
-                                        onClick={function onClick}
--                                       fdprocessedid="5sv98f"
-                                      >
-+                                       Get a Quote
-                              ...
-                                <div className="grid md:gr...">
-                                  ...
-                                    <CardContent className="w-1/2 p-6 ...">
-                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
-                                        <div>
-                                        <Button variant="default" className="bg-black h...">
-                                          <button
-                                            data-slot="button"
-                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
--                                           fdprocessedid="apwfs8"
-                                          >
-+                                           Read More
-                                  ...
-                                    <CardContent className="w-1/2 p-6 ...">
-                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
-                                        <div>
-                                        <Button variant="default" className="bg-black h...">
-                                          <button
-                                            data-slot="button"
-                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
--                                           fdprocessedid="u797d6"
-                                          >
-+                                           Read More
-                                  ...
-                                    <CardContent className="w-1/2 p-6 ...">
-                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
-                                        <div>
-                                        <Button variant="default" className="bg-black h...">
-                                          <button
-                                            data-slot="button"
-                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
--                                           fdprocessedid="drw5u"
-                                          >
-+                                           Read More
-                                  ...
-                                    <CardContent className="w-1/2 p-6 ...">
-                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
-                                        <div>
-                                        <Button variant="default" className="bg-black h...">
-                                          <button
-                                            data-slot="button"
-                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
--                                           fdprocessedid="9s06gl"
-                                          >
-+                                           Read More
-                              <section id="fleet" className="py-20 bg-[...">
-                                <div className="max-w-7xl ...">
-                                  <div>
-                                  <div className="flex justi...">
-                                    <Button variant="default" className="bg-[#A4C63...">
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
--                                       fdprocessedid="afsdst"
-                                      >
-+                                       All
-                                    <Button variant="ghost" className="rounded-xl">
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
--                                       fdprocessedid="a7r23o"
-                                      >
-+                                       Sedan
-                                    <Button variant="ghost" className="rounded-xl">
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
--                                       fdprocessedid="yq44gl"
-                                      >
-+                                       SUV
-                                    <Button variant="ghost" className="rounded-xl">
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
--                                       fdprocessedid="gprv7b"
-                                      >
-+                                       Van
-                                  ...
-                              <section>
-                              ...
-                                <div className="flex items...">
-                                  <div className="flex-1">
-                                    <h3>
-                                    <ul>
-                                    <Button size="lg" className="bg-black h...">
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
--                                       fdprocessedid="xmd5b"
-                                      >
-+                                       Reserve Now
-                                  ...
-                              <section>
-                              ...
-                                <div data-slot="card-content" className="p-8">
-                                  <form className="space-y-6">
-                                    <div className="grid md:gr...">
-                                      <div className="space-y-2">
-                                        <label>
-                                        <Input placeholder="John Doe" className="rounded-xl">
-                                          <input
-                                            type={undefined}
-                                            data-slot="input"
-                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
-                                            placeholder="John Doe"
--                                           fdprocessedid="rzxyxu"
-                                          >
-                                      <div className="space-y-2">
-                                        <label>
-                                        <Input type="email" placeholder="john@examp..." className="rounded-xl">
-                                          <input
-                                            type="email"
-                                            data-slot="input"
-                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
-                                            placeholder="john@example.com"
--                                           fdprocessedid="cyx1c7"
-                                          >
-                                    <div className="grid md:gr...">
-                                      <div className="space-y-2">
-                                        <label>
-                                        <Input type="tel" placeholder="+27 123 45..." className="rounded-xl">
-                                          <input
-                                            type="tel"
-                                            data-slot="input"
-                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
-                                            placeholder="+27 123 456 7890"
--                                           fdprocessedid="qcm48w"
-                                          >
-                                      ...
-                                        <Slot ref={function}>
-                                          <SlotClone ref={function}>
-                                            <Primitive.button type="button" role="combobox" aria-controls="radix-_R_5..." ...>
-                                              <button
-                                                type="button"
-                                                role="combobox"
-                                                aria-controls="radix-_R_558indlb_"
-                                                aria-expanded={false}
-                                                aria-required={undefined}
-                                                aria-autocomplete="none"
-                                                dir="ltr"
-                                                data-state="closed"
-                                                disabled={false}
-                                                data-disabled={undefined}
-                                                data-placeholder=""
-                                                data-slot="select-trigger"
-                                                data-size="default"
-                                                className={"border-input data-[placeholder]:text-muted-foreground [&_..."}
-                                                onClick={function handleEvent}
-                                                onPointerDown={function handleEvent}
-                                                onKeyDown={function handleEvent}
-                                                ref={function}
--                                               fdprocessedid="zm3088"
-                                              >
-                                    <div className="grid md:gr...">
-                                      <div className="space-y-2">
-                                        <label>
-                                        <Input placeholder="Enter pick..." className="rounded-xl">
-                                          <input
-                                            type={undefined}
-                                            data-slot="input"
-                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
-                                            placeholder="Enter pickup address"
--                                           fdprocessedid="db8b5b"
-                                          >
-                                      <div className="space-y-2">
-                                        <label>
-                                        <Input placeholder="Enter dest..." className="rounded-xl">
-                                          <input
-                                            type={undefined}
-                                            data-slot="input"
-                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
-                                            placeholder="Enter destination"
--                                           fdprocessedid="h0qxmv"
-                                          >
-                                    <div>
-                                    <div>
-                                    <Button type="button" size="lg" className="w-full bg-..." onClick={function onClick}>
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
-                                        type="button"
-                                        onClick={function onClick}
--                                       fdprocessedid="0slprt"
-                                      >
-                                    ...
-                              <button
-                                onClick={function onClick}
-                                className="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white..."
-                                aria-label="Chat on WhatsApp"
--                               fdprocessedid="e5glfp"
-                              >
-                              ...
-                      ...
-                    ...
-        ...
-
-[00:00:23.173] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:23.173] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:23.173] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764603118993}
-[00:02:32.920] Server  LOG      ✓ Compiled in 417ms
-[00:02:39.897] Server  LOG      ✓ Compiled in 257ms
-[00:02:47.687] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:48.093] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:02:48.093] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:02:48.093] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764603263925}
-[00:02:54.768] Server  LOG      ✓ Compiled in 204ms
-[00:02:58.099] Server  LOG      ✓ Compiled in 210ms
-[00:03:01.205] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:01.675] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:03:01.676] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:03:01.676] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764603277508}
-[00:03:25.682] Server  LOG      ✓ Compiled in 181ms
-[00:03:28.460] Server  LOG      ✓ Compiled in 190ms
-[00:03:30.539] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:30.999] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:03:30.999] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:03:30.999] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764603306835}
-[00:03:41.676] Server  LOG      ✓ Compiled in 232ms
-[00:03:42.644] Server  LOG      ✓ Compiled in 181ms
-[00:03:46.710] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:47.182] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:03:47.182] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:03:47.182] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764603323011}
-[00:05:24.886] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:25.404] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ScrollAndFocusHandler segmentPath={[...]}>
-      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-          <LoadingBoundary name="/" loading={null}>
-            <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-                <RedirectBoundary>
-                  <RedirectErrorBoundary router={{...}}>
-                    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-                      <SegmentViewNode type="page" pagePath="page.tsx">
-                        <SegmentTrieNode>
-                        <ClientPageRoot Component={function MrFloatLanding} serverProvidedParams={{...}}>
-                          <MrFloatLanding params={Promise} searchParams={Promise}>
-                            <div className="min-w-full">
-                              <header className="absolute t...">
-                                <nav className="flex items...">
-                                  <div>
-                                  <div className="hidden md:...">
-                                    <a>
-                                    <a>
-                                    <a>
-                                    <a>
-                                    <a>
-                                    <Button className="bg-[#A4C63..." onClick={function onClick}>
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
-                                        onClick={function onClick}
--                                       fdprocessedid="gvffmi"
-                                      >
-+                                       Online Booking
-                              ...
-                                <div className="max-w-3xl">
-                                  <h1>
-                                  <p>
-                                  <div className="flex gap-4...">
-                                    <Button size="lg" className="bg-[#A4C63..." onClick={function onClick}>
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
-                                        onClick={function onClick}
--                                       fdprocessedid="u4zp"
-                                      >
-                                    <Button size="lg" variant="outline" className="border-2 b..." ...>
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
-                                        onClick={function onClick}
--                                       fdprocessedid="qazz55"
-                                      >
-+                                       Get a Quote
-                              ...
-                                <div className="grid md:gr...">
-                                  ...
-                                    <CardContent className="w-1/2 p-6 ...">
-                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
-                                        <div>
-                                        <Button variant="default" className="bg-black h...">
-                                          <button
-                                            data-slot="button"
-                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
--                                           fdprocessedid="lzvy64"
-                                          >
-+                                           Read More
-                                  ...
-                                    <CardContent className="w-1/2 p-6 ...">
-                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
-                                        <div>
-                                        <Button variant="default" className="bg-black h...">
-                                          <button
-                                            data-slot="button"
-                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
--                                           fdprocessedid="avtowa"
-                                          >
-+                                           Read More
-                                  ...
-                                    <CardContent className="w-1/2 p-6 ...">
-                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
-                                        <div>
-                                        <Button variant="default" className="bg-black h...">
-                                          <button
-                                            data-slot="button"
-                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
--                                           fdprocessedid="jt9ksk"
-                                          >
-+                                           Read More
-                                  ...
-                                    <CardContent className="w-1/2 p-6 ...">
-                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
-                                        <div>
-                                        <Button variant="default" className="bg-black h...">
-                                          <button
-                                            data-slot="button"
-                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
--                                           fdprocessedid="k6r6to"
-                                          >
-+                                           Read More
-                              <section id="fleet" className="py-20 bg-[...">
-                                <div className="max-w-7xl ...">
-                                  <div>
-                                  <div className="flex justi...">
-                                    <Button variant="default" className="bg-[#A4C63...">
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
--                                       fdprocessedid="12ta17"
-                                      >
-+                                       All
-                                    <Button variant="ghost" className="rounded-xl">
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
--                                       fdprocessedid="s26t2p"
-                                      >
-+                                       Sedan
-                                    <Button variant="ghost" className="rounded-xl">
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
--                                       fdprocessedid="qjph3s"
-                                      >
-+                                       SUV
-                                    <Button variant="ghost" className="rounded-xl">
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
--                                       fdprocessedid="4t5i8h"
-                                      >
-+                                       Van
-                                  ...
-                              <section>
-                              ...
-                                <div className="flex items...">
-                                  <div className="flex-1">
-                                    <h3>
-                                    <ul>
-                                    <Button size="lg" className="bg-black h...">
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
--                                       fdprocessedid="cq0bv"
-                                      >
-+                                       Reserve Now
-                                  ...
-                              <section>
-                              ...
-                                <div data-slot="card-content" className="p-8">
-                                  <form className="space-y-6">
-                                    <div className="grid md:gr...">
-                                      <div className="space-y-2">
-                                        <label>
-                                        <Input placeholder="John Doe" className="rounded-xl">
-                                          <input
-                                            type={undefined}
-                                            data-slot="input"
-                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
-                                            placeholder="John Doe"
--                                           fdprocessedid="zfi6pn"
-                                          >
-                                      <div className="space-y-2">
-                                        <label>
-                                        <Input type="email" placeholder="john@examp..." className="rounded-xl">
-                                          <input
-                                            type="email"
-                                            data-slot="input"
-                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
-                                            placeholder="john@example.com"
--                                           fdprocessedid="lox8cp"
-                                          >
-                                    <div className="grid md:gr...">
-                                      <div className="space-y-2">
-                                        <label>
-                                        <Input type="tel" placeholder="+27 123 45..." className="rounded-xl">
-                                          <input
-                                            type="tel"
-                                            data-slot="input"
-                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
-                                            placeholder="+27 123 456 7890"
--                                           fdprocessedid="ctiow7"
-                                          >
-                                      ...
-                                        <Slot ref={function}>
-                                          <SlotClone ref={function}>
-                                            <Primitive.button type="button" role="combobox" aria-controls="radix-_R_5..." ...>
-                                              <button
-                                                type="button"
-                                                role="combobox"
-                                                aria-controls="radix-_R_558indlb_"
-                                                aria-expanded={false}
-                                                aria-required={undefined}
-                                                aria-autocomplete="none"
-                                                dir="ltr"
-                                                data-state="closed"
-                                                disabled={false}
-                                                data-disabled={undefined}
-                                                data-placeholder=""
-                                                data-slot="select-trigger"
-                                                data-size="default"
-                                                className={"border-input data-[placeholder]:text-muted-foreground [&_..."}
-                                                onClick={function handleEvent}
-                                                onPointerDown={function handleEvent}
-                                                onKeyDown={function handleEvent}
-                                                ref={function}
--                                               fdprocessedid="ifow1a"
-                                              >
-                                    <div className="grid md:gr...">
-                                      <div className="space-y-2">
-                                        <label>
-                                        <Input placeholder="Enter pick..." className="rounded-xl">
-                                          <input
-                                            type={undefined}
-                                            data-slot="input"
-                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
-                                            placeholder="Enter pickup address"
--                                           fdprocessedid="n2hvf"
-                                          >
-                                      <div className="space-y-2">
-                                        <label>
-                                        <Input placeholder="Enter dest..." className="rounded-xl">
-                                          <input
-                                            type={undefined}
-                                            data-slot="input"
-                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
-                                            placeholder="Enter destination"
--                                           fdprocessedid="vsqqc"
-                                          >
-                                    <div>
-                                    <div>
-                                    <Button type="button" size="lg" className="w-full bg-..." onClick={function onClick}>
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
-                                        type="button"
-                                        onClick={function onClick}
--                                       fdprocessedid="m1fi6"
-                                      >
-                                    ...
-                              <button
-                                onClick={function onClick}
-                                className="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white..."
-                                aria-label="Chat on WhatsApp"
--                               fdprocessedid="t59u2k"
-                              >
-                              ...
-                      ...
-                    ...
-        ...
-
-[00:05:25.575] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:05:25.575] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:05:25.575] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764603421408}
-[00:05:38.717] Server  LOG      ✓ Compiled in 202ms
-[00:05:59.541] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:59.970] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ScrollAndFocusHandler segmentPath={[...]}>
-      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-          <LoadingBoundary name="/" loading={null}>
-            <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-                <RedirectBoundary>
-                  <RedirectErrorBoundary router={{...}}>
-                    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                    <InnerLayoutRouter url="/#home" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
                       <SegmentViewNode type="page" pagePath="page.tsx">
                         <SegmentTrieNode>
                         <ClientPageRoot Component={function MrFloatLanding} serverProvidedParams={{...}}>
                           <MrFloatLanding params={Promise} searchParams={Promise}>
                             <div className="min-w-full">
                               <header>
-                              <section>
-                              <section>
-                              <section>
+                              ...
+                                <div className="max-w-3xl">
+                                  <h1>
+                                  <p>
+                                  <div className="flex gap-4...">
+                                    <Button size="lg" className="bg-[#A4C63..." onClick={function onClick}>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        onClick={function onClick}
+-                                       fdprocessedid="blkksl"
+                                      >
+                                    <Button size="lg" variant="outline" className="border-2 b..." ...>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        onClick={function onClick}
+-                                       fdprocessedid="ubox4v"
+                                      >
++                                       Get a Quote
+                              ...
+                                <div className="grid md:gr...">
+                                  ...
+                                    <CardContent className="w-1/2 p-6 ...">
+                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
+                                        <div>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="p7y5u8"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="w-1/2 p-6 ...">
+                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
+                                        <div>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="1fy0hn"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="w-1/2 p-6 ...">
+                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
+                                        <div>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="jbc1pj"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="w-1/2 p-6 ...">
+                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
+                                        <div>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="7nhkde"
+                                          >
++                                           Read More
+                              <section id="fleet" className="py-20 bg-[...">
+                                <div className="max-w-7xl ...">
+                                  <div>
+                                  <div className="flex justi...">
+                                    <Button variant="default" className="bg-[#A4C63...">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="c8emg4"
+                                      >
++                                       All
+                                    <Button variant="ghost" className="rounded-xl">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="z6vc25"
+                                      >
++                                       Sedan
+                                    <Button variant="ghost" className="rounded-xl">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="ef3uv"
+                                      >
++                                       SUV
+                                    <Button variant="ghost" className="rounded-xl">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="bhzrii"
+                                      >
++                                       Van
+                                  ...
                               <section>
                               ...
                                 <div className="flex items...">
@@ -597,7 +147,7 @@ It can also happen if the client has a browser extension installed which messes 
                                       <button
                                         data-slot="button"
                                         className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
--                                       fdprocessedid="51dtqi"
+-                                       fdprocessedid="n3itr1"
                                       >
 +                                       Reserve Now
                                   ...
@@ -614,7 +164,7 @@ It can also happen if the client has a browser extension installed which messes 
                                             data-slot="input"
                                             className="file:text-foreground placeholder:text-muted-foreground selectio..."
                                             placeholder="John Doe"
--                                           fdprocessedid="d569ne"
+-                                           fdprocessedid="dc1bsn"
                                           >
                                       <div className="space-y-2">
                                         <label>
@@ -624,7 +174,7 @@ It can also happen if the client has a browser extension installed which messes 
                                             data-slot="input"
                                             className="file:text-foreground placeholder:text-muted-foreground selectio..."
                                             placeholder="john@example.com"
--                                           fdprocessedid="18rn04"
+-                                           fdprocessedid="pjwlx"
                                           >
                                     <div className="grid md:gr...">
                                       <div className="space-y-2">
@@ -635,7 +185,7 @@ It can also happen if the client has a browser extension installed which messes 
                                             data-slot="input"
                                             className="file:text-foreground placeholder:text-muted-foreground selectio..."
                                             placeholder="+27 123 456 7890"
--                                           fdprocessedid="9xnt9"
+-                                           fdprocessedid="ysybl2"
                                           >
                                       ...
                                         <Slot ref={function}>
@@ -660,7 +210,7 @@ It can also happen if the client has a browser extension installed which messes 
                                                 onPointerDown={function handleEvent}
                                                 onKeyDown={function handleEvent}
                                                 ref={function}
--                                               fdprocessedid="qrdnn"
+-                                               fdprocessedid="9h6eae"
                                               >
                                     <div className="grid md:gr...">
                                       <div className="space-y-2">
@@ -671,7 +221,7 @@ It can also happen if the client has a browser extension installed which messes 
                                             data-slot="input"
                                             className="file:text-foreground placeholder:text-muted-foreground selectio..."
                                             placeholder="Enter pickup address"
--                                           fdprocessedid="35cskm"
+-                                           fdprocessedid="1pool"
                                           >
                                       <div className="space-y-2">
                                         <label>
@@ -681,7 +231,7 @@ It can also happen if the client has a browser extension installed which messes 
                                             data-slot="input"
                                             className="file:text-foreground placeholder:text-muted-foreground selectio..."
                                             placeholder="Enter destination"
--                                           fdprocessedid="pcac5k"
+-                                           fdprocessedid="ev48h8"
                                           >
                                     <div>
                                     <div>
@@ -691,24 +241,1252 @@ It can also happen if the client has a browser extension installed which messes 
                                         className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
                                         type="button"
                                         onClick={function onClick}
--                                       fdprocessedid="wut1z"
+-                                       fdprocessedid="8n5eg"
                                       >
                                     ...
                               <button
                                 onClick={function onClick}
                                 className="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white..."
                                 aria-label="Chat on WhatsApp"
--                               fdprocessedid="q09on"
+-                               fdprocessedid="jn50fi"
                               >
                               ...
                       ...
                     ...
         ...
 
-[00:06:00.136] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:06:00.136] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:06:00.136] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764603455958}
-[00:06:15.479] Server  LOG      ✓ Compiled in 296ms
-[00:07:10.580] Server  LOG      ✓ Compiled in 162ms
-[00:07:18.468] Server  LOG      ✓ Compiled in 246ms
-[00:07:23.001] Server  LOG      ✓ Compiled in 448ms
+[00:19:39.425] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:19:39.425] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:19:39.425] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#home color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#home","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764613049457}
+[00:20:42.690] Server  LOG      ✓ Compiled in 134ms
+[00:20:44.549] Server  LOG      ✓ Compiled in 197ms
+[00:20:51.491] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:51.774] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ScrollAndFocusHandler segmentPath={[...]}>
+      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/#home" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function MrFloatLanding} serverProvidedParams={{...}}>
+                          <MrFloatLanding params={Promise} searchParams={Promise}>
+                            <div className="min-w-full">
+                              <header>
+                              ...
+                                <div className="max-w-3xl">
+                                  <h1>
+                                  <p>
+                                  <div className="flex gap-4...">
+                                    <Button size="lg" className="bg-[#A4C63..." onClick={function onClick}>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        onClick={function onClick}
+-                                       fdprocessedid="mb56o7"
+                                      >
+                                    <Button size="lg" variant="outline" className="border-2 b..." ...>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        onClick={function onClick}
+-                                       fdprocessedid="xlnhnr"
+                                      >
++                                       Get a Quote
+                              ...
+                                <div className="grid md:gr...">
+                                  ...
+                                    <CardContent className="w-1/2 p-6 ...">
+                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
+                                        <div>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="965m6h"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="w-1/2 p-6 ...">
+                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
+                                        <div>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="dycpv"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="w-1/2 p-6 ...">
+                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
+                                        <div>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="98rlsm"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="w-1/2 p-6 ...">
+                                      <div data-slot="card-content" className="w-1/2 p-6 ...">
+                                        <div>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="g51qa2"
+                                          >
++                                           Read More
+                              <section id="fleet" className="py-20 bg-[...">
+                                <div className="max-w-7xl ...">
+                                  <div>
+                                  <div className="flex justi...">
+                                    <Button variant="default" className="bg-[#A4C63...">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="putxow"
+                                      >
++                                       All
+                                    <Button variant="ghost" className="rounded-xl">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="xw2ysg"
+                                      >
++                                       Sedan
+                                    <Button variant="ghost" className="rounded-xl">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="3im8qq"
+                                      >
++                                       SUV
+                                    <Button variant="ghost" className="rounded-xl">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="yghpai"
+                                      >
++                                       Van
+                                  ...
+                              <section>
+                              ...
+                                <div className="flex items...">
+                                  <div className="flex-1">
+                                    <h3>
+                                    <ul>
+                                    <Button size="lg" className="bg-black h...">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="kh5j9"
+                                      >
++                                       Reserve Now
+                                  ...
+                              <section>
+                              ...
+                                <div data-slot="card-content" className="p-8">
+                                  <form className="space-y-6">
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="John Doe" className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="John Doe"
+-                                           fdprocessedid="9p8fhl"
+                                          >
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input type="email" placeholder="john@examp..." className="rounded-xl">
+                                          <input
+                                            type="email"
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="john@example.com"
+-                                           fdprocessedid="q4qr1c"
+                                          >
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input type="tel" placeholder="+27 123 45..." className="rounded-xl">
+                                          <input
+                                            type="tel"
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="+27 123 456 7890"
+-                                           fdprocessedid="rdkeo"
+                                          >
+                                      ...
+                                        <Slot ref={function}>
+                                          <SlotClone ref={function}>
+                                            <Primitive.button type="button" role="combobox" aria-controls="radix-_R_5..." ...>
+                                              <button
+                                                type="button"
+                                                role="combobox"
+                                                aria-controls="radix-_R_558indlb_"
+                                                aria-expanded={false}
+                                                aria-required={undefined}
+                                                aria-autocomplete="none"
+                                                dir="ltr"
+                                                data-state="closed"
+                                                disabled={false}
+                                                data-disabled={undefined}
+                                                data-placeholder=""
+                                                data-slot="select-trigger"
+                                                data-size="default"
+                                                className={"border-input data-[placeholder]:text-muted-foreground [&_..."}
+                                                onClick={function handleEvent}
+                                                onPointerDown={function handleEvent}
+                                                onKeyDown={function handleEvent}
+                                                ref={function}
+-                                               fdprocessedid="bi9jt6"
+                                              >
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="Enter pick..." className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="Enter pickup address"
+-                                           fdprocessedid="r7gc2"
+                                          >
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="Enter dest..." className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="Enter destination"
+-                                           fdprocessedid="xu4p"
+                                          >
+                                    <div>
+                                    <div>
+                                    <Button type="button" size="lg" className="w-full bg-..." onClick={function onClick}>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        type="button"
+                                        onClick={function onClick}
+-                                       fdprocessedid="vb492n"
+                                      >
+                                    ...
+                              <button
+                                onClick={function onClick}
+                                className="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white..."
+                                aria-label="Chat on WhatsApp"
+-                               fdprocessedid="up4sno"
+                              >
+                              ...
+                      ...
+                    ...
+        ...
+
+[00:20:51.774] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:20:51.774] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:20:51.774] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#home color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#home","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764613121828}
+[00:22:41.993] Server  LOG      ✓ Compiled in 186ms
+[00:22:44.206] Server  LOG      ✓ Compiled in 135ms
+[00:22:46.287] Server  LOG      ✓ Compiled in 223ms
+[00:27:31.216] Server  LOG      ✓ Compiled in 180ms
+[00:29:33.014] Server  LOG      ✓ Compiled in 150ms
+[00:29:45.385] Server  LOG      ✓ Compiled in 144ms
+[00:31:51.833] Server  LOG      ✓ Compiled in 194ms
+[00:31:59.512] Server  LOG      ✓ Compiled in 187ms
+[00:32:00.739] Server  LOG      ✓ Compiled in 176ms
+[00:33:40.752] Server  LOG      ✓ Compiled in 151ms
+[00:33:43.574] Server  LOG      ✓ Compiled in 123ms
+[00:33:48.879] Server  LOG      ✓ Compiled in 110ms
+[00:41:53.089] Server  LOG      ✓ Compiled in 2.1s
+[00:42:22.482] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:22.998] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ScrollAndFocusHandler segmentPath={[...]}>
+      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/#home" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function MrFloatLanding} serverProvidedParams={{...}}>
+                          <MrFloatLanding params={Promise} searchParams={Promise}>
+                            <div className="min-w-full">
+                              <header className="absolute t...">
+                                <nav className="flex items...">
+                                  <div>
+                                  <div className="hidden md:...">
+                                    <a>
+                                    <a>
+                                    <a>
+                                    <a>
+                                    <a>
+                                    <Button className="bg-[#A4C63..." onClick={function onClick}>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+                                        onClick={function onClick}
+-                                       fdprocessedid="3by1z"
+                                      >
++                                       Online Booking
+                              ...
+                                <div className="max-w-3xl">
+                                  <h1>
+                                  <p>
+                                  <div className="flex gap-4...">
+                                    <Button size="lg" className="bg-[#A4C63..." onClick={function onClick}>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        onClick={function onClick}
+-                                       fdprocessedid="st5q07"
+                                      >
+                                    <Button size="lg" variant="outline" className="border-2 b..." ...>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        onClick={function onClick}
+-                                       fdprocessedid="0zy5s8"
+                                      >
++                                       Get a Quote
+                              ...
+                                <div className="grid md:gr...">
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="ypfd6"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="erz369"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="wfptd"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="i0ago9"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="xc4fbo"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="fnb7aq"
+                                          >
++                                           Read More
+                              <section id="fleet" className="py-20 bg-[...">
+                                <div className="max-w-7xl ...">
+                                  <div>
+                                  <div className="flex justi...">
+                                    <Button variant="default" className="bg-[#A4C63...">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="frxw1b"
+                                      >
++                                       All
+                                    <Button variant="ghost" className="rounded-xl">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="gfsjur"
+                                      >
++                                       Sedan
+                                    <Button variant="ghost" className="rounded-xl">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="9afey6"
+                                      >
++                                       SUV
+                                    <Button variant="ghost" className="rounded-xl">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="w8q9si"
+                                      >
++                                       Van
+                                  ...
+                              <section>
+                              ...
+                                <div className="flex items...">
+                                  <div className="flex-1">
+                                    <h3>
+                                    <ul>
+                                    <Button size="lg" className="bg-black h...">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+-                                       fdprocessedid="qpq713o"
+                                      >
++                                       Reserve Now
+                                  ...
+                              <section>
+                              ...
+                                <div data-slot="card-content" className="p-8">
+                                  <form className="space-y-6">
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="John Doe" className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="John Doe"
+-                                           fdprocessedid="xwez3"
+                                          >
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input type="email" placeholder="john@examp..." className="rounded-xl">
+                                          <input
+                                            type="email"
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="john@example.com"
+-                                           fdprocessedid="yr0a6j"
+                                          >
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input type="tel" placeholder="+27 123 45..." className="rounded-xl">
+                                          <input
+                                            type="tel"
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="+27 123 456 7890"
+-                                           fdprocessedid="ce7cp"
+                                          >
+                                      ...
+                                        <Slot ref={function}>
+                                          <SlotClone ref={function}>
+                                            <Primitive.button type="button" role="combobox" aria-controls="radix-_R_5..." ...>
+                                              <button
+                                                type="button"
+                                                role="combobox"
+                                                aria-controls="radix-_R_558indlb_"
+                                                aria-expanded={false}
+                                                aria-required={undefined}
+                                                aria-autocomplete="none"
+                                                dir="ltr"
+                                                data-state="closed"
+                                                disabled={false}
+                                                data-disabled={undefined}
+                                                data-placeholder=""
+                                                data-slot="select-trigger"
+                                                data-size="default"
+                                                className={"border-input data-[placeholder]:text-muted-foreground [&_..."}
+                                                onClick={function handleEvent}
+                                                onPointerDown={function handleEvent}
+                                                onKeyDown={function handleEvent}
+                                                ref={function}
+-                                               fdprocessedid="volflm"
+                                              >
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="Enter pick..." className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="Enter pickup address"
+-                                           fdprocessedid="g5x5sb"
+                                          >
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="Enter dest..." className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="Enter destination"
+-                                           fdprocessedid="v4a82"
+                                          >
+                                    <div>
+                                    <div>
+                                    <Button type="button" size="lg" className="w-full bg-..." onClick={function onClick}>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        type="button"
+                                        onClick={function onClick}
+-                                       fdprocessedid="5gf7rm"
+                                      >
+                                    ...
+                              <button
+                                onClick={function onClick}
+                                className="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white..."
+                                aria-label="Chat on WhatsApp"
+-                               fdprocessedid="wzarl"
+                              >
+                              ...
+                      ...
+                    ...
+        ...
+
+[00:42:23.179] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:42:23.179] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:42:23.179] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#home color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#home","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764614413227}
+[00:42:54.417] Server  LOG      ✓ Compiled in 193ms
+[00:45:59.386] Server  LOG      ✓ Compiled in 540ms
+[00:55:03.771] Server  LOG      ✓ Compiled in 521ms
+[00:55:04.273] Server  LOG      ✓ Compiled in 301ms
+[00:55:11.443] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:11.735] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ScrollAndFocusHandler segmentPath={[...]}>
+      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/#home" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function MrFloatLanding} serverProvidedParams={{...}}>
+                          <MrFloatLanding params={Promise} searchParams={Promise}>
+                            <div className="min-w-full">
+                              <header className="absolute t...">
+                                <nav className="flex items...">
+                                  <div>
+                                  <div className="hidden md:...">
+                                    <a>
+                                    <a>
+                                    <a>
+                                    <a>
+                                    <a>
+                                    <Button className="bg-[#A4C63..." onClick={function onClick}>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+                                        onClick={function onClick}
+-                                       fdprocessedid="ns2jdp"
+                                      >
++                                       Online Booking
+                              ...
+                                <div className="max-w-3xl">
+                                  <h1>
+                                  <p>
+                                  <div className="flex gap-4...">
+                                    <Button size="lg" className="bg-[#A4C63..." onClick={function onClick}>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        onClick={function onClick}
+-                                       fdprocessedid="0hea6n"
+                                      >
+                                    <Button size="lg" variant="outline" className="border-2 b..." ...>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        onClick={function onClick}
+-                                       fdprocessedid="bun7yw"
+                                      >
++                                       Get a Quote
+                              ...
+                                <div className="grid md:gr...">
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="qq0yy5"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="w9ryb"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="utpawd"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="nga3o"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="8bpja9"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="dtcsll"
+                                          >
++                                           Read More
+                              <section>
+                              <section>
+                              <section>
+                              ...
+                                <div data-slot="card-content" className="p-8">
+                                  <form className="space-y-6">
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="John Doe" className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="John Doe"
+-                                           fdprocessedid="f33nm4"
+                                          >
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input type="email" placeholder="john@examp..." className="rounded-xl">
+                                          <input
+                                            type="email"
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="john@example.com"
+-                                           fdprocessedid="ek7cf4"
+                                          >
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input type="tel" placeholder="+27 123 45..." className="rounded-xl">
+                                          <input
+                                            type="tel"
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="+27 123 456 7890"
+-                                           fdprocessedid="9cwzao"
+                                          >
+                                      ...
+                                        <Slot ref={function}>
+                                          <SlotClone ref={function}>
+                                            <Primitive.button type="button" role="combobox" aria-controls="radix-_R_5..." ...>
+                                              <button
+                                                type="button"
+                                                role="combobox"
+                                                aria-controls="radix-_R_557indlb_"
+                                                aria-expanded={false}
+                                                aria-required={undefined}
+                                                aria-autocomplete="none"
+                                                dir="ltr"
+                                                data-state="closed"
+                                                disabled={false}
+                                                data-disabled={undefined}
+                                                data-placeholder=""
+                                                data-slot="select-trigger"
+                                                data-size="default"
+                                                className={"border-input data-[placeholder]:text-muted-foreground [&_..."}
+                                                onClick={function handleEvent}
+                                                onPointerDown={function handleEvent}
+                                                onKeyDown={function handleEvent}
+                                                ref={function}
+-                                               fdprocessedid="6d36e8"
+                                              >
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="Enter pick..." className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="Enter pickup address"
+-                                           fdprocessedid="b8q0ka"
+                                          >
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="Enter dest..." className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="Enter destination"
+-                                           fdprocessedid="67eudw"
+                                          >
+                                    <div>
+                                    <div>
+                                    <Button type="button" size="lg" className="w-full bg-..." onClick={function onClick}>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        type="button"
+                                        onClick={function onClick}
+-                                       fdprocessedid="y4kgc6"
+                                      >
+                                    ...
+                              <button
+                                onClick={function onClick}
+                                className="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white..."
+                                aria-label="Chat on WhatsApp"
+-                               fdprocessedid="158zvw"
+                              >
+                              ...
+                      ...
+                    ...
+        ...
+
+[00:55:11.862] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:55:11.862] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:55:11.862] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#home color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#home","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764615181911}
+[01:04:37.583] Server  LOG      ✓ Compiled in 800ms
+[01:04:38.639] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.699] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\node_modules_next_dist_179b90d2._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.794] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.804] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.807] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.809] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.815] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.818] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.822] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[01:04:38.837] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.839] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\node_modules_next_dist_179b90d2._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.841] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.843] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.844] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.845] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.847] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.848] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:38.850] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[01:04:38.996] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.000] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\node_modules_next_dist_179b90d2._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.002] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.005] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.007] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.011] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.017] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.020] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.023] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[01:04:39.106] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.113] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\node_modules_next_dist_179b90d2._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.117] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.121] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.124] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.127] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.131] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.137] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:39.139] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[01:04:42.890] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/page"
+[01:05:15.582] Server  LOG      ✓ Compiled in 660ms
+[01:05:17.999] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:05:18.501] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ScrollAndFocusHandler segmentPath={[...]}>
+      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/#home" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function MRFloatLanding} serverProvidedParams={{...}}>
+                          <MRFloatLanding params={Promise} searchParams={Promise}>
+                            <div className="min-h-scre...">
+                              <header className="fixed top-...">
+                                <nav className="flex items...">
+                                  <div>
+                                  <div className="hidden md:...">
+                                    <a>
+                                    <a>
+                                    <a>
+                                    <a>
+                                    <a>
+                                    <Button className="bg-[#A4C63..." onClick={function onClick}>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+                                        onClick={function onClick}
+-                                       fdprocessedid="putdqr"
+                                      >
++                                       Online Booking
+                              ...
+                                <div data-slot="card-content" className="p-8">
+                                  <h2>
+                                  <form className="space-y-4">
+                                    <div className="grid md:gr...">
+                                      <div className="relative">
+                                        <Input placeholder="First and ..." className="bg-white p...">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="First and Last name"
+-                                           fdprocessedid="lnsw1m"
+                                          >
+                                        ...
+                                      <div className="relative">
+                                        <Input placeholder="# of passe..." type="number" className="bg-white p...">
+                                          <input
+                                            type="number"
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="# of passengers"
+-                                           fdprocessedid="bfyt8a"
+                                          >
+                                        ...
+                                    <div className="grid md:gr...">
+                                      <div className="relative">
+                                        <Input placeholder="Phone" type="tel" className="bg-white p...">
+                                          <input
+                                            type="tel"
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="Phone"
+-                                           fdprocessedid="1qxwvb"
+                                          >
+                                        ...
+                                      <div className="relative">
+                                        <Input placeholder="Email" type="email" className="bg-white p...">
+                                          <input
+                                            type="email"
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="Email"
+-                                           fdprocessedid="8ldz8t"
+                                          >
+                                        ...
+                                    <div className="grid md:gr...">
+                                      ...
+                                        <Slot ref={function}>
+                                          <SlotClone ref={function}>
+                                            <Primitive.button type="button" role="combobox" aria-controls="radix-_R_j..." ...>
+                                              <button
+                                                type="button"
+                                                role="combobox"
+                                                aria-controls="radix-_R_jl2indlb_"
+                                                aria-expanded={false}
+                                                aria-required={undefined}
+                                                aria-autocomplete="none"
+                                                dir="ltr"
+                                                data-state="closed"
+                                                disabled={false}
+                                                data-disabled={undefined}
+                                                data-placeholder=""
+                                                data-slot="select-trigger"
+                                                data-size="default"
+                                                className={"data-[placeholder]:text-muted-foreground [&_svg:not([clas..."}
+                                                onClick={function handleEvent}
+                                                onPointerDown={function handleEvent}
+                                                onKeyDown={function handleEvent}
+                                                ref={function}
+-                                               fdprocessedid="wi1jau"
+                                              >
+                                      ...
+                                        <Slot ref={function}>
+                                          <SlotClone ref={function}>
+                                            <Primitive.button type="button" role="combobox" aria-controls="radix-_R_1..." ...>
+                                              <button
+                                                type="button"
+                                                role="combobox"
+                                                aria-controls="radix-_R_13l2indlb_"
+                                                aria-expanded={false}
+                                                aria-required={undefined}
+                                                aria-autocomplete="none"
+                                                dir="ltr"
+                                                data-state="closed"
+                                                disabled={false}
+                                                data-disabled={undefined}
+                                                data-placeholder=""
+                                                data-slot="select-trigger"
+                                                data-size="default"
+                                                className={"data-[placeholder]:text-muted-foreground [&_svg:not([clas..."}
+                                                onClick={function handleEvent}
+                                                onPointerDown={function handleEvent}
+                                                onKeyDown={function handleEvent}
+                                                ref={function}
+-                                               fdprocessedid="gniarw"
+                                              >
+                                    <div>
+                                    <div className="relative">
+                                      <Input placeholder="Pick-up lo..." className="bg-white p...">
+                                        <input
+                                          type={undefined}
+                                          data-slot="input"
+                                          className="file:text-foreground placeholder:text-muted-foreground selection:..."
+                                          placeholder="Pick-up location"
+-                                         fdprocessedid="bewcj9"
+                                        >
+                                      ...
+                                    <Button type="button" className="bg-blue-60...">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+                                        type="button"
+-                                       fdprocessedid="jfnmml"
+                                      >
++                                       Add Stop
+                                    <div className="relative">
+                                      <Input placeholder="Drop-off l..." className="bg-white p...">
+                                        <input
+                                          type={undefined}
+                                          data-slot="input"
+                                          className="file:text-foreground placeholder:text-muted-foreground selection:..."
+                                          placeholder="Drop-off location"
+-                                         fdprocessedid="2di7ca"
+                                        >
+                                      ...
+                                    <Textarea>
+                                    ...
+                                      <CheckboxProvider scope={undefined} state={false} disabled={undefined}>
+                                        <Primitive.button type="button" role="checkbox" aria-checked={false} ...>
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked={false}
+                                            aria-required={undefined}
+                                            data-state="unchecked"
+                                            data-disabled={undefined}
+                                            disabled={undefined}
+                                            value="on"
+                                            data-slot="checkbox"
+                                            className="peer border-input dark:bg-input/30 data-[state=checked]:bg-prim..."
+                                            id="consent"
+                                            onKeyDown={function handleEvent}
+                                            onClick={function handleEvent}
+                                            ref={function}
+-                                           fdprocessedid="0b6xvb"
+                                          >
+                                        ...
+                                    <Button type="submit" className="w-full bg-...">
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
+                                        type="submit"
+-                                       fdprocessedid="ms5uph"
+                                      >
++                                       Get My Quote
+                              ...
+                                <div className="grid md:gr...">
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="gvis3q"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="zbgpr"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="cpjhue"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="ggjpis"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="26jsek"
+                                          >
++                                           Read More
+                                  ...
+                                    <CardContent className="p-6">
+                                      <div data-slot="card-content" className="p-6">
+                                        <h3>
+                                        <p>
+                                        <Button variant="default" className="bg-black h...">
+                                          <button
+                                            data-slot="button"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           fdprocessedid="0lubi8"
+                                          >
++                                           Read More
+                              <section>
+                              <section>
+                              <section>
+                              ...
+                                <div data-slot="card-content" className="p-8">
+                                  <form className="space-y-6">
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="John Doe" className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="John Doe"
+-                                           fdprocessedid="hj8wo"
+                                          >
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input type="email" placeholder="john@examp..." className="rounded-xl">
+                                          <input
+                                            type="email"
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="john@example.com"
+-                                           fdprocessedid="9x5aqe"
+                                          >
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input type="tel" placeholder="+27 123 45..." className="rounded-xl">
+                                          <input
+                                            type="tel"
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="+27 123 456 7890"
+-                                           fdprocessedid="m2awzi"
+                                          >
+                                      ...
+                                        <Slot ref={function}>
+                                          <SlotClone ref={function}>
+                                            <Primitive.button type="button" role="combobox" aria-controls="radix-_R_5..." ...>
+                                              <button
+                                                type="button"
+                                                role="combobox"
+                                                aria-controls="radix-_R_557indlb_"
+                                                aria-expanded={false}
+                                                aria-required={undefined}
+                                                aria-autocomplete="none"
+                                                dir="ltr"
+                                                data-state="closed"
+                                                disabled={false}
+                                                data-disabled={undefined}
+                                                data-placeholder=""
+                                                data-slot="select-trigger"
+                                                data-size="default"
+                                                className={"border-input data-[placeholder]:text-muted-foreground [&_..."}
+                                                onClick={function handleEvent}
+                                                onPointerDown={function handleEvent}
+                                                onKeyDown={function handleEvent}
+                                                ref={function}
+-                                               fdprocessedid="6eluu"
+                                              >
+                                    <div className="grid md:gr...">
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="Enter pick..." className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="Enter pickup address"
+-                                           fdprocessedid="u4yjbh"
+                                          >
+                                      <div className="space-y-2">
+                                        <label>
+                                        <Input placeholder="Enter dest..." className="rounded-xl">
+                                          <input
+                                            type={undefined}
+                                            data-slot="input"
+                                            className="file:text-foreground placeholder:text-muted-foreground selectio..."
+                                            placeholder="Enter destination"
+-                                           fdprocessedid="kjugra"
+                                          >
+                                    <div>
+                                    <div>
+                                    <Button type="button" size="lg" className="w-full bg-..." onClick={function onClick}>
+                                      <button
+                                        data-slot="button"
+                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap f..."}
+                                        type="button"
+                                        onClick={function onClick}
+-                                       fdprocessedid="ll9i7i"
+                                      >
+                                    ...
+                              <button
+                                onClick={function onClick}
+                                className="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white..."
+                                aria-label="Chat on WhatsApp"
+-                               fdprocessedid="0yztv"
+                              >
+                              ...
+                      ...
+                    ...
+        ...
+
+[01:05:18.661] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:05:18.661] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:05:18.661] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#home color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#home","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764615788718}

@@ -1,35 +1,39 @@
 "use client"
 
-import { Car, Package, Clock, Shield, CreditCard, MessageCircle, Mail, Phone, MapPin } from "lucide-react"
+import { useState } from "react"
+import { Car, Package, Clock, Shield, CreditCard, MessageCircle, Mail, Phone, MapPin, User, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Checkbox } from "@/components/ui/checkbox"
 
-export default function MrFloatLanding() {
+export default function MRFloatLanding() {
+  const [agreed, setAgreed] = useState(false)
+
   return (
-    <div className="min-w-full">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 z-10 px-8 py-6">
-        <nav className="flex items-center justify-between max-w-7xl mx-auto">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <nav className="flex items-center justify-between max-w-7xl mx-auto px-8 py-4">
           <div className="text-2xl font-bold text-black">
             <span className="text-black">MR</span> <span className="text-gray-400">FLOAT</span>
           </div>
-          <div className="hidden md:flex gap-8 items-center text-white/90">
-            <a href="#home" className="hover:text-white transition-colors">
+          <div className="hidden md:flex gap-8 items-center text-gray-700">
+            <a href="#home" className="hover:text-[#A4C639] transition-colors font-medium">
               Home
             </a>
-            <a href="#services" className="hover:text-white transition-colors">
+            <a href="#services" className="hover:text-[#A4C639] transition-colors font-medium">
               Services
             </a>
-            <a href="#fleet" className="hover:text-white transition-colors">
+            <a href="#fleet" className="hover:text-[#A4C639] transition-colors font-medium">
               Fleet
             </a>
-            <a href="#testimonials" className="hover:text-white transition-colors">
+            <a href="#testimonials" className="hover:text-[#A4C639] transition-colors font-medium">
               Testimonials
             </a>
-            <a href="#contact" className="hover:text-white transition-colors">
+            <a href="#contact" className="hover:text-[#A4C639] transition-colors font-medium">
               Contact
             </a>
             <Button
@@ -43,34 +47,146 @@ export default function MrFloatLanding() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="relative h-[600px] bg-gray-100 overflow-hidden">
-        <div className="absolute inset-0 opacity-80">
-          <img src="/hero.jpg" alt="City transport" className="w-full h-full object-cover" />
+      <section id="home" className="relative min-h-screen bg-gray-100 overflow-hidden pt-20">
+        <div className="absolute inset-0 opacity-60">
+          <img src="/modern-city-road-at-sunset.jpg" alt="City transport" className="w-full h-full object-cover" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-8 h-full flex items-center justify-center text-center">
-          <div className="max-w-3xl">
-            <h1 className="text-7xl font-bold text-black mb-6">Your Reliable Transport Partner</h1>
-            <p className="text-2xl text-gray-600 mb-8">
-              Professional rides and delivery services across the city and beyond
-            </p>
-            <div className="flex gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-8 rounded-xl text-lg"
-                onClick={() => window.open("https://wa.me/1234567890", "_blank")}
-              >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Chat on WhatsApp
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-black text-black hover:bg-black hover:text-white px-8 rounded-xl text-lg bg-transparent"
-                onClick={() => document.getElementById("quote-form")?.scrollIntoView({ behavior: "smooth" })}
-              >
-                Get a Quote
-              </Button>
+        <div className="relative max-w-7xl mx-auto px-8 h-full min-h-[calc(100vh-80px)] flex items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center w-full">
+            {/* Left side - Hero text */}
+            <div>
+              <h1 className="text-6xl font-bold text-white mb-6 drop-shadow-lg">Your Reliable Transport Partner</h1>
+              <p className="text-2xl text-white mb-8 drop-shadow-md">
+                Professional rides and delivery services across the city and beyond
+              </p>
             </div>
+
+            {/* Right side - Quote Form */}
+            <Card className="bg-gray-100/95 backdrop-blur-sm rounded-3xl shadow-2xl">
+              <CardContent className="p-8">
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">REQUEST A QUOTE</h2>
+                <form className="space-y-4">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="relative">
+                      <Input
+                        placeholder="First and Last name"
+                        className="bg-white pl-4 pr-10 py-6 rounded-lg border-gray-300"
+                      />
+                      <User className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                    </div>
+                    <div className="relative">
+                      <Input
+                        placeholder="# of passengers"
+                        type="number"
+                        className="bg-white pl-4 pr-10 py-6 rounded-lg border-gray-300"
+                      />
+                      <Users className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="relative">
+                      <Input
+                        placeholder="Phone"
+                        type="tel"
+                        className="bg-white pl-4 pr-10 py-6 rounded-lg border-gray-300"
+                      />
+                      <Phone className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                    </div>
+                    <div className="relative">
+                      <Input
+                        placeholder="Email"
+                        type="email"
+                        className="bg-white pl-4 pr-10 py-6 rounded-lg border-gray-300"
+                      />
+                      <Mail className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <Select>
+                      <SelectTrigger className="bg-white py-6 rounded-lg border-gray-300">
+                        <SelectValue placeholder="Select service type" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="taxi">Taxi / e-hailing</SelectItem>
+                        <SelectItem value="airport">Airport Shuttle</SelectItem>
+                        <SelectItem value="delivery">Dial-a-Delivery</SelectItem>
+                        <SelectItem value="school">School Runs</SelectItem>
+                        <SelectItem value="cityride">City-to-City Rides</SelectItem>
+                        <SelectItem value="cbd">CBD Errands</SelectItem>
+                        <SelectItem value="hire">Car Hire</SelectItem>
+                      </SelectContent>
+                    </Select>
+
+                    <Select>
+                      <SelectTrigger className="bg-white py-6 rounded-lg border-gray-300">
+                        <SelectValue placeholder="Select vehicle" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="sedan">Sedan</SelectItem>
+                        <SelectItem value="suv">SUV</SelectItem>
+                        <SelectItem value="van">Van</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  <div className="relative">
+                    <Input
+                      placeholder="Pick-up time"
+                      type="datetime-local"
+                      className="bg-white pl-4 pr-10 py-6 rounded-lg border-gray-300"
+                    />
+                    <Clock className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                  </div>
+
+                  <div className="relative">
+                    <Input
+                      placeholder="Pick-up location"
+                      className="bg-white pl-4 pr-10 py-6 rounded-lg border-gray-300"
+                    />
+                    <MapPin className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                  </div>
+
+                  <Button type="button" className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg">
+                    Add Stop
+                  </Button>
+
+                  <div className="relative">
+                    <Input
+                      placeholder="Drop-off location"
+                      className="bg-white pl-4 pr-10 py-6 rounded-lg border-gray-300"
+                    />
+                    <MapPin className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                  </div>
+
+                  <Textarea
+                    placeholder="Additional Notes"
+                    className="bg-white min-h-[100px] rounded-lg border-gray-300"
+                  />
+
+                  <div className="flex items-start gap-3">
+                    <Checkbox
+                      id="consent"
+                      checked={agreed}
+                      onCheckedChange={(checked) => setAgreed(checked as boolean)}
+                      className="mt-1"
+                    />
+                    <label htmlFor="consent" className="text-sm text-gray-700 leading-tight cursor-pointer">
+                      I agree to receive SMS and email communications from MR FLOAT regarding my quote request. You can
+                      reply STOP to opt out of SMS at any time.
+                    </label>
+                  </div>
+
+                  <Button
+                    type="submit"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 rounded-lg text-lg font-semibold"
+                  >
+                    Get My Quote
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -83,93 +199,111 @@ export default function MrFloatLanding() {
             <p className="text-gray-600 text-lg">We provide comprehensive transport solutions tailored to your needs</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0">
-              <div className="flex">
-                <div className="w-1/2">
-                  <img
-                    src="/professional-driver-at-airport-terminal.jpg"
-                    alt="Airport shuttle"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <CardContent className="w-1/2 p-6 flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-2xl font-bold mb-3">Airport Shuttle</h3>
-                    <p className="text-gray-600 mb-4">
-                      Reliable on-time airport transfers with flight tracking to ensure smooth pickups and drop-offs.
-                    </p>
-                  </div>
-                  <Button variant="default" className="bg-black hover:bg-black/90 w-fit rounded-xl">
-                    Read More
-                  </Button>
-                </CardContent>
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src="/professional-driver-at-airport-terminal.jpg"
+                  alt="Airport shuttle"
+                  className="w-full h-full object-cover"
+                />
               </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3">Airport Shuttle</h3>
+                <p className="text-gray-600 mb-4">
+                  Reliable on-time airport transfers with flight tracking to ensure smooth pickups and drop-offs.
+                </p>
+                <Button variant="default" className="bg-black hover:bg-black/90 w-fit rounded-xl">
+                  Read More
+                </Button>
+              </CardContent>
             </Card>
 
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0">
-              <div className="flex">
-                <div className="w-1/2">
-                  <img
-                    src="/professional-chauffeur-driving-on-highway.jpg"
-                    alt="City rides"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <CardContent className="w-1/2 p-6 flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-2xl font-bold mb-3">City-to-City Rides</h3>
-                    <p className="text-gray-600 mb-4">
-                      Comfortable long-distance transport for intercity travel with experienced drivers.
-                    </p>
-                  </div>
-                  <Button variant="default" className="bg-black hover:bg-black/90 w-fit rounded-xl">
-                    Read More
-                  </Button>
-                </CardContent>
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src="/professional-chauffeur-driving-on-highway.jpg"
+                  alt="City rides"
+                  className="w-full h-full object-cover"
+                />
               </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3">City-to-City Rides</h3>
+                <p className="text-gray-600 mb-4">
+                  Comfortable long-distance transport for intercity travel with experienced drivers.
+                </p>
+                <Button variant="default" className="bg-black hover:bg-black/90 w-fit rounded-xl">
+                  Read More
+                </Button>
+              </CardContent>
             </Card>
 
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0">
-              <div className="flex">
-                <div className="w-1/2">
-                  <img
-                    src="/delivery-driver-with-packages.jpg"
-                    alt="Delivery service"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <CardContent className="w-1/2 p-6 flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-2xl font-bold mb-3">Dial-a-Delivery</h3>
-                    <p className="text-gray-600 mb-4">
-                      Quick and secure package delivery across the city with real-time tracking for peace of mind.
-                    </p>
-                  </div>
-                  <Button variant="default" className="bg-black hover:bg-black/90 w-fit rounded-xl">
-                    Read More
-                  </Button>
-                </CardContent>
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src="/delivery-driver-with-packages.jpg"
+                  alt="Delivery service"
+                  className="w-full h-full object-cover"
+                />
               </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3">Dial-a-Delivery</h3>
+                <p className="text-gray-600 mb-4">
+                  Quick and secure package delivery across the city with real-time tracking for peace of mind.
+                </p>
+                <Button variant="default" className="bg-black hover:bg-black/90 w-fit rounded-xl">
+                  Read More
+                </Button>
+              </CardContent>
             </Card>
 
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0">
-              <div className="flex">
-                <div className="w-1/2">
-                  <img src="/school-bus-with-children.jpg" alt="School runs" className="w-full h-full object-cover" />
-                </div>
-                <CardContent className="w-1/2 p-6 flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-2xl font-bold mb-3">School Runs</h3>
-                    <p className="text-gray-600 mb-4">
-                      Safe and dependable daily school transport with vetted drivers you can trust.
-                    </p>
-                  </div>
-                  <Button variant="default" className="bg-black hover:bg-black/90 w-fit rounded-xl">
-                    Read More
-                  </Button>
-                </CardContent>
+              <div className="aspect-square overflow-hidden">
+                <img src="/school-bus-with-children.jpg" alt="School runs" className="w-full h-full object-cover" />
               </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3">School Runs</h3>
+                <p className="text-gray-600 mb-4">
+                  Safe and dependable daily school transport with vetted drivers you can trust.
+                </p>
+                <Button variant="default" className="bg-black hover:bg-black/90 w-fit rounded-xl">
+                  Read More
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0">
+              <div className="aspect-square overflow-hidden bg-[#E8F0DC] flex items-center justify-center">
+                <img
+                  src="/luxury-black-suv-three-quarter-view.jpg"
+                  alt="CBD Errands"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3">CBD Errands</h3>
+                <p className="text-gray-600 mb-4">
+                  Quick city errands and business runs with professional drivers at your service.
+                </p>
+                <Button variant="default" className="bg-black hover:bg-black/90 w-fit rounded-xl">
+                  Read More
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0">
+              <div className="aspect-square overflow-hidden bg-[#E5E5E5] flex items-center justify-center">
+                <img src="/black-suv-side.png" alt="Car Hire" className="w-full h-full object-contain p-8" />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3">Car Hire</h3>
+                <p className="text-gray-600 mb-4">
+                  Hourly and daily car hire with professional chauffeur service for all occasions.
+                </p>
+                <Button variant="default" className="bg-black hover:bg-black/90 w-fit rounded-xl">
+                  Read More
+                </Button>
+              </CardContent>
             </Card>
           </div>
         </div>
@@ -183,25 +317,10 @@ export default function MrFloatLanding() {
             <p className="text-gray-600 text-lg">Modern and well-maintained vehicles for every transport need</p>
           </div>
 
-          <div className="flex justify-center gap-4 mb-12">
-            <Button variant="default" className="bg-[#A4C639] hover:bg-[#8FB02F] rounded-xl">
-              All
-            </Button>
-            <Button variant="ghost" className="rounded-xl">
-              Sedan
-            </Button>
-            <Button variant="ghost" className="rounded-xl">
-              SUV
-            </Button>
-            <Button variant="ghost" className="rounded-xl">
-              Van
-            </Button>
-          </div>
-
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="overflow-hidden rounded-3xl border-0 shadow-md">
-              <div className="bg-[#E8F0DC] p-8">
-                <img src="/modern-white-sedan-car-side-view.jpg" alt="Sedan" className="w-full h-auto" />
+              <div className="bg-[#E8F0DC] aspect-square flex items-center justify-center p-8">
+                <img src="/greycar.jpg" alt="Sedan" className="w-full h-full object-contain" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2">Comfort Sedan</h3>
@@ -217,8 +336,8 @@ export default function MrFloatLanding() {
             </Card>
 
             <Card className="overflow-hidden rounded-3xl border-0 shadow-md">
-              <div className="bg-[#E5E5E5] p-8">
-                <img src="/black-suv-side.png" alt="SUV" className="w-full h-auto" />
+              <div className="bg-[#E5E5E5] aspect-square flex items-center justify-center p-8">
+                <img src="/bluecar.png" alt="SUV" className="w-full h-full object-contain" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2">Premium SUV</h3>
@@ -234,8 +353,8 @@ export default function MrFloatLanding() {
             </Card>
 
             <Card className="overflow-hidden rounded-3xl border-0 shadow-md">
-              <div className="bg-[#E8F0DC] p-8">
-                <img src="/silver-minivan-side-view.jpg" alt="Van" className="w-full h-auto" />
+              <div className="bg-[#E8F0DC] aspect-square flex items-center justify-center p-8">
+                <img src="/whitecar.png" alt="Van" className="w-full h-full object-contain" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2">Spacious Van</h3>
@@ -294,58 +413,6 @@ export default function MrFloatLanding() {
               <p className="text-gray-600">Multiple secure payment options for your convenience</p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Special Offer Section */}
-      <section className="py-20 bg-[#F5F5F0]">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold mb-4">Special Offer</h2>
-            <p className="text-gray-600 text-lg">Get exclusive rates for regular bookings and corporate accounts</p>
-          </div>
-
-          <Card className="overflow-hidden bg-gradient-to-r from-[#E8E8E8] to-[#E8F0DC] rounded-3xl border-0 shadow-lg">
-            <CardContent className="p-12">
-              <div className="flex items-center justify-between">
-                <div className="flex-1">
-                  <h3 className="text-4xl font-bold mb-6">CBD Errands & Car Hire</h3>
-                  <ul className="space-y-3 mb-8">
-                    <li className="flex items-center gap-2">
-                      <div className="w-5 h-5 bg-[#A4C639] rounded-full flex items-center justify-center">
-                        <span className="text-white text-xs">✓</span>
-                      </div>
-                      <span>Quick city errands</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-5 h-5 bg-[#A4C639] rounded-full flex items-center justify-center">
-                        <span className="text-white text-xs">✓</span>
-                      </div>
-                      <span>Hourly car hire available</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-5 h-5 bg-[#A4C639] rounded-full flex items-center justify-center">
-                        <span className="text-white text-xs">✓</span>
-                      </div>
-                      <span>Professional chauffeur service</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-5 h-5 bg-[#A4C639] rounded-full flex items-center justify-center">
-                        <span className="text-white text-xs">✓</span>
-                      </div>
-                      <span>Corporate packages available</span>
-                    </li>
-                  </ul>
-                  <Button size="lg" className="bg-black hover:bg-black/90 rounded-xl">
-                    Reserve Now
-                  </Button>
-                </div>
-                <div className="flex-1 flex justify-end">
-                  <img src="/luxury-black-suv-three-quarter-view.jpg" alt="Premium vehicle" className="max-w-md" />
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </section>
 

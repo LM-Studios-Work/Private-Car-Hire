@@ -787,7 +787,7 @@ export default function MRFloatLanding() {
                 </Button>
 
                 <p className="text-center text-sm text-gray-500">
-                  You can also reach us at{""}
+                  You can also reach us at {""}
                   <a
                     href="mailto:info@mrfloat.com"
                     className="text-[#A4C639] hover:underline"

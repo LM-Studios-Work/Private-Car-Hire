@@ -1,428 +1,327 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { MessageCircle, ChevronDown, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import {
+  Car,
+  MapPin,
+  CreditCard,
+  ShieldCheck,
+  Clock,
+  UserCheck,
+  ChevronDown,
+} from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function TaxiServicePage() {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
-        <nav className="flex items-center justify-between max-w-7xl mx-auto px-8 py-4">
+    <div className="min-h-screen bg-white font-sans">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
           <Link href="/">
             <div className="text-2xl font-bold text-black cursor-pointer">
               <span className="text-black">MR</span>{" "}
               <span className="text-gray-400">FLOAT</span>
             </div>
           </Link>
-          <div className="hidden md:flex gap-8 items-center text-gray-700">
+          <div className="hidden md:flex items-center gap-8 text-gray-700">
             <Link
-              href="/#home"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              href="/"
+              className="text-gray-600 hover:text-[#A4C639] transition-colors font-medium"
             >
               Home
             </Link>
+
+            {/* Services Dropdown */}
             <div
-              className="relative"
+              className="relative h-full flex items-center"
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
             >
-              <button className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1">
+              <div className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 cursor-pointer py-2">
                 Services <ChevronDown className="w-4 h-4" />
-              </button>
+              </div>
               {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 mt-0 bg-white shadow-lg rounded-xl py-2 min-w-[200px] border border-gray-100">
-                  <Link
-                    href="/services/taxi"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                  >
-                    Taxi / E-Hailing
-                  </Link>
-                  <Link
-                    href="/services/airport"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                  >
-                    Airport Shuttle
-                  </Link>
-                  <Link
-                    href="/services/school-runs"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                  >
-                    School Runs
-                  </Link>
-                  <Link
-                    href="/services/city-to-city"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                  >
-                    City-to-City Rides
-                  </Link>
-                  <Link
-                    href="/services/delivery"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                  >
-                    Dial-a-Delivery
-                  </Link>
-                  <Link
-                    href="/services/car-hire"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                  >
-                    Car Hire
-                  </Link>
-                  <Link
-                    href="/services/cbd-errands"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                  >
-                    CBD Errands
-                  </Link>
+                <div className="absolute top-full left-0 pt-2 w-[220px]">
+                  <div className="bg-white shadow-lg rounded-xl py-2 border border-gray-100">
+                    <Link
+                      href="/services/car-hire"
+                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    >
+                      Car Hire
+                    </Link>{" "}
+                    <Link
+                      href="/services/taxi"
+                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    >
+                      Taxi / E-Hailing
+                    </Link>
+                    <Link
+                      href="/services/airport"
+                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    >
+                      Airport Shuttle
+                    </Link>
+                    <Link
+                      href="/services/school-runs"
+                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    >
+                      School Runs
+                    </Link>
+                    <Link
+                      href="/services/city-to-city"
+                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    >
+                      City-to-City Rides
+                    </Link>
+                    <Link
+                      href="/services/delivery"
+                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    >
+                      Dial-a-Delivery
+                    </Link>
+                    <Link
+                      href="/services/cbd-errands"
+                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    >
+                      CBD Errands
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
+
             <Link
               href="/#fleet"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="text-gray-600 hover:text-[#A4C639] transition-colors font-medium"
             >
               Fleet
             </Link>
             <Link
               href="/#about"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="text-gray-600 hover:text-[#A4C639] transition-colors font-medium"
             >
               About
             </Link>
             <Link
               href="/#contact"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="text-gray-600 hover:text-[#A4C639] transition-colors font-medium"
             >
               Contact
             </Link>
             <Link href="/booking">
-              <Button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl">
+              <Button className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-6">
                 Book Online
               </Button>
             </Link>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] pt-32 pb-20 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('/professional-chauffeur-driving-on-highway.jpg')",
-          }}
-        >
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-8 text-center text-white">
-          <h1 className="text-6xl font-bold mb-6">
-            Instant City Rides, Redefined.
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <Image
+          src="/UberHero.png"
+          alt="Taxi Service"
+          fill
+          className="object-cover"
+        />
+        <div className="relative z-20 text-center text-white px-4">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+            Taxi & E-Hailing
           </h1>
-          <p className="text-2xl mb-8 text-gray-200">
-            Safe, vetted, and always on time. Experience the reliability of a
-            private driver with the convenience of an app.
+          <p className="text-xl md:text-2xl">
+            Trusted Private Transport for Every Journey
           </p>
-          <div className="flex gap-4 justify-center">
-            <Link href="/booking">
-              <Button
-                size="lg"
-                className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-8"
-              >
-                Book a Ride
-              </Button>
-            </Link>
-            <Button
-              size="lg"
-              variant="outline"
-              className="bg-white/10 border-white text-white hover:bg-white/20 rounded-xl text-lg px-8"
-            >
-              Download App (Coming Soon)
-            </Button>
-          </div>
         </div>
       </section>
 
-      {/* Description Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-8">
+      {/* Description */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-4xl font-bold mb-6 text-center">
             The Safe Way to Travel
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            MR FLOAT is not just another ride-share app. We own our fleet and
-            employ our drivers, which means we guarantee a level of safety and
-            consistency that gig-economy apps cannot. Whether you need a ride to
-            a dinner date, a late-night pickup, or a quick dash to the office,
-            our Taxi / E-Hailing service prioritizes your safety and comfort
-            above all else.
+          <p className="text-lg text-gray-700 leading-relaxed text-center">
+            MR FLOAT is a fully managed private transport service. We are not a
+            gig driver platform. We own our vehicles and employ trained drivers
+            who follow our strict safety standards. Whether you need transport
+            for work, general city trips, or a night out, we provide clean cars
+            and reliable service every time.
           </p>
         </div>
       </section>
 
-      {/* What's Included */}
-      <section className="py-20 bg-[#F5F5F0]">
-        <div className="max-w-6xl mx-auto px-8">
+      {/* What's Included - Matching Style */}
+      <section className="py-16 bg-[#F5F5F0]">
+        <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-12 text-center">
             What's Included
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="p-6 rounded-3xl border-0 bg-white">
-              <div className="flex gap-4">
-                <Check className="w-6 h-6 text-[#A4C639] flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-bold text-xl mb-2">
-                    Door-to-Door Service
-                  </h3>
-                  <p className="text-gray-600">
-                    Pick up and drop off at your exact location.
-                  </p>
-                </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {/* Card 1 */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-[#A4C639] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-white" />
               </div>
-            </Card>
-            <Card className="p-6 rounded-3xl border-0 bg-white">
-              <div className="flex gap-4">
-                <Check className="w-6 h-6 text-[#A4C639] flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-bold text-xl mb-2">Vetted Drivers</h3>
-                  <p className="text-gray-600">
-                    All drivers have PDPs and clean criminal records.
-                  </p>
-                </div>
-              </div>
-            </Card>
-            <Card className="p-6 rounded-3xl border-0 bg-white">
-              <div className="flex gap-4">
-                <Check className="w-6 h-6 text-[#A4C639] flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-bold text-xl mb-2">
-                    Driver Communication
-                  </h3>
-                  <p className="text-gray-600">
-                    Direct line to your driver for smooth pickups.
-                  </p>
-                </div>
-              </div>
-            </Card>
-            <Card className="p-6 rounded-3xl border-0 bg-white">
-              <div className="flex gap-4">
-                <Check className="w-6 h-6 text-[#A4C639] flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-bold text-xl mb-2">Clean Vehicles</h3>
-                  <p className="text-gray-600">
-                    Cars are washed and sanitized regularly.
-                  </p>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
+              <h3 className="font-bold text-xl mb-2">Door-to-Door</h3>
+              <p className="text-gray-600">
+                Pick up and drop off at your exact location
+              </p>
+            </div>
 
-      {/* Benefits */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">Benefits</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="flex gap-4">
-              <Check className="w-6 h-6 text-[#A4C639] flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-xl mb-2">No Surge Pricing</h3>
-                <p className="text-gray-600">
-                  Consistent rates regardless of traffic or weather.
-                </p>
+            {/* Card 2 */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <CreditCard className="w-8 h-8 text-white" />
               </div>
+              <h3 className="font-bold text-xl mb-2">No Surge Pricing</h3>
+              <p className="text-gray-600">
+                Consistent rates regardless of traffic
+              </p>
             </div>
-            <div className="flex gap-4">
-              <Check className="w-6 h-6 text-[#A4C639] flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-xl mb-2">Hygiene Standard</h3>
-                <p className="text-gray-600">
-                  We maintain high standards of cleanliness for every trip.
-                </p>
+
+            {/* Card 3 */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-[#A4C639] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <UserCheck className="w-8 h-8 text-white" />
               </div>
+              <h3 className="font-bold text-xl mb-2">Vetted Drivers</h3>
+              <p className="text-gray-600">
+                All drivers have PDPs & clean records
+              </p>
             </div>
-            <div className="flex gap-4">
-              <Check className="w-6 h-6 text-[#A4C639] flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-xl mb-2">24/7 Availability</h3>
-                <p className="text-gray-600">
-                  We operate around the clock, 365 days a year.
-                </p>
+
+            {/* Card 4 */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <ShieldCheck className="w-8 h-8 text-white" />
               </div>
-            </div>
-            <div className="flex gap-4">
-              <Check className="w-6 h-6 text-[#A4C639] flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-xl mb-2">Cash or Card</h3>
-                <p className="text-gray-600">
-                  Flexible payment options including secure mobile card
-                  machines.
-                </p>
-              </div>
+              <h3 className="font-bold text-xl mb-2">Clean Vehicles</h3>
+              <p className="text-gray-600">Cars are sanitized for every trip</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Available Vehicles */}
-      <section className="py-20 bg-[#F5F5F0]">
-        <div className="max-w-4xl mx-auto px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">
-            Available Vehicles
+      {/* Vehicle Selection - KEPT AS REQUESTED (But Styled Cleaner) */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="bg-[#1a1a1a] rounded-[2.5rem] p-8 md:p-12 text-white overflow-hidden relative shadow-2xl">
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="md:w-1/2 relative z-10">
+                <span className="inline-block px-3 py-1 bg-[#A4C639] text-black font-bold text-xs rounded-full mb-4">
+                  POPULAR CHOICE
+                </span>
+                <h2 className="text-4xl font-bold mb-4">Comfort Sedan</h2>
+                <p className="text-gray-400 text-lg mb-8 leading-relaxed">
+                  Our standard taxi vehicle. Perfect for daily commutes or city
+                  errands. Fits up to 4 passengers with luggage comfortably.
+                </p>
+
+                <div className="grid grid-cols-2 gap-y-4 gap-x-8 mb-8">
+                  <div className="flex items-center gap-2 text-gray-300">
+                    <UserCheck className="w-5 h-5 text-[#A4C639]" />
+                    <span>Max 4 Passengers</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-300">
+                    <Car className="w-5 h-5 text-[#A4C639]" />
+                    <span>Air Conditioned</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-300">
+                    <ShieldCheck className="w-5 h-5 text-[#A4C639]" />
+                    <span>Insurance Included</span>
+                  </div>
+                </div>
+
+                <Link href="/booking">
+                  <Button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-full px-8 py-6 text-lg w-full md:w-auto">
+                    Book This Vehicle
+                  </Button>
+                </Link>
+              </div>
+
+              <div className="md:w-1/2 flex justify-center">
+                <div className="relative w-full max-w-md aspect-[4/3] rounded-2xl overflow-hidden bg-white/5 border border-white/10 shadow-inner p-4">
+                  {/* Using object-contain so the whole car shows */}
+                  <Image
+                    src="/greycar.jpg"
+                    alt="Comfort Sedan"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits - Matching List Style */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-4xl font-bold mb-8 text-center">
+            Why Ride With Mr Float?
           </h2>
-          <Card className="p-8 rounded-3xl border-0 bg-white text-center">
-            <div className="aspect-square max-w-md mx-auto mb-6 bg-[#E5E5E5] rounded-2xl flex items-center justify-center">
-              <img
-                src="/greycar.jpg"
-                alt="Comfort Sedan"
-                className="w-full h-full object-cover rounded-2xl"
-              />
-            </div>
-            <h3 className="text-2xl font-bold mb-2">Comfort Sedan</h3>
-            <p className="text-gray-600">For 1-4 Passengers</p>
-          </Card>
+          <ul className="space-y-4 text-lg">
+            <li className="flex items-start gap-3">
+              <span className="text-[#A4C639] text-2xl">✓</span>
+              <span>
+                <strong>Hygiene Standards:</strong> We maintain high standards
+                of cleanliness for every trip.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#A4C639] text-2xl">✓</span>
+              <span>
+                <strong>24/7 Availability:</strong> We operate around the clock,
+                365 days a year.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#A4C639] text-2xl">✓</span>
+              <span>
+                <strong>Cash or Card:</strong> Flexible payment options
+                including secure mobile card machines.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#A4C639] text-2xl">✓</span>
+              <span>
+                <strong>Direct Communication:</strong> Direct line to your
+                driver for smooth pickups.
+              </span>
+            </li>
+          </ul>
         </div>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="text-5xl font-bold mb-4">Ready to go?</h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Book your ride via WhatsApp for an instant response.
+      {/* CTA */}
+      <section className="py-16 bg-[#F5F5F0]">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-6">Ready to Go?</h2>
+          <p className="text-xl text-gray-700 mb-8">
+            Book your taxi via WhatsApp for an instant response.
           </p>
-          <div className="flex gap-4 justify-center">
-            <a
-              href="https://wa.me/27XXXXXXXXX"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                size="lg"
-                className="bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-xl text-lg px-8"
-              >
-                Request Ride Now
+          <div className="flex gap-4 justify-center flex-wrap">
+            <Link href="https://wa.me/27XXXXXXXXX" target="_blank">
+              <Button className="bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full px-8 py-6 text-lg">
+                WhatsApp Us
               </Button>
-            </a>
+            </Link>
             <Link href="/booking">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-black text-black hover:bg-black hover:text-white rounded-xl text-lg px-8 bg-transparent"
-              >
+              <Button className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-8 py-6 text-lg">
                 Book Online
               </Button>
             </Link>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-[#1a1a1a] text-white py-12">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">
-                <span className="text-white">MR</span>{" "}
-                <span className="text-gray-400">FLOAT</span>
-              </h3>
-              <p className="text-gray-400">
-                Your trusted transport partner for all occasions.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <Link href="/#home" className="hover:text-[#A4C639]">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#services" className="hover:text-[#A4C639]">
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#fleet" className="hover:text-[#A4C639]">
-                    Fleet
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#about" className="hover:text-[#A4C639]">
-                    About
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <Link href="/services/taxi" className="hover:text-[#A4C639]">
-                    Taxi Service
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/airport"
-                    className="hover:text-[#A4C639]"
-                  >
-                    Airport Shuttle
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/school-runs"
-                    className="hover:text-[#A4C639]"
-                  >
-                    School Runs
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/delivery"
-                    className="hover:text-[#A4C639]"
-                  >
-                    Delivery
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">Contact Info</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>+27 XX XXX XXXX</li>
-                <li>info@mrfloat.co.za</li>
-                <li>Johannesburg, South Africa</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 MR FLOAT. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
-
-      {/* WhatsApp Floating Button */}
-      <a
-        href="https://wa.me/27XXXXXXXXX"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110"
-      >
-        <MessageCircle className="w-8 h-8" />
-      </a>
     </div>
   );
 }

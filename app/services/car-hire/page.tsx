@@ -2,7 +2,19 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Car, Key, Shield, Calendar, ChevronDown } from "lucide-react";
+import {
+  Car,
+  ShieldCheck,
+  FileCheck,
+  MapPin,
+  ChevronDown,
+  Banknote,
+  Fuel,
+  Luggage,
+  AlertCircle,
+  CreditCard,
+  ArrowDown,
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -10,7 +22,7 @@ export default function CarHirePage() {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans scroll-smooth">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
@@ -41,6 +53,12 @@ export default function CarHirePage() {
                 <div className="absolute top-full left-0 pt-2 w-[220px]">
                   <div className="bg-white shadow-lg rounded-xl py-2 border border-gray-100">
                     <Link
+                      href="/services/car-hire"
+                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    >
+                      Car Hire
+                    </Link>
+                    <Link
                       href="/services/taxi"
                       className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
                     >
@@ -70,12 +88,7 @@ export default function CarHirePage() {
                     >
                       Dial-a-Delivery
                     </Link>
-                    <Link
-                      href="/services/car-hire"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Car Hire
-                    </Link>
+
                     <Link
                       href="/services/cbd-errands"
                       className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
@@ -113,21 +126,43 @@ export default function CarHirePage() {
           </div>
         </div>
       </nav>
-
       {/* Hero Section */}
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-black/40 z-10" />
-        <Image
-          src="/luxury-car-rental-modern-vehicle.jpg"
-          alt="Car Hire"
-          fill
-          className="object-cover"
-        />
-        <div className="relative z-20 text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Car Hire</h1>
-          <p className="text-xl md:text-2xl">
-            Flexible Vehicle Rental Solutions
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/HeroHire.png"
+            alt="Luxury Car Hire"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Sophisticated Overlay - Gradient for better depth */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-20 text-center text-white px-4 max-w-5xl mx-auto mt-16">
+          {/* Badge */}
+
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
+            Drive on Your Own Terms.
+          </h1>
+
+          <p className="text-xl md:text-2xl text-gray-200 mb-10 font-light max-w-2xl mx-auto leading-relaxed">
+            Flexible. Affordable. Fuel Efficient.{" "}
+            <br className="hidden md:block" />
+            Experience the freedom of the open road with full cover.
           </p>
+
+          {/* Sophisticated Button */}
+          <div className="flex justify-center">
+            <a href="#fleet">
+              <Button className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-12 py-8 text-lg font-semibold shadow-2xl transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[#A4C639]/40">
+                View Available Cars
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -135,105 +170,313 @@ export default function CarHirePage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-4xl font-bold mb-6 text-center">
-            About Our Car Hire Service
+            Drive With Confidence
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Need a vehicle for the day, week, or month? MR FLOAT offers flexible
-            car hire options to suit your needs. Whether you're planning a road
-            trip, need a car for business, or want the freedom to explore at
-            your own pace, we have a range of well-maintained vehicles
-            available. Enjoy competitive rates, flexible terms, and the
-            convenience of driving yourself.
+          <p className="text-lg text-gray-700 leading-relaxed text-center">
+            Need a vehicle for the day, week, or a road trip? MR FLOAT offers
+            flexible car hire options with a fleet of fuel-efficient vehicles.
+            All our cars come with a full service history and 24/7 tracking for
+            your peace of mind.
           </p>
         </div>
       </section>
 
-      {/* What's Included */}
+      {/* Vehicle Features */}
       <section className="py-16 bg-[#F5F5F0]">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-12 text-center">
-            What's Included
+            Vehicle Features
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white p-6 rounded-3xl shadow-sm text-center">
+            {/* Feature 1 */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-[#A4C639] rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Car className="w-8 h-8 text-white" />
+                <Fuel className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-xl mb-2">Modern Fleet</h3>
-              <p className="text-gray-600">Well-maintained vehicles</p>
+              <h3 className="font-bold text-xl mb-2">Fuel Efficient</h3>
+              <p className="text-gray-600">
+                Save money on gas with our eco-friendly fleet.
+              </p>
             </div>
-            <div className="bg-white p-6 rounded-3xl shadow-sm text-center">
+
+            {/* Feature 2 */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Calendar className="w-8 h-8 text-white" />
+                <ShieldCheck className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-xl mb-2">Flexible Terms</h3>
-              <p className="text-gray-600">Daily, weekly, or monthly</p>
+              <h3 className="font-bold text-xl mb-2">Full Cover</h3>
+              <p className="text-gray-600">
+                Comprehensive insurance included in rental.
+              </p>
             </div>
-            <div className="bg-white p-6 rounded-3xl shadow-sm text-center">
+
+            {/* Feature 3 */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-[#A4C639] rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-8 h-8 text-white" />
+                <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-xl mb-2">Insurance Included</h3>
-              <p className="text-gray-600">Comprehensive coverage</p>
+              <h3 className="font-bold text-xl mb-2">Tracking System</h3>
+              <p className="text-gray-600">24/7 monitoring for your safety.</p>
             </div>
-            <div className="bg-white p-6 rounded-3xl shadow-sm text-center">
+
+            {/* Feature 4 */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Key className="w-8 h-8 text-white" />
+                <FileCheck className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-xl mb-2">Easy Process</h3>
-              <p className="text-gray-600">Quick and simple rental</p>
+              <h3 className="font-bold text-xl mb-2">Service History</h3>
+              <p className="text-gray-600">
+                Full maintenance history available.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-4xl font-bold mb-8 text-center">
-            Why Choose MR FLOAT Car Hire
-          </h2>
-          <ul className="space-y-4 text-lg">
-            <li className="flex items-start gap-3">
-              <span className="text-[#A4C639] text-2xl">✓</span>
-              <span>Wide range of vehicles from sedans to SUVs</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[#A4C639] text-2xl">✓</span>
-              <span>Competitive rates with no hidden fees</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[#A4C639] text-2xl">✓</span>
-              <span>Flexible rental terms to suit your schedule</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[#A4C639] text-2xl">✓</span>
-              <span>Well-maintained, clean vehicles with full tank</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[#A4C639] text-2xl">✓</span>
-              <span>24/7 roadside assistance for peace of mind</span>
-            </li>
-          </ul>
+      {/* --- OUR FLEET (With Bag Icons) --- */}
+      <section id="fleet" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-5xl font-bold mb-4">Select Your Vehicle</h2>
+            <p className="text-gray-600 text-lg">
+              Modern, fuel-efficient vehicles for every need.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Mazda Demio */}
+            <div className="bg-[#F5F5F0] rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 border-transparent hover:border-[#A4C639]">
+              <div className="aspect-[4/3] bg-white flex items-center justify-center p-6 relative">
+                <img
+                  src="/Mazda.png"
+                  alt="Mazda Demio"
+                  className="w-full h-full object-contain drop-shadow-xl"
+                />
+                <span className="absolute top-4 right-4 bg-[#A4C639] text-white text-xs font-bold px-3 py-1 rounded-full">
+                  ECONOMY
+                </span>
+              </div>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-2">Mazda Demio</h3>
+                <div className="flex gap-4 text-sm text-gray-500 mb-6">
+                  <span className="flex items-center gap-1 bg-white px-2 py-1 rounded-md">
+                    <Car className="w-4 h-4 text-[#A4C639]" /> 5 seats
+                  </span>
+                  <span className="flex items-center gap-1 bg-white px-2 py-1 rounded-md">
+                    <Luggage className="w-4 h-4 text-[#A4C639]" /> 2–3 bags
+                  </span>
+                  <span className="flex items-center gap-1 bg-white px-2 py-1 rounded-md">
+                    <Fuel className="w-4 h-4 text-[#A4C639]" /> 1.3L
+                  </span>
+                </div>
+                <Link href="/booking">
+                  <Button className="w-full bg-black hover:bg-[#333] text-white rounded-xl h-12 text-lg">
+                    Book Mazda
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Honda Fit Hybrid */}
+            <div className="bg-[#F5F5F0] rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 border-transparent hover:border-[#A4C639]">
+              <div className="aspect-[4/3] bg-white flex items-center justify-center p-6 relative">
+                <img
+                  src="/HondaB.png"
+                  alt="Honda Fit GP5 Hybrid"
+                  className="w-full h-full object-contain drop-shadow-xl"
+                />
+                <span className="absolute top-4 right-4 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  HYBRID
+                </span>
+              </div>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-2">Honda Fit GP5</h3>
+                <div className="flex gap-4 text-sm text-gray-500 mb-6">
+                  <span className="flex items-center gap-1 bg-white px-2 py-1 rounded-md">
+                    <Car className="w-4 h-4 text-[#A4C639]" /> 5 seats
+                  </span>
+                  <span className="flex items-center gap-1 bg-white px-2 py-1 rounded-md">
+                    <Luggage className="w-4 h-4 text-[#A4C639]" /> 3–4 bags
+                  </span>
+                  <span className="flex items-center gap-1 bg-white px-2 py-1 rounded-md">
+                    <Fuel className="w-4 h-4 text-[#A4C639]" /> Hybrid
+                  </span>
+                </div>
+                <Link href="/booking">
+                  <Button className="w-full bg-black hover:bg-[#333] text-white rounded-xl h-12 text-lg">
+                    Book Hybrid
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Honda Fit GP3 */}
+            <div className="bg-[#F5F5F0] rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 border-transparent hover:border-[#A4C639]">
+              <div className="aspect-[4/3] bg-white flex items-center justify-center p-6 relative">
+                <img
+                  src="/HondaG.png"
+                  alt="Honda Fit GP3"
+                  className="w-full h-full object-contain drop-shadow-xl"
+                />
+                <span className="absolute top-4 right-4 bg-gray-800 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  SPACIOUS
+                </span>
+              </div>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-2">Honda Fit GP3</h3>
+                <div className="flex gap-4 text-sm text-gray-500 mb-6">
+                  <span className="flex items-center gap-1 bg-white px-2 py-1 rounded-md">
+                    <Car className="w-4 h-4 text-[#A4C639]" /> 5 seats
+                  </span>
+                  <span className="flex items-center gap-1 bg-white px-2 py-1 rounded-md">
+                    <Luggage className="w-4 h-4 text-[#A4C639]" /> 3–4 bags
+                  </span>
+                  <span className="flex items-center gap-1 bg-white px-2 py-1 rounded-md">
+                    <Fuel className="w-4 h-4 text-[#A4C639]" /> 1.5L
+                  </span>
+                </div>
+                <Link href="/booking">
+                  <Button className="w-full bg-black hover:bg-[#333] text-white rounded-xl h-12 text-lg">
+                    Book Fit GP3
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- RATES & REQUIREMENTS --- */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Left: Pricing Card */}
+            <div className="bg-[#1a1a1a] text-white rounded-[2.5rem] p-10 shadow-2xl relative overflow-hidden">
+              {/* Decorative background element */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#A4C639] opacity-10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+
+              <h3 className="text-3xl font-bold mb-8 flex items-center gap-3">
+                <Banknote className="text-[#A4C639] w-8 h-8" /> Rental Rates
+              </h3>
+
+              <div className="space-y-8 relative z-10">
+                {/* Local Rate */}
+                <div className="border-b border-gray-700 pb-6">
+                  <div className="flex justify-between items-end mb-2">
+                    <span className="text-gray-400 font-bold uppercase tracking-wider text-sm">
+                      Local Rate
+                    </span>
+                    <span className="bg-[#A4C639]/20 text-[#A4C639] text-xs px-2 py-1 rounded">
+                      Within City
+                    </span>
+                  </div>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-5xl font-bold text-[#A4C639]">
+                      $50
+                    </span>
+                    <span className="text-xl text-gray-300">/ 24 hours</span>
+                  </div>
+                </div>
+
+                {/* Out of City Rate */}
+                <div>
+                  <div className="flex justify-between items-end mb-2">
+                    <span className="text-gray-400 font-bold uppercase tracking-wider text-sm">
+                      Out of City Rate
+                    </span>
+                    <span className="bg-white/10 text-white text-xs px-2 py-1 rounded">
+                      Long Distance
+                    </span>
+                  </div>
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-5xl font-bold text-white">$60</span>
+                    <span className="text-xl text-gray-300">/ first 100km</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-400 bg-black/30 p-3 rounded-lg border border-gray-700">
+                    <Fuel className="w-4 h-4 text-[#A4C639]" />
+                    <span>+ $10 per every 20km thereafter</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Requirements */}
+            <div className="bg-white p-8">
+              <h3 className="text-3xl font-bold mb-8 text-black flex items-center gap-3">
+                <FileCheck className="text-[#A4C639] w-8 h-8" /> Requirements
+              </h3>
+
+              <ul className="space-y-6">
+                <li className="flex gap-4 items-start">
+                  <div className="w-8 h-8 rounded-full bg-[#f5f5f0] flex items-center justify-center flex-shrink-0 mt-1">
+                    <ShieldCheck className="w-4 h-4 text-[#A4C639]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-lg">Security Deposit</h4>
+                    <p className="text-gray-600">
+                      $100 refundable security deposit required.
+                    </p>
+                  </div>
+                </li>
+
+                <li className="flex gap-4 items-start">
+                  <div className="w-8 h-8 rounded-full bg-[#f5f5f0] flex items-center justify-center flex-shrink-0 mt-1">
+                    <CreditCard className="w-4 h-4 text-[#A4C639]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-lg">Payment Terms</h4>
+                    <p className="text-gray-600">
+                      Full payment for the car hire period required upfront.
+                    </p>
+                  </div>
+                </li>
+
+                <li className="flex gap-4 items-start">
+                  <div className="w-8 h-8 rounded-full bg-[#f5f5f0] flex items-center justify-center flex-shrink-0 mt-1">
+                    <Car className="w-4 h-4 text-[#A4C639]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-lg">Documents</h4>
+                    <p className="text-gray-600">
+                      Valid Driver's License and ID/Passport copy.
+                    </p>
+                  </div>
+                </li>
+
+                <li className="flex gap-4 items-start">
+                  <div className="w-8 h-8 rounded-full bg-[#f5f5f0] flex items-center justify-center flex-shrink-0 mt-1">
+                    <MapPin className="w-4 h-4 text-[#A4C639]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-lg">Safety Features</h4>
+                    <p className="text-gray-600">
+                      All vehicles equipped with tracking systems and full
+                      cover.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#F5F5F0]">
+      <section className="py-20 bg-[#F5F5F0]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Hire a Vehicle?</h2>
+          <h2 className="text-4xl font-bold mb-6">Ready to Hit the Road?</h2>
           <p className="text-xl text-gray-700 mb-8">
-            Flexible rental options with competitive rates
+            Book your car today. Simple, fast, and secure.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="https://wa.me/1234567890">
+            <Link href="https://wa.me/27XXXXXXXXX" target="_blank">
               <Button className="bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full px-8 py-6 text-lg">
                 WhatsApp Us
               </Button>
             </Link>
             <Link href="/booking">
               <Button className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-8 py-6 text-lg">
-                Book Now
+                Book Online
               </Button>
             </Link>
           </div>

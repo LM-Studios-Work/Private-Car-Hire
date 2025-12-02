@@ -1,5 +1,13 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/booking/page": "app/booking/page.js",
   "/page": "app/page.js",
-  "/services/city-to-city/page": "app/services/city-to-city/page.js"
+  "/services/airport/page": "app/services/airport/page.js",
+  "/services/car-hire/page": "app/services/car-hire/page.js",
+  "/services/cbd-errands/page": "app/services/cbd-errands/page.js",
+  "/services/city-to-city/page": "app/services/city-to-city/page.js",
+  "/services/delivery/page": "app/services/delivery/page.js",
+  "/services/page": "app/services/page.js",
+  "/services/school-runs/page": "app/services/school-runs/page.js",
+  "/services/taxi/page": "app/services/taxi/page.js"
 }

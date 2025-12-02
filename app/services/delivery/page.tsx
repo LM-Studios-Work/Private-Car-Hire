@@ -41,6 +41,12 @@ export default function DeliveryPage() {
                 <div className="absolute top-full left-0 pt-2 w-[220px]">
                   <div className="bg-white shadow-lg rounded-xl py-2 border border-gray-100">
                     <Link
+                      href="/services/car-hire"
+                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    >
+                      Car Hire
+                    </Link>
+                    <Link
                       href="/services/taxi"
                       className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
                     >
@@ -70,12 +76,7 @@ export default function DeliveryPage() {
                     >
                       Dial-a-Delivery
                     </Link>
-                    <Link
-                      href="/services/car-hire"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Car Hire
-                    </Link>
+
                     <Link
                       href="/services/cbd-errands"
                       className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"

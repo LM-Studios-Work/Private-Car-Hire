@@ -1,10 +1,15 @@
-[00:00:06.781] Server  LOG      ✓ Ready in 5.3s
-[00:00:09.834] Server  LOG      ○ Compiling / ...
-[00:00:15.183] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.658] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:15.658] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:15.658] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764693366656}
-[00:00:45.716] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764693396701}
-[00:02:50.202] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/car-hire color: rgb(120, 120, 120) color: inherit {"dp":"/services/car-hire","o":"http://localhost:3000/services/car-hire","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764693521148}
-[00:03:24.481] Server  LOG      ✓ Compiled in 435ms
-[00:03:31.037] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764693562033}
+[00:00:05.150] Server  LOG      ✓ Ready in 3.6s
+[00:00:08.243] Server  LOG      ○ Compiling / ...
+[00:00:14.283] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:14.908] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:14.908] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:14.908] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764693642031}
+[00:00:17.303] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764693644404}
+[00:03:42.557] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/airport color: rgb(120, 120, 120) color: inherit {"dp":"/services/airport","o":"http://localhost:3000/services/airport","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764693849659}
+[00:04:01.972] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764693869095}
+[00:04:05.274] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/airport color: rgb(120, 120, 120) color: inherit {"dp":"/services/airport","o":"http://localhost:3000/services/airport","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764693872396}
+[00:05:39.842] Server  LOG      ✓ Compiled in 432ms
+[00:06:25.783] Server  LOG      ✓ Compiled in 181ms
+[00:06:27.897] Server  LOG      ✓ Compiled in 221ms
+[00:06:30.210] Server  LOG      ✓ Compiled in 173ms
+[00:06:34.142] Server  LOG      ✓ Compiled in 215ms

@@ -4,10 +4,13 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   ShoppingBag,
-  Clock,
-  Zap,
-  CheckCircle,
+  FileText,
+  Timer,
+  Smartphone,
+  Award,
   ChevronDown,
+  MapPin,
+  Car,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -16,7 +19,7 @@ export default function CBDErrandsPage() {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
@@ -46,48 +49,23 @@ export default function CBDErrandsPage() {
               {servicesDropdownOpen && (
                 <div className="absolute top-full left-0 pt-2 w-[220px]">
                   <div className="bg-white shadow-lg rounded-xl py-2 border border-gray-100">
-                    <Link
-                      href="/services/taxi"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Taxi / E-Hailing
-                    </Link>
-                    <Link
-                      href="/services/airport"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Airport Shuttle
-                    </Link>
-                    <Link
-                      href="/services/school-runs"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      School Runs
-                    </Link>
-                    <Link
-                      href="/services/city-to-city"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      City-to-City Rides
-                    </Link>
-                    <Link
-                      href="/services/delivery"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Dial-a-Delivery
-                    </Link>
-                    <Link
-                      href="/services/car-hire"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Car Hire
-                    </Link>
-                    <Link
-                      href="/services/cbd-errands"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      CBD Errands
-                    </Link>
+                    {[
+                      { href: "/services/car-hire", label: "Car Hire" },
+                      { href: "/services/taxi", label: "Taxi / E-Hailing" },
+                      { href: "/services/airport", label: "Airport Shuttle" },
+                      { href: "/services/school-runs", label: "School Runs" },
+
+                      { href: "/services/delivery", label: "Dial-a-Delivery" },
+                      { href: "/services/cbd-errands", label: "CBD Errands" },
+                    ].map((service) => (
+                      <Link
+                        key={service.href}
+                        href={service.href}
+                        className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                      >
+                        {service.label}
+                      </Link>
+                    ))}
                   </div>
                 </div>
               )}
@@ -112,7 +90,7 @@ export default function CBDErrandsPage() {
               Contact
             </Link>
             <Link href="/booking">
-              <Button className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-xl px-6">
+              <Button className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-6">
                 Book Online
               </Button>
             </Link>
@@ -122,28 +100,28 @@ export default function CBDErrandsPage() {
 
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className="absolute inset-0 bg-black/50 z-10" />
         <Image
-          src="/busy-city-center-shopping-district.jpg"
+          src="/CbdHero.png" // Ensure you have a relevant city image
           alt="CBD Errands"
           fill
           className="object-cover"
         />
-        <div className="relative z-20 text-center text-white">
+        <div className="relative z-20 text-center text-white px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">CBD Errands</h1>
-          <p className="text-xl md:text-2xl">
+          <p className="text-xl md:text-2xl font-light">
             Quick City Center Errands Made Easy
           </p>
         </div>
       </section>
 
-      {/* Description */}
+      {/* About Description */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-4xl font-bold mb-6 text-center">
             About Our CBD Errands Service
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-700 leading-relaxed text-center">
             Short on time? Let MR FLOAT handle your CBD errands! Whether you
             need to pick up documents, grab lunch, collect parcels, or run quick
             shopping errands in the city center, our drivers are ready to help.
@@ -153,46 +131,59 @@ export default function CBDErrandsPage() {
         </div>
       </section>
 
-      {/* What's Included */}
+      {/* What's Included - Grid Layout */}
       <section className="py-16 bg-[#F5F5F0]">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-12 text-center">
             What's Included
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white p-6 rounded-3xl shadow-sm text-center">
+            {/* Quick Service */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-[#A4C639] rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Zap className="w-8 h-8 text-white" />
+                <Timer className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-xl mb-2">Quick Service</h3>
-              <p className="text-gray-600">Fast turnaround times</p>
+              <p className="text-gray-600">
+                Fast turnaround times for busy schedules
+              </p>
             </div>
-            <div className="bg-white p-6 rounded-3xl shadow-sm text-center">
+
+            {/* Any Errand */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <ShoppingBag className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-xl mb-2">Any Errand</h3>
-              <p className="text-gray-600">Documents, shopping, parcels</p>
+              <p className="text-gray-600">
+                Documents, shopping, lunch, or parcels
+              </p>
             </div>
-            <div className="bg-white p-6 rounded-3xl shadow-sm text-center">
+
+            {/* On-Demand */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-[#A4C639] rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-8 h-8 text-white" />
+                <Smartphone className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-xl mb-2">On-Demand</h3>
-              <p className="text-gray-600">Book when you need us</p>
+              <p className="text-gray-600">Book instantly when you need us</p>
             </div>
-            <div className="bg-white p-6 rounded-3xl shadow-sm text-center">
+
+            {/* Reliable */}
+            <div className="bg-white p-6 rounded-3xl shadow-sm text-center hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="w-8 h-8 text-white" />
+                <Award className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-xl mb-2">Reliable</h3>
-              <p className="text-gray-600">Professional service every time</p>
+              <p className="text-gray-600">
+                Professional service every single time
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Benefits */}
+      {/* Why Choose - List Layout */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-4xl font-bold mb-8 text-center">
@@ -202,39 +193,50 @@ export default function CBDErrandsPage() {
             <li className="flex items-start gap-3">
               <span className="text-[#A4C639] text-2xl">✓</span>
               <span>
-                Fast service for urgent errands and time-sensitive tasks
+                <strong>Urgency:</strong> Fast service for urgent errands and
+                time-sensitive tasks.
               </span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[#A4C639] text-2xl">✓</span>
-              <span>Flexible service for any type of CBD errand</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[#A4C639] text-2xl">✓</span>
-              <span>Affordable rates for quick city center tasks</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[#A4C639] text-2xl">✓</span>
-              <span>Professional drivers who know the CBD area well</span>
+              <span>
+                <strong>Flexibility:</strong> Versatile service for any type of
+                CBD errand.
+              </span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[#A4C639] text-2xl">✓</span>
               <span>
-                Save time and avoid the hassle of city traffic and parking
+                <strong>Value:</strong> Affordable rates for quick city center
+                tasks.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#A4C639] text-2xl">✓</span>
+              <span>
+                <strong>Knowledge:</strong> Professional drivers who know the
+                CBD area well.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#A4C639] text-2xl">✓</span>
+              <span>
+                <strong>Convenience:</strong> Save time and avoid the hassle of
+                city traffic and parking.
               </span>
             </li>
           </ul>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA Section */}
       <section className="py-16 bg-[#F5F5F0]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">
             Need Help with CBD Errands?
           </h2>
           <p className="text-xl text-gray-700 mb-8">
-            Fast, reliable service for all your city center needs
+            Fast, reliable service for all your city center needs.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="https://wa.me/1234567890">

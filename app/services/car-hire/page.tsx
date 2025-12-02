@@ -76,12 +76,7 @@ export default function CarHirePage() {
                     >
                       School Runs
                     </Link>
-                    <Link
-                      href="/services/city-to-city"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      City-to-City Rides
-                    </Link>
+
                     <Link
                       href="/services/delivery"
                       className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"

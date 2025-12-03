@@ -606,35 +606,41 @@ export default function MRFloatLanding() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="rounded-3xl border-0 shadow-md text-center">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-[#A4C639] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Phone className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Call Us</h3>
-                <p className="text-gray-600">+263 78 595 3345</p>
-              </CardContent>
-            </Card>
+            <a href="tel:+263785953345" className="block hover:scale-105 transition-transform">
+              <Card className="rounded-3xl border-0 shadow-md text-center h-full">
+                <CardContent className="p-8">
+                  <div className="w-16 h-16 bg-[#A4C639] rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Phone className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Call Us</h3>
+                  <p className="text-gray-600">+263 78 595 3345</p>
+                </CardContent>
+              </Card>
+            </a>
 
-            <Card className="rounded-3xl border-0 shadow-md text-center">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-[#A4C639] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Email Us</h3>
-                <p className="text-gray-600">info@mrfloat.co.za</p>
-              </CardContent>
-            </Card>
+            <a href="mailto:aaronphiri707@gmail.com" className="block hover:scale-105 transition-transform">
+              <Card className="rounded-3xl border-0 shadow-md text-center h-full">
+                <CardContent className="p-8">
+                  <div className="w-16 h-16 bg-[#A4C639] rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Mail className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Email Us</h3>
+                  <p className="text-gray-600">aaronphiri707@gmail.com</p>
+                </CardContent>
+              </Card>
+            </a>
 
-            <Card className="rounded-3xl border-0 shadow-md text-center">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-[#A4C639] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MessageCircle className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">WhatsApp Us</h3>
-                <p className="text-gray-600">Quick response available</p>
-              </CardContent>
-            </Card>
+            <a href="https://wa.me/263785953345" target="_blank" rel="noopener noreferrer" className="block hover:scale-105 transition-transform">
+              <Card className="rounded-3xl border-0 shadow-md text-center h-full">
+                <CardContent className="p-8">
+                  <div className="w-16 h-16 bg-[#A4C639] rounded-full flex items-center justify-center mx-auto mb-4">
+                    <MessageCircle className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">WhatsApp Us</h3>
+                  <p className="text-gray-600">Quick response available</p>
+                </CardContent>
+              </Card>
+            </a>
           </div>
         </div>
       </section>
@@ -747,9 +753,9 @@ export default function MRFloatLanding() {
             <div>
               <h4 className="font-bold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>+263 78 595 3345</li>
-                <li>info@mrfloat.co.za</li>
-                <li>Johannesburg, South Africa</li>
+                <li><a href="tel:+263785953345" className="hover:text-[#A4C639]">+263 78 595 3345</a></li>
+                <li><a href="mailto:aaronphiri707@gmail.com" className="hover:text-[#A4C639]">aaronphiri707@gmail.com</a></li>
+                <li>Bulawayo, Zimbabwe</li>
               </ul>
             </div>
           </div>

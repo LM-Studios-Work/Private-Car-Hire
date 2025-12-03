@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { MessageCircle, ChevronDown } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -19,7 +19,6 @@ import toast from "react-hot-toast";
 function BookingForm() {
   const searchParams = useSearchParams();
   const [agreed, setAgreed] = useState(false);
-  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   // Form state
   const [fullName, setFullName] = useState(searchParams.get("name") || "");
@@ -173,108 +172,6 @@ function BookingForm() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
-        <nav className="flex items-center justify-between max-w-7xl mx-auto px-8 py-4">
-          <Link href="/">
-            <div className="text-2xl font-bold text-black cursor-pointer">
-              <span className="text-black">MR</span>{" "}
-              <span className="text-gray-400">FLOAT</span>
-            </div>
-          </Link>
-          <div className="hidden md:flex gap-8 items-center text-gray-700">
-            <Link
-              href="/#home"
-              className="hover:text-[#A4C639] transition-colors font-medium"
-            >
-              Home
-            </Link>
-
-            <div
-              className="relative h-full flex items-center"
-              onMouseEnter={() => setServicesDropdownOpen(true)}
-              onMouseLeave={() => setServicesDropdownOpen(false)}
-            >
-              <div className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 cursor-pointer py-2">
-                Services <ChevronDown className="w-4 h-4" />
-              </div>
-              {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 pt-2 w-[220px]">
-                  <div className="bg-white shadow-lg rounded-xl py-2 border border-gray-100">
-                    <Link
-                      href="/services/taxi"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Taxi / E-Hailing
-                    </Link>
-                    <Link
-                      href="/services/airport"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Airport Shuttle
-                    </Link>
-                    <Link
-                      href="/services/school-runs"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      School Runs
-                    </Link>
-                    <Link
-                      href="/services/city-to-city"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      City-to-City Rides
-                    </Link>
-                    <Link
-                      href="/services/delivery"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Dial-a-Delivery
-                    </Link>
-                    <Link
-                      href="/services/car-hire"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Car Hire
-                    </Link>
-                    <Link
-                      href="/services/cbd-errands"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      CBD Errands
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <Link
-              href="/#fleet"
-              className="hover:text-[#A4C639] transition-colors font-medium"
-            >
-              Fleet
-            </Link>
-            <Link
-              href="/#about"
-              className="hover:text-[#A4C639] transition-colors font-medium"
-            >
-              About
-            </Link>
-            <Link
-              href="/#contact"
-              className="hover:text-[#A4C639] transition-colors font-medium"
-            >
-              Contact
-            </Link>
-            <Link href="/booking">
-              <Button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl">
-                Book Online
-              </Button>
-            </Link>
-          </div>
-        </nav>
-      </header>
-
       {/* Booking Form Section */}
       <section className="pt-32 pb-20 bg-gray-100">
         <div className="max-w-3xl mx-auto px-8">

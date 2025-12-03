@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
@@ -8,7 +7,6 @@ import {
   ShieldCheck,
   FileCheck,
   MapPin,
-  ChevronDown,
   Banknote,
   Fuel,
   Luggage,
@@ -21,7 +19,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function TaxiPage() {
-  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const router = useRouter();
 
   const handleBookNow = () => {
@@ -41,86 +38,6 @@ export default function TaxiPage() {
 
   return (
     <div className="min-h-screen bg-white font-sans scroll-smooth">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
-          <Link href="/">
-            <div className="text-2xl font-bold text-black cursor-pointer">
-              <span className="text-black">MR</span>{" "}
-              <span className="text-gray-400">FLOAT</span>
-            </div>
-          </Link>
-          <div className="hidden md:flex items-center gap-8 text-gray-700">
-            <Link
-              href="/"
-              className="text-gray-600 hover:text-[#A4C639] transition-colors font-medium"
-            >
-              Home
-            </Link>
-
-            {/* Services Dropdown */}
-            <div
-              className="relative h-full flex items-center"
-              onMouseEnter={() => setServicesDropdownOpen(true)}
-              onMouseLeave={() => setServicesDropdownOpen(false)}
-            >
-              <div className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 cursor-pointer py-2">
-                Services <ChevronDown className="w-4 h-4" />
-              </div>
-              {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 pt-2 w-[220px]">
-                  <div className="bg-white shadow-lg rounded-xl py-2 border border-gray-100">
-                    <Link
-                      href="/services/taxi"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Taxi & Inter-City
-                    </Link>
-                    <Link
-                      href="/services/car-hire"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Car Hire
-                    </Link>
-                    <Link
-                      href="/services/airport"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Airport Shuttle
-                    </Link>
-                    <Link
-                      href="/services/delivery"
-                      className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                    >
-                      Dial-a-Delivery
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <Link
-              href="/#fleet"
-              className="text-gray-600 hover:text-[#A4C639] transition-colors font-medium"
-            >
-              Fleet
-            </Link>
-            <Link
-              href="/#contact"
-              className="text-gray-600 hover:text-[#A4C639] transition-colors font-medium"
-            >
-              Contact
-            </Link>
-            <Button
-              onClick={handleBookNow}
-              className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-xl px-6"
-            >
-              Book Ride
-            </Button>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Background Image */}

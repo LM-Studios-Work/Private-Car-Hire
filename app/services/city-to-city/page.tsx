@@ -332,7 +332,7 @@ export default function InterCityPage() {
             today and travel on your own terms.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="https://wa.me/27XXXXXXXXX" target="_blank">
+            <Link href="https://wa.me/63785953345" target="_blank">
               <Button className="bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full px-8 py-6 text-lg">
                 WhatsApp Quote
               </Button>

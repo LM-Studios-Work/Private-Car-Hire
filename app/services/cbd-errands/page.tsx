@@ -2,12 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import {
-  ShoppingBag,
-  Timer,
-  Smartphone,
-  Award,
-} from "lucide-react";
+import { ShoppingBag, Timer, Smartphone, Award } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -161,7 +156,7 @@ export default function CBDErrandsPage() {
             Fast, reliable service for all your city center needs.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="https://wa.me/1234567890">
+            <Link href="https://wa.me/63785953345">
               <Button className="bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full px-8 py-6 text-lg">
                 WhatsApp Us
               </Button>

@@ -19,15 +19,48 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import toast from "react-hot-toast";
 
 export default function SchoolRunsPage() {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [parentName, setParentName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [pickupAddress, setPickupAddress] = useState("");
+  const [schoolName, setSchoolName] = useState("");
+  const [tripType, setTripType] = useState("Return Trip");
+  const [numChildren, setNumChildren] = useState("1 Child");
+  const [message, setMessage] = useState("");
 
   const scrollToForm = () => {
     const element = document.getElementById("enquiry-form");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleEnquirySubmit = () => {
+    if (!parentName || !phone || !pickupAddress || !schoolName) {
+      toast.error("Please fill in all required fields.");
+      return;
+    }
+
+    const enquiryDetails = `
+*SCHOOL RUN ENQUIRY*
+-------------------------
+*Parent Name:* ${parentName}
+*Phone Number:* ${phone}
+*Pickup Address:* ${pickupAddress}
+*School Name:* ${schoolName}
+*Trip Type:* ${tripType}
+*Number of Children:* ${numChildren}
+*Additional Notes:* ${message || "None"}
+-------------------------
+    `;
+
+    const whatsappUrl = `https://wa.me/27672792090?text=${encodeURIComponent(
+      enquiryDetails
+    )}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
@@ -331,11 +364,11 @@ export default function SchoolRunsPage() {
                   Prefer to chat on WhatsApp?
                 </p>
                 <Link
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/27672792090"
                   className="text-[#25D366] font-bold text-xl flex items-center hover:underline"
                 >
                   <Phone className="w-6 h-6 mr-2" />
-                  +27 12 345 6789
+                  +27 71 004 7018
                 </Link>
               </div>
             </div>
@@ -344,13 +377,18 @@ export default function SchoolRunsPage() {
             <div className="lg:w-1/2 w-full">
               <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-gray-100">
                 <h3 className="text-2xl font-bold mb-6">Student Details</h3>
-                <form className="space-y-4">
+                <form
+                  className="space-y-4"
+                  onSubmit={(e) => e.preventDefault()}
+                >
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Parent Name</Label>
                       <Input
                         id="name"
                         placeholder="John Doe"
+                        value={parentName}
+                        onChange={(e) => setParentName(e.target.value)}
                         className="bg-[#F5F5F0] border-transparent h-12 rounded-xl focus:border-[#A4C639] focus:ring-[#A4C639]"
                       />
                     </div>
@@ -359,6 +397,8 @@ export default function SchoolRunsPage() {
                       <Input
                         id="phone"
                         placeholder="082 123 4567"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
                         className="bg-[#F5F5F0] border-transparent h-12 rounded-xl focus:border-[#A4C639] focus:ring-[#A4C639]"
                       />
                     </div>
@@ -369,6 +409,8 @@ export default function SchoolRunsPage() {
                     <Input
                       id="pickup"
                       placeholder="e.g. 12 Main St, Midrand"
+                      value={pickupAddress}
+                      onChange={(e) => setPickupAddress(e.target.value)}
                       className="bg-[#F5F5F0] border-transparent h-12 rounded-xl focus:border-[#A4C639] focus:ring-[#A4C639]"
                     />
                   </div>
@@ -378,6 +420,8 @@ export default function SchoolRunsPage() {
                     <Input
                       id="school"
                       placeholder="e.g. Curro Waterfall"
+                      value={schoolName}
+                      onChange={(e) => setSchoolName(e.target.value)}
                       className="bg-[#F5F5F0] border-transparent h-12 rounded-xl focus:border-[#A4C639] focus:ring-[#A4C639]"
                     />
                   </div>
@@ -385,7 +429,11 @@ export default function SchoolRunsPage() {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label>Trip Type</Label>
-                      <select className="w-full h-12 px-3 rounded-xl border-transparent bg-[#F5F5F0] text-sm focus:border-[#A4C639] focus:ring-[#A4C639]">
+                      <select
+                        value={tripType}
+                        onChange={(e) => setTripType(e.target.value)}
+                        className="w-full h-12 px-3 rounded-xl border-transparent bg-[#F5F5F0] text-sm focus:border-[#A4C639] focus:ring-[#A4C639]"
+                      >
                         <option>Return Trip</option>
                         <option>Morning Only</option>
                         <option>Afternoon Only</option>
@@ -393,7 +441,11 @@ export default function SchoolRunsPage() {
                     </div>
                     <div className="space-y-2">
                       <Label>No. of Children</Label>
-                      <select className="w-full h-12 px-3 rounded-xl border-transparent bg-[#F5F5F0] text-sm focus:border-[#A4C639] focus:ring-[#A4C639]">
+                      <select
+                        value={numChildren}
+                        onChange={(e) => setNumChildren(e.target.value)}
+                        className="w-full h-12 px-3 rounded-xl border-transparent bg-[#F5F5F0] text-sm focus:border-[#A4C639] focus:ring-[#A4C639]"
+                      >
                         <option>1 Child</option>
                         <option>2 Children</option>
                         <option>3+ Children</option>
@@ -406,11 +458,16 @@ export default function SchoolRunsPage() {
                     <Textarea
                       id="message"
                       placeholder="Pickup times, special requirements..."
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       className="bg-[#F5F5F0] border-transparent rounded-xl focus:border-[#A4C639] focus:ring-[#A4C639] resize-none h-24"
                     />
                   </div>
 
-                  <Button className="w-full h-14 bg-[#A4C639] hover:bg-[#8fb82e] text-white text-lg rounded-xl mt-4 font-bold">
+                  <Button
+                    onClick={handleEnquirySubmit}
+                    className="w-full h-14 bg-[#A4C639] hover:bg-[#8fb82e] text-white text-lg rounded-xl mt-4 font-bold"
+                  >
                     Send Enquiry
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>

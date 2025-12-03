@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
   Package,
@@ -17,6 +18,11 @@ import Image from "next/image";
 
 export default function DeliveryPage() {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const router = useRouter();
+
+  const handleBookNow = () => {
+    router.push(`/booking?service=${encodeURIComponent("Dial-a-Delivery")}`);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans">
@@ -248,11 +254,12 @@ export default function DeliveryPage() {
                 WhatsApp Us
               </Button>
             </Link>
-            <Link href="/booking">
-              <Button className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-8 py-6 text-lg">
-                Book Now
-              </Button>
-            </Link>
+            <Button
+              onClick={handleBookNow}
+              className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-8 py-6 text-lg"
+            >
+              Book Now
+            </Button>
           </div>
         </div>
       </section>

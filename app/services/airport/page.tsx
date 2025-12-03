@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
   Plane,
@@ -17,6 +18,22 @@ import Image from "next/image";
 
 export default function AirportServicePage() {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const router = useRouter();
+
+  const handleBookNow = () => {
+    const query = new URLSearchParams({
+      service: "Airport Shuttle",
+    }).toString();
+    router.push(`/booking?${query}`);
+  };
+
+  const handleBookVehicle = (vehicle: string) => {
+    const query = new URLSearchParams({
+      service: "Airport Shuttle",
+      vehicle,
+    }).toString();
+    router.push(`/booking?${query}`);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans">
@@ -108,11 +125,12 @@ export default function AirportServicePage() {
             >
               Contact
             </Link>
-            <Link href="/booking">
-              <Button className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-xl px-6">
-                Book Online
-              </Button>
-            </Link>
+            <Button
+              onClick={handleBookNow}
+              className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-xl px-6"
+            >
+              Book Online
+            </Button>
           </div>
         </div>
       </nav>
@@ -236,11 +254,12 @@ export default function AirportServicePage() {
                     <Fuel className="w-4 h-4 text-[#A4C639]" /> AC
                   </span>
                 </div>
-                <Link href="/booking">
-                  <Button className="w-full bg-black hover:bg-[#333] text-white rounded-xl h-12 text-lg">
-                    Book Shuttle
-                  </Button>
-                </Link>
+                <Button
+                  onClick={() => handleBookVehicle("sedan")}
+                  className="w-full bg-black hover:bg-[#333] text-white rounded-xl h-12 text-lg"
+                >
+                  Book Shuttle
+                </Button>
               </div>
             </div>
 
@@ -269,11 +288,12 @@ export default function AirportServicePage() {
                     <Fuel className="w-4 h-4 text-[#A4C639]" /> Hybrid
                   </span>
                 </div>
-                <Link href="/booking">
-                  <Button className="w-full bg-black hover:bg-[#333] text-white rounded-xl h-12 text-lg">
-                    Book Shuttle
-                  </Button>
-                </Link>
+                <Button
+                  onClick={() => handleBookVehicle("suv")}
+                  className="w-full bg-black hover:bg-[#333] text-white rounded-xl h-12 text-lg"
+                >
+                  Book Shuttle
+                </Button>
               </div>
             </div>
 
@@ -302,11 +322,12 @@ export default function AirportServicePage() {
                     <Fuel className="w-4 h-4 text-[#A4C639]" /> AC
                   </span>
                 </div>
-                <Link href="/booking">
-                  <Button className="w-full bg-black hover:bg-[#333] text-white rounded-xl h-12 text-lg">
-                    Book Shuttle
-                  </Button>
-                </Link>
+                <Button
+                  onClick={() => handleBookVehicle("van")}
+                  className="w-full bg-black hover:bg-[#333] text-white rounded-xl h-12 text-lg"
+                >
+                  Book Shuttle
+                </Button>
               </div>
             </div>
           </div>
@@ -367,16 +388,17 @@ export default function AirportServicePage() {
             Secure your booking at least 24 hours in advance.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="https://wa.me/27XXXXXXXXX" target="_blank">
+            <Link href="https://wa.me/27710047018" target="_blank">
               <Button className="bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full px-8 py-6 text-lg">
                 WhatsApp Quote
               </Button>
             </Link>
-            <Link href="/booking">
-              <Button className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-8 py-6 text-lg">
-                Book Shuttle
-              </Button>
-            </Link>
+            <Button
+              onClick={handleBookNow}
+              className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-8 py-6 text-lg"
+            >
+              Book Shuttle
+            </Button>
           </div>
         </div>
       </section>

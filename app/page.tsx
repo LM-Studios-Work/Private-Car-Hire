@@ -1,7 +1,7 @@
 "use client";
 
 import { Textarea } from "@/components/ui/textarea";
-
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
 import {
@@ -30,6 +30,21 @@ import {
 
 export default function MRFloatLanding() {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [service, setService] = useState("");
+  const [pickup, setPickup] = useState("");
+  const router = useRouter();
+
+  const handleQuoteSubmit = () => {
+    const query = new URLSearchParams({
+      name,
+      phone,
+      service,
+      pickup,
+    }).toString();
+    router.push(`/booking?${query}`);
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -163,15 +178,19 @@ export default function MRFloatLanding() {
                   <Input
                     placeholder="Full Name"
                     className="bg-gray-50 border-gray-200 rounded-lg h-11"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
 
                   <Input
                     placeholder="Phone Number"
                     type="tel"
                     className="bg-gray-50 border-gray-200 rounded-lg h-11"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                   />
 
-                  <Select>
+                  <Select onValueChange={setService} value={service}>
                     <SelectTrigger className="bg-gray-50 border-gray-200 rounded-lg h-11">
                       <SelectValue placeholder="Select Service" />
                     </SelectTrigger>
@@ -189,16 +208,17 @@ export default function MRFloatLanding() {
                   <Input
                     placeholder="Pickup Location"
                     className="bg-gray-50 border-gray-200 rounded-lg h-11"
+                    value={pickup}
+                    onChange={(e) => setPickup(e.target.value)}
                   />
 
-                  <Link href="/booking">
-                    <Button
-                      type="button"
-                      className="w-full bg-black hover:bg-gray-800 text-white py-5 rounded-lg text-base font-semibold mt-2"
-                    >
-                      Get My Quote
-                    </Button>
-                  </Link>
+                  <Button
+                    type="button"
+                    className="w-full bg-black hover:bg-gray-800 text-white py-5 rounded-lg text-base font-semibold mt-2"
+                    onClick={handleQuoteSubmit}
+                  >
+                    Get My Quote
+                  </Button>
                 </form>
               </div>
             </div>
@@ -652,153 +672,21 @@ export default function MRFloatLanding() {
         </div>
       </section>
 
-      {/* Quote Form Section */}
-      <section id="quote-form" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold mb-4">Get a Quote</h2>
-            <p className="text-gray-600 text-lg">
-              Fill out the form below and we'll get back to you shortly
-            </p>
-          </div>
-
-          <Card className="rounded-3xl border-0 shadow-xl">
-            <CardContent className="p-8">
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-gray-700">
-                      Full Name
-                    </label>
-                    <Input placeholder="John Doe" className="rounded-xl" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-gray-700">
-                      Email Address
-                    </label>
-                    <Input
-                      type="email"
-                      placeholder="john@example.com"
-                      className="rounded-xl"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-gray-700">
-                      Phone Number
-                    </label>
-                    <Input
-                      type="tel"
-                      placeholder="+27 123 456 7890"
-                      className="rounded-xl"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-gray-700">
-                      Service Required
-                    </label>
-                    <Select>
-                      <SelectTrigger className="rounded-xl">
-                        <SelectValue placeholder="Select a service" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="taxi">
-                          Taxi / E-hailing Service
-                        </SelectItem>
-                        <SelectItem value="airport">Airport Shuttle</SelectItem>
-                        <SelectItem value="delivery">
-                          Dial-a-Delivery
-                        </SelectItem>
-                        <SelectItem value="school">School Runs</SelectItem>
-                        <SelectItem value="intercity">
-                          City-to-City Rides
-                        </SelectItem>
-                        <SelectItem value="cbd">CBD Errands</SelectItem>
-                        <SelectItem value="hire">Car Hire</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-gray-700">
-                      Pick-up Location
-                    </label>
-                    <Input
-                      placeholder="Enter pickup address"
-                      className="rounded-xl"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-gray-700">
-                      Drop-off Location
-                    </label>
-                    <Input
-                      placeholder="Enter destination"
-                      className="rounded-xl"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-gray-700">
-                      Date
-                    </label>
-                    <Input type="date" className="rounded-xl" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-gray-700">
-                      Time
-                    </label>
-                    <Input type="time" className="rounded-xl" />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-semibold text-gray-700">
-                    Additional Information
-                  </label>
-                  <Textarea
-                    placeholder="Tell us more about your transport needs..."
-                    className="rounded-xl min-h-[120px]"
-                  />
-                </div>
-
-                <Button
-                  type="button"
-                  size="lg"
-                  className="w-full bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg"
-                  onClick={() =>
-                    window.open("https://wa.me/1234567890", "_blank")
-                  }
-                >
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Submit via WhatsApp
-                </Button>
-
-                <p className="text-center text-sm text-gray-500">
-                  You can also reach us at {""}
-                  <a
-                    href="mailto:info@mrfloat.com"
-                    className="text-[#A4C639] hover:underline"
-                  >
-                    info@mrfloat.com
-                  </a>{" "}
-                  or call{" "}
-                  <a
-                    href="tel:+263 78 595 3345"
-                    className="text-[#A4C639] hover:underline"
-                  >
-                    +263 78 595 3345
-                  </a>
-                </p>
-              </form>
-            </CardContent>
-          </Card>
+      {/* CTA Button Section */}
+      <section id="booking-cta" className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-8 text-center">
+          <h2 className="text-5xl font-bold mb-4">Ready to Ride?</h2>
+          <p className="text-gray-600 text-lg mb-8">
+            Click the button below to book your ride in just a few clicks.
+          </p>
+          <Link href="/booking">
+            <Button
+              size="lg"
+              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
+            >
+              Book Now
+            </Button>
+          </Link>
         </div>
       </section>
 

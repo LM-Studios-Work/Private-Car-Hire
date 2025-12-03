@@ -124,36 +124,37 @@ export default function InterCityPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0">
-          <Image
-            src="/Intercity.png"
-            alt="Inter-City Travel"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
-        </div>
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60 z-10" />
 
-        <div className="relative z-20 text-center text-white px-4 max-w-5xl mx-auto mt-10">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
-            Inter-City Rides
+        {/* Background Image */}
+        <Image
+          src="/Intercity.png"
+          alt="Transport Services"
+          fill
+          className="object-cover"
+          priority
+        />
+
+        {/* Content */}
+        <div className="relative z-20 text-center text-white px-4">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+            Short Trips & <br />
+            <span className="text-[#A4C639]">Long Journeys.</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-200 mb-10 font-light max-w-2xl mx-auto leading-relaxed">
-            Comfortable, private transport between cities.{" "}
+          <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light">
+            From quick local taxi runs to private inter-city travel.
             <br className="hidden md:block" />
-            No bus schedules. No delays. Just you and the road.
+            Book direct or find us on InDrive & Bolt.
           </p>
 
-          <div className="flex justify-center">
-            <a href="#fleet">
-              <Button className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-12 py-8 text-lg font-semibold shadow-2xl transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[#A4C639]/40">
-                View Available Vehicles
-              </Button>
-            </a>
-          </div>
+          <a href="#fleet">
+            <Button className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-10 py-4 text-lg font-semibold shadow-xl transition-all">
+              Choose Vehicle
+            </Button>
+          </a>
         </div>
       </section>
 

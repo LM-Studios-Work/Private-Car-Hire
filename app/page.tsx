@@ -26,6 +26,7 @@ export default function MRFloatLanding() {
 
   return (
     <div className="min-h-screen bg-white">
+
       {/* Hero Section - Desktop Version */}
       <section
         id="home"

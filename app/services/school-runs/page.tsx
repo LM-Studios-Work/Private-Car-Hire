@@ -10,11 +10,9 @@ import {
   ShieldCheck,
   Clock,
   Users,
-  ChevronDown,
   MapPin,
   Phone,
   ArrowRight,
-  CheckCircle2,
   CalendarCheck,
 } from "lucide-react";
 import Link from "next/link";
@@ -22,7 +20,6 @@ import Image from "next/image";
 import toast from "react-hot-toast";
 
 export default function SchoolRunsPage() {
-  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const [parentName, setParentName] = useState("");
   const [phone, setPhone] = useState("");
   const [pickupAddress, setPickupAddress] = useState("");
@@ -65,85 +62,6 @@ export default function SchoolRunsPage() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
-          <Link href="/">
-            <div className="text-2xl font-bold text-black cursor-pointer">
-              <span className="text-black">MR</span>{" "}
-              <span className="text-gray-400">FLOAT</span>
-            </div>
-          </Link>
-          <div className="hidden md:flex items-center gap-8 text-gray-700">
-            <Link
-              href="/"
-              className="text-gray-600 hover:text-[#A4C639] transition-colors font-medium"
-            >
-              Home
-            </Link>
-
-            {/* Services Dropdown */}
-            <div
-              className="relative h-full flex items-center"
-              onMouseEnter={() => setServicesDropdownOpen(true)}
-              onMouseLeave={() => setServicesDropdownOpen(false)}
-            >
-              <div className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 cursor-pointer py-2">
-                Services <ChevronDown className="w-4 h-4" />
-              </div>
-              {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 pt-2 w-[220px]">
-                  <div className="bg-white shadow-lg rounded-xl py-2 border border-gray-100">
-                    {[
-                      { href: "/services/car-hire", label: "Car Hire" },
-                      { href: "/services/taxi", label: "Taxi / E-Hailing" },
-                      { href: "/services/airport", label: "Airport Shuttle" },
-                      { href: "/services/school-runs", label: "School Runs" },
-
-                      { href: "/services/delivery", label: "Dial-a-Delivery" },
-                      { href: "/services/cbd-errands", label: "CBD Errands" },
-                    ].map((service) => (
-                      <Link
-                        key={service.href}
-                        href={service.href}
-                        className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
-                      >
-                        {service.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <Link
-              href="/#fleet"
-              className="text-gray-600 hover:text-[#A4C639] transition-colors font-medium"
-            >
-              Fleet
-            </Link>
-            <Link
-              href="/#about"
-              className="text-gray-600 hover:text-[#A4C639] transition-colors font-medium"
-            >
-              About
-            </Link>
-            <Link
-              href="/#contact"
-              className="text-gray-600 hover:text-[#A4C639] transition-colors font-medium"
-            >
-              Contact
-            </Link>
-            <Button
-              onClick={scrollToForm}
-              className="bg-[#A4C639] hover:bg-[#8fb82e] text-white rounded-full px-6"
-            >
-              Get a Quote
-            </Button>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-black/50 z-10" />

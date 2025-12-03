@@ -147,7 +147,7 @@ export default function InterCityPage() {
           <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light">
             From quick local taxi runs to private inter-city travel.
             <br className="hidden md:block" />
-            Book direct or find us on InDrive & Bolt.
+            Book direct or find us on InDrive.
           </p>
 
           <a href="#fleet">

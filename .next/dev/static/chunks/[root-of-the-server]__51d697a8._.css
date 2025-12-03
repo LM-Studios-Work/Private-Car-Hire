@@ -1175,10 +1175,6 @@
     height: 1px;
   }
 
-  .h-screen {
-    height: 100vh;
-  }
-
   .h-svh {
     height: 100svh;
   }
@@ -2303,6 +2299,10 @@
 
   .object-cover {
     object-fit: cover;
+  }
+
+  .object-top {
+    object-position: top;
   }
 
   .p-0 {
@@ -5073,6 +5073,12 @@
   @media (min-width: 48rem) {
     .md\:hidden {
       display: none;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:h-48 {
+      height: calc(var(--spacing) * 48);
     }
   }
 

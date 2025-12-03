@@ -1,7 +1,11 @@
-[00:00:04.144] Server  LOG      ✓ Ready in 2.8s
-[00:00:07.223] Server  LOG      ○ Compiling / ...
-[00:00:11.538] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:11.924] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:03.806] Server  LOG      ✓ Ready in 2.5s
+[00:00:08.811] Server  LOG      ○ Compiling / ...
+[00:00:16.594] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:17.444] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:17.445] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:17.445] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764779027650}
+[00:10:00.703] Server  LOG      ✓ Compiled in 572ms
+[00:12:54.607] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -25,68 +29,42 @@ It can also happen if the client has a browser extension installed which messes 
                   <div className="min-h-scre...">
                     <header>
                     <section>
-                    <section>
-                    <section>
-                    <section>
-                    <section>
-                    <section>
-                    <section>
-                    <section>
-                    <section id="booking-cta" className="py-20 bg-w...">
-                      <div className="max-w-4xl ...">
-                        <h2>
-                        <p>
-                        <LinkComponent href="/booking">
-                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                            <button
-                              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
--                             fdprocessedid="2ophqq"
-                            >
-+                             Book Now
-                    ...
-            ...
-          ...
-
-[00:00:12.055] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:12.055] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:12.055] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764777664540}
-[00:00:37.193] Server  LOG      ✓ Compiled in 225ms
-[00:00:42.749] Server  LOG      ✓ Compiled in 164ms
-[00:01:02.551] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:02.964] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-      <RedirectBoundary>
-        <RedirectErrorBoundary router={{...}}>
-          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
-            <SegmentViewNode type="page" pagePath="page.tsx">
-              <SegmentTrieNode>
-              <ClientPageRoot Component={function MRFloatLanding} serverProvidedParams={{...}}>
-                <MRFloatLanding params={Promise} searchParams={Promise}>
-                  <div className="min-h-scre...">
-                    <header>
-                    <section id="home" className="relative m...">
-                      <div className="container ...">
+                    <section id="home" className="relative b...">
+                      <div className="w-full px-4">
                         <div className="relative w...">
                           <div>
-                          <div className="relative g...">
-                            <div>
+                          <div className="relative f...">
+                            ...
+                              <LinkComponent href="#fleet">
+                                <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                  <button
+                                    className="bg-white hover:bg-[#A4C639] hover:text-white text-black px-6 py-2.5 rou..."
+-                                   fdprocessedid="k9fze4"
+                                  >
++                                   View Our Fleet
                             <div className="bg-white/9...">
                               <h2>
                               <form className="space-y-3">
-                                <Input>
-                                <Input>
+                                <Input placeholder="Full Name" className="bg-gray-50..." value="" ...>
+                                  <input
+                                    type={undefined}
+                                    data-slot="input"
+                                    className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
+                                    placeholder="Full Name"
+                                    value=""
+                                    onChange={function onChange}
+-                                   fdprocessedid="al82u"
+                                  >
+                                <Input placeholder="Phone Number" type="tel" className="bg-gray-50..." value="" ...>
+                                  <input
+                                    type="tel"
+                                    data-slot="input"
+                                    className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
+                                    placeholder="Phone Number"
+                                    value=""
+                                    onChange={function onChange}
+-                                   fdprocessedid="qhgukp"
+                                  >
                                 ...
                                   <Slot ref={function}>
                                     <SlotClone ref={function}>
@@ -94,7 +72,7 @@ It can also happen if the client has a browser extension installed which messes 
                                         <button
                                           type="button"
                                           role="combobox"
-                                          aria-controls="radix-_R_3l2inelb_"
+                                          aria-controls="radix-_R_3l3inelb_"
                                           aria-expanded={false}
                                           aria-required={undefined}
                                           aria-autocomplete="none"
@@ -110,7 +88,7 @@ It can also happen if the client has a browser extension installed which messes 
                                           onPointerDown={function handleEvent}
                                           onKeyDown={function handleEvent}
                                           ref={function}
--                                         fdprocessedid="a5g1xe5"
+-                                         fdprocessedid="jmxl9k"
                                         >
                                 <Input placeholder="Pickup Loc..." className="bg-gray-50..." value="" ...>
                                   <input
@@ -120,16 +98,15 @@ It can also happen if the client has a browser extension installed which messes 
                                     placeholder="Pickup Location"
                                     value=""
                                     onChange={function onChange}
--                                   fdprocessedid="u7g7jm"
+-                                   fdprocessedid="73ar2j"
                                   >
                                 <button
                                   type="button"
-                                  className="w-full bg-black hover:bg-gray-800 text-white py-5 rounded-lg text-base fo..."
+                                  className="w-full bg-black hover:bg-gray-800 text-white py-3.5 rounded-xl text-sm fo..."
                                   onClick={function handleQuoteSubmit}
--                                 fdprocessedid="72k13b"
+-                                 fdprocessedid="6z9pow"
                                 >
 +                                 Get My Quote
-                    <section>
                     <section id="services" className="py-20 bg-w...">
                       <div className="max-w-7xl ...">
                         <div>
@@ -139,7 +116,7 @@ It can also happen if the client has a browser extension installed which messes 
                               <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
                                 <button
                                   className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
--                                 fdprocessedid="ojb64"
+-                                 fdprocessedid="6u7xes"
                                 >
 +                                 Read More
                           ...
@@ -147,7 +124,7 @@ It can also happen if the client has a browser extension installed which messes 
                               <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
                                 <button
                                   className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
--                                 fdprocessedid="017s6b"
+-                                 fdprocessedid="zsmebzd"
                                 >
 +                                 Read More
                           ...
@@ -155,7 +132,7 @@ It can also happen if the client has a browser extension installed which messes 
                               <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
                                 <button
                                   className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
--                                 fdprocessedid="8gnega"
+-                                 fdprocessedid="ti1fe2"
                                 >
 +                                 Read More
                           ...
@@ -163,7 +140,7 @@ It can also happen if the client has a browser extension installed which messes 
                               <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
                                 <button
                                   className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
--                                 fdprocessedid="bbx243"
+-                                 fdprocessedid="9curt"
                                 >
 +                                 Read More
                         <div className="text-cente...">
@@ -171,7 +148,7 @@ It can also happen if the client has a browser extension installed which messes 
                             <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
                               <button
                                 className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-8 py-4 rounded-xl text-lg"
--                               fdprocessedid="4cgepb"
+-                               fdprocessedid="xosknn"
                               >
 +                               Book A Service
                     <section>
@@ -187,30 +164,29 @@ It can also happen if the client has a browser extension installed which messes 
                           <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
                             <button
                               className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
--                             fdprocessedid="lysue"
+-                             fdprocessedid="j8m3d"
                             >
 +                             Book Now
                     ...
             ...
           ...
 
-[00:01:03.099] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:03.099] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:01:03.099] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764777715580}
-[00:01:18.986] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/booking color: rgb(120, 120, 120) color: inherit {"dp":"/booking","o":"http://localhost:3000/booking","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764777731328}
-[00:01:21.251] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#home color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#home","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764777733632}
-[00:08:20.008] Server  LOG      ✓ Compiled in 659ms
-[00:08:21.366] Browser ERROR   ./app/page.tsx:537:75
+[00:12:54.846] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:54.846] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:12:54.846] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764779785052}
+[00:14:41.230] Server  LOG      ✓ Compiled in 218ms
+[00:14:42.599] Server  LOG      ✓ Compiled in 336ms
+[00:14:43.633] Browser ERROR   ./app/page.tsx:252:156
 Parsing ecmascript source code failed
-  535 |             {/* Feature 1: Easy Booking */}
-  536 |             {/* FIX: Changed 'items-start text-left' to 'items-center text-center' */}
-> 537 |             <div className="flex flex-col items-center text-cen"use client";
-      |                                                                           ^^
-  538 | import { useRouter } from "next/navigation";
-  539 | import { useState } from "react";
-  540 | import Link from "next/link";
+  250 |                   <Link href="#fleet">
+  251 |                     <button className="] hover:text-white text-black px-6 py-2.5 rounded-xl text-sm shadow-lg transition-colors font-medium">
+> 252 |                       View Our Fleet hover:bg-[#A4C639] hover:text-white text-black px-6 py-2.5 rounded-xl text-sm shadow-lg transition-colors font-medium">
+      |                                                                                                                                                            ^
+  253 |                       View Our Fleet
+  254 |                     </button>
+  255 |                   </Link>
 
-Unterminated string constant
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
 
 Import traces:
   Client Component Browser:
@@ -220,30 +196,242 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:08:21.457] Server  LOG      ✓ Compiled in 239ms
-[00:10:59.027] Server  LOG      ✓ Compiled in 400ms
-[00:11:32.450] Server  LOG      ✓ Compiled in 205ms
-[00:11:35.311] Server  LOG      ✓ Compiled in 181ms
-[00:11:47.086] Server  LOG      ✓ Compiled in 213ms
-[00:11:47.353] Browser ERROR   ./app/page.tsx:358:12
-Parsing ecmascript source code failed
-  356 |               </div>
-  357 |             </div>
-> 358 |           </div>
-      |            ^^^^^
-  359 |         </div>
-  360 |       </section>
-  361 |
+[00:14:54.784] Server  LOG      ✓ Compiled in 214ms
+[00:15:05.180] Server  LOG      ✓ Compiled in 85ms
+[00:15:10.260] Server  LOG      ✓ Compiled in 110ms
+[00:15:14.008] Server  LOG      ✓ Compiled in 130ms
+[00:15:17.954] Server  LOG      ✓ Compiled in 93ms
+[00:15:19.526] Server  LOG      ✓ Compiled in 116ms
+[00:15:25.872] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/booking?name=&phone=&service=&pickup= color: rgb(120, 120, 120) color: inherit {"dp":"/booking","o":"http://localhost:3000/booking?name=&phone=&service=&pickup=","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764779935854}
+[00:15:32.813] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:33.283] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
-Unterminated regexp literal
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
 
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:12:18.928] Server  LOG      ✓ Compiled in 296ms
-[00:12:19.762] Server  LOG      ✓ Compiled in 231ms
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter url={"/booking..."} tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+      <SegmentViewNode type="page" pagePath="booking/pa...">
+        <SegmentTrieNode>
+        <ClientPageRoot Component={function BookingPage} serverProvidedParams={{...}}>
+          <BookingPage params={Promise} searchParams={Promise}>
+            <Suspense fallback={<div>}>
+              <BookingForm>
+                <div className="min-h-scre...">
+                  <header>
+                  <section className="pt-32 pb-2...">
+                    <div className="max-w-3xl ...">
+                      <div>
+                      <div className="bg-white/9...">
+                        <h2>
+                        <form className="space-y-4">
+                          <div className="grid grid-...">
+                            <Input placeholder="Full Name" className="bg-gray-50..." value="" ...>
+                              <input
+                                type={undefined}
+                                data-slot="input"
+                                className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary..."
+                                placeholder="Full Name"
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+-                               fdprocessedid="o5pai"
+                              >
+                            <Input placeholder="# of passe..." type="number" min="1" className="bg-gray-50..." value="" ...>
+                              <input
+                                type="number"
+                                data-slot="input"
+                                className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary..."
+                                placeholder="# of passengers"
+                                min="1"
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+-                               fdprocessedid="ct48f4"
+                              >
+                          <div className="grid grid-...">
+                            <Input placeholder="Phone" type="tel" className="bg-gray-50..." value="" ...>
+                              <input
+                                type="tel"
+                                data-slot="input"
+                                className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary..."
+                                placeholder="Phone"
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+-                               fdprocessedid="k053l"
+                              >
+                            <Input placeholder="Email" type="email" className="bg-gray-50..." value="" ...>
+                              <input
+                                type="email"
+                                data-slot="input"
+                                className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary..."
+                                placeholder="Email"
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+-                               fdprocessedid="q7zux"
+                              >
+                          <div className="grid grid-...">
+                            ...
+                              <Slot ref={function}>
+                                <SlotClone ref={function}>
+                                  <Primitive.button type="button" role="combobox" aria-controls="radix-_R_4..." ...>
+                                    <button
+                                      type="button"
+                                      role="combobox"
+                                      aria-controls="radix-_R_4t55esnelb_"
+                                      aria-expanded={false}
+                                      aria-required={undefined}
+                                      aria-autocomplete="none"
+                                      dir="ltr"
+                                      data-state="closed"
+                                      disabled={false}
+                                      data-disabled={undefined}
+                                      data-placeholder=""
+                                      data-slot="select-trigger"
+                                      data-size="default"
+                                      className={"data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'..."}
+                                      onClick={function handleEvent}
+                                      onPointerDown={function handleEvent}
+                                      onKeyDown={function handleEvent}
+                                      ref={function}
+-                                     fdprocessedid="qg7byg"
+                                    >
+                            ...
+                              <Slot ref={function}>
+                                <SlotClone ref={function}>
+                                  <Primitive.button type="button" role="combobox" aria-controls="radix-_R_8..." ...>
+                                    <button
+                                      type="button"
+                                      role="combobox"
+                                      aria-controls="radix-_R_8t55esnelb_"
+                                      aria-expanded={false}
+                                      aria-required={undefined}
+                                      aria-autocomplete="none"
+                                      dir="ltr"
+                                      data-state="closed"
+                                      disabled={false}
+                                      data-disabled={undefined}
+                                      data-placeholder=""
+                                      data-slot="select-trigger"
+                                      data-size="default"
+                                      className={"data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'..."}
+                                      onClick={function handleEvent}
+                                      onPointerDown={function handleEvent}
+                                      onKeyDown={function handleEvent}
+                                      ref={function}
+-                                     fdprocessedid="rk42eu"
+                                    >
+                          <Input placeholder="Pick-up lo..." className="bg-gray-50..." value="" ...>
+                            <input
+                              type={undefined}
+                              data-slot="input"
+                              className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary s..."
+                              placeholder="Pick-up location"
+                              value=""
+                              onChange={function onChange}
+                              required={true}
+-                             fdprocessedid="1yptys"
+                            >
+                          <Input placeholder="Drop-off l..." className="bg-gray-50..." value="" ...>
+                            <input
+                              type={undefined}
+                              data-slot="input"
+                              className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary s..."
+                              placeholder="Drop-off location"
+                              value=""
+                              onChange={function onChange}
+                              required={true}
+-                             fdprocessedid="btvkmg"
+                            >
+                          ...
+                          ...
+                  ...
+      ...
+
+[00:15:33.394] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:15:33.394] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/booking","route":"/booking"}
+[00:15:33.394] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/booking?name=&phone=&service=&pickup= color: rgb(120, 120, 120) color: inherit {"dp":"/booking","o":"http://localhost:3000/booking?name=&phone=&service=&pickup=","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764779943601}
+[00:15:34.856] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764779944822}
+[00:16:20.860] Server  LOG      ✓ Compiled in 108ms
+[00:17:06.590] Server  LOG      ✓ Compiled in 97ms
+[00:17:09.478] Server  LOG      ✓ Compiled in 105ms
+[00:17:12.223] Server  LOG      ✓ Compiled in 95ms
+[00:17:15.078] Server  LOG      ✓ Compiled in 248ms
+[00:17:19.377] Server  LOG      ✓ Compiled in 111ms
+[00:17:24.536] Server  LOG      ✓ Compiled in 105ms
+[00:17:26.646] Server  LOG      ✓ Compiled in 127ms
+[00:17:29.123] Server  LOG      ✓ Compiled in 127ms
+[00:17:32.960] Server  LOG      ✓ Compiled in 111ms
+[00:17:51.395] Server  LOG      ✓ Compiled in 128ms
+[00:18:00.722] Server  LOG      ✓ Compiled in 99ms
+[00:18:50.654] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:50.930] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function MRFloatLanding} serverProvidedParams={{...}}>
+                <MRFloatLanding params={Promise} searchParams={Promise}>
+                  <div className="min-h-scre...">
+                    <header>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section id="booking-cta" className="py-20 bg-w...">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <p>
+                        <LinkComponent href="/booking">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                            <button
+                              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
+-                             fdprocessedid="5lm2x"
+                            >
++                             Book Now
+                    ...
+            ...
+          ...
+
+[00:18:51.044] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:18:51.044] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:18:51.044] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764780141252}
+[00:23:01.173] Server  LOG      ✓ Compiled in 334ms
+[00:23:01.454] Server  LOG      ✓ Compiled in 107ms
+[00:24:46.746] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:47.351] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:24:47.351] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:24:47.351] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764780497550}
+[00:26:56.004] Server  LOG      ✓ Compiled in 223ms
+[00:27:09.736] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:10.087] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:10.087] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:27:10.087] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764780640293}
+[00:27:46.679] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/car-hire color: rgb(120, 120, 120) color: inherit {"dp":"/services/car-hire","o":"http://localhost:3000/services/car-hire","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764780676863}

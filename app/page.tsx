@@ -139,7 +139,7 @@ export default function MRFloatLanding() {
         className="relative min-h-screen bg-gray-100 overflow-hidden pt-16 hidden md:block"
       >
         <div className="container mx-auto px-4 h-full min-h-[calc(100vh-64px)] flex items-center py-4">
-          <div className="relative w-full bg-gradient-to-br from-gray-50 to-gray-100 rounded-[2.5rem] overflow-hidden shadow-2xl min-h-[85vh]">
+          <div className="relative w-full bg-gradient-to-br from-gray-50 togray-100 rounded-[2.5rem] overflow-hidden shadow-2xl min-h-[85vh]">
             <div className="absolute inset-0">
               <img
                 src="/HeroBlue.png"
@@ -152,14 +152,15 @@ export default function MRFloatLanding() {
               {/* Left side - Hero text */}
               <div>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-2xl">
-                  Your Reliable Transport Partner
+                  Your <span className="text-[#A4C639]">Reliable</span>{" "}
+                  Transport Partner
                 </h1>
                 <p className="text-xl md:text-2xl text-white/95 mb-8 drop-shadow-lg">
                   Professional taxi rides, airport transfers, car hire and more
                   across the city and beyond.
                 </p>
                 <Link href="#fleet">
-                  <button className="bg-white hover:bg-[#A4C639] hover:text-white text-black px-8 py-6 rounded-xl text-lg shadow-xl transition-colors">
+                  <button className="bg-white hover:bg-[#A4C639] hover:text-white text-black px-8 py-4 rounded-xl text-lg shadow-xl transition-colors">
                     View Our Fleet
                   </button>
                 </Link>
@@ -238,7 +239,8 @@ export default function MRFloatLanding() {
               {/* Text Section - anchored top */}
               <div className="flex flex-col justify-center pt-4">
                 <h1 className="text-3xl font-bold text-white mb-3 drop-shadow-2xl leading-tight">
-                  Your Reliable Transport Partner
+                  Your <span className="text-[#A4C639]">Reliable</span>{" "}
+                  Transport Partner
                 </h1>
                 <p className="text-base text-white/95 mb-6 drop-shadow-lg leading-relaxed">
                   Professional taxi rides, airport transfers, car hire and more
@@ -305,6 +307,7 @@ export default function MRFloatLanding() {
           </div>
         </div>
       </section>
+
       <section id="services" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
@@ -317,12 +320,13 @@ export default function MRFloatLanding() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Car Hire */}
+            {/* Car Hire */}
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0 h-full flex flex-col">
-              <div className="h-48 w-full overflow-hidden">
+              <div className="aspect-video md:h-48 w-full overflow-hidden">
                 <img
                   src="/HeroHire.png"
                   alt="Car Hire"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <CardContent className="p-6 flex flex-col flex-grow justify-between">
@@ -343,11 +347,11 @@ export default function MRFloatLanding() {
 
             {/* Taxi / City Rides */}
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0 h-full flex flex-col">
-              <div className="h-48 w-full overflow-hidden">
+              <div className="aspect-video md:h-48 w-full overflow-hidden">
                 <img
                   src="/Uber.jpeg"
                   alt="Taxi rides"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <CardContent className="p-6 flex flex-col flex-grow justify-between">
@@ -368,11 +372,11 @@ export default function MRFloatLanding() {
 
             {/* Airport Shuttle */}
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0 h-full flex flex-col">
-              <div className="h-48 w-full overflow-hidden">
+              <div className="aspect-video md:h-48 w-full overflow-hidden">
                 <img
                   src="/Airport.jpeg"
                   alt="Airport shuttle"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <CardContent className="p-6 flex flex-col flex-grow justify-between">
@@ -392,11 +396,11 @@ export default function MRFloatLanding() {
 
             {/* Dial-a-Delivery */}
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0 h-full flex flex-col">
-              <div className="h-48 w-full overflow-hidden">
+              <div className="aspect-video md:h-48 w-full overflow-hidden">
                 <img
                   src="/Courier.jpeg"
                   alt="Delivery service"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <CardContent className="p-6 flex flex-col flex-grow justify-between">

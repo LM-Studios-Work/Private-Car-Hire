@@ -392,7 +392,7 @@ export default function TaxiPage() {
             Book your ride today. Simple, fast, and secure.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="https://wa.me/27710047018" target="_blank">
+            <Link href="https://wa.me/263785953345" target="_blank">
               <Button className="bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full px-8 py-6 text-lg">
                 WhatsApp Booking
               </Button>

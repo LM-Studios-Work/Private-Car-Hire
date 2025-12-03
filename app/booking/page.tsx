@@ -115,7 +115,7 @@ function BookingForm() {
     }
     // --- End Validation ---
 
-    const phoneNumber = "27672792090";
+    const phoneNumber = "263785953345";
 
     // --- Build Message ---
     let serviceSpecificDetails = "";
@@ -504,9 +504,9 @@ function BookingForm() {
             <div>
               <h4 className="font-bold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>+27 71 004 7018</li>
-                <li>info@mrfloat.co.za</li>
-                <li>Johannesburg, South Africa</li>
+                <li>+263 78 595 3345</li>
+                <li>aaronphiri707@gmail.com</li>
+                <li>Bulawayo, Zimbabwe</li>
               </ul>
             </div>
           </div>
@@ -519,7 +519,7 @@ function BookingForm() {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/27710047018"
+        href="https://wa.me/263785953345"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110"

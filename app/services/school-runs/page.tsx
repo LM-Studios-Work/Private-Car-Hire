@@ -54,7 +54,7 @@ export default function SchoolRunsPage() {
 -------------------------
     `;
 
-    const whatsappUrl = `https://wa.me/27672792090?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/263785953345?text=${encodeURIComponent(
       enquiryDetails
     )}`;
     window.open(whatsappUrl, "_blank");
@@ -282,11 +282,11 @@ export default function SchoolRunsPage() {
                   Prefer to chat on WhatsApp?
                 </p>
                 <Link
-                  href="https://wa.me/27672792090"
+                  href="https://wa.me/263785953345"
                   className="text-[#25D366] font-bold text-xl flex items-center hover:underline"
                 >
                   <Phone className="w-6 h-6 mr-2" />
-                  +27 71 004 7018
+                  +263 78 595 3345
                 </Link>
               </div>
             </div>

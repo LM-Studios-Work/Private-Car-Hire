@@ -430,6 +430,7 @@ export default function MRFloatLanding() {
       </section>
 
       {/* Our Fleet Section */}
+      {/* Our Fleet Section */}
       <section id="fleet" className="py-20 bg-[#F5F5F0]">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-12">
@@ -442,11 +443,12 @@ export default function MRFloatLanding() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Mazda Demio (white) - Comfort Sedan */}
             <Card className="overflow-hidden rounded-3xl border-0 shadow-md">
-              <div className="bg-white aspect-[665/375] flex items-center justify-center p-6">
+              {/* FIX: Changed aspect ratio, added relative, reduced padding to p-2 */}
+              <div className="bg-white aspect-[4/3] md:aspect-video relative flex items-center justify-center p-2 md:p-4">
                 <img
                   src="/Mazda.png"
                   alt="Mazda Demio"
-                  className="w-full h-full object-contain drop-shadow-lg"
+                  className="w-full h-full object-contain drop-shadow-lg z-10"
                 />
               </div>
               <CardContent className="p-6">
@@ -464,11 +466,12 @@ export default function MRFloatLanding() {
 
             {/* Honda Fit GP5 Hybrid (blue) - Premium SUV / Compact Hybrid */}
             <Card className="overflow-hidden rounded-3xl border-0 shadow-md">
-              <div className="bg-white aspect-[665/375] flex items-center justify-center p-6">
+              {/* FIX applied here too */}
+              <div className="bg-white aspect-[4/3] md:aspect-video relative flex items-center justify-center p-2 md:p-4">
                 <img
                   src="/HondaB.png"
                   alt="Honda Fit GP5 Hybrid"
-                  className="w-full h-full object-contain drop-shadow-lg"
+                  className="w-full h-full object-contain drop-shadow-lg z-10"
                 />
               </div>
               <CardContent className="p-6">
@@ -486,11 +489,12 @@ export default function MRFloatLanding() {
 
             {/* Honda Fit GP3 (grey) - Spacious Van / Practical Hatch */}
             <Card className="overflow-hidden rounded-3xl border-0 shadow-md">
-              <div className="bg-white aspect-[665/375] flex items-center justify-center p-6">
+              {/* FIX applied here too */}
+              <div className="bg-white aspect-[4/3] md:aspect-video relative flex items-center justify-center p-2 md:p-4">
                 <img
                   src="/HondaG.png"
                   alt="Honda Fit GP3"
-                  className="w-full h-full object-contain drop-shadow-lg"
+                  className="w-full h-full object-contain drop-shadow-lg z-10"
                 />
               </div>
               <CardContent className="p-6">
@@ -508,7 +512,6 @@ export default function MRFloatLanding() {
           </div>
         </div>
       </section>
-
       {/* About Section */}
       <section id="about" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
@@ -756,17 +759,25 @@ export default function MRFloatLanding() {
           </Link>
         </div>
       </section>
-
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/+263 78 595 3345"
+        href="https://wa.me/263785953345"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110"
+        className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 hover:rotate-3"
       >
-        <MessageCircle className="w-8 h-8" />
+        {/* Official WhatsApp SVG Logo */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+          className="w-8 h-8"
+        >
+          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        </svg>
       </a>
-
       {/* Footer */}
       <footer className="bg-[#1a1a1a] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 md:px-8">

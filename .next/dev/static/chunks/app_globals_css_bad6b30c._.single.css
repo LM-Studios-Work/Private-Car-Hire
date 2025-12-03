@@ -894,10 +894,6 @@
     aspect-ratio: 4 / 3;
   }
 
-  .aspect-\[665\/375\] {
-    aspect-ratio: 665 / 375;
-  }
-
   .aspect-square {
     aspect-ratio: 1;
   }
@@ -3444,6 +3440,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:rotate-3:hover {
+      rotate: 3deg;
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:border-\[\#A4C639\]:hover {
       border-color: #a4c639;
     }
@@ -4991,6 +4993,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:aspect-video {
+      aspect-ratio: var(--aspect-video);
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:h-48 {
       height: calc(var(--spacing) * 48);
     }
@@ -5047,6 +5055,12 @@
   @media (min-width: 48rem) {
     .md\:gap-8 {
       gap: calc(var(--spacing) * 8);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:p-4 {
+      padding: calc(var(--spacing) * 4);
     }
   }
 

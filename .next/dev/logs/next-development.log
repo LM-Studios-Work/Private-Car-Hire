@@ -1,467 +1,95 @@
-[00:00:07.116] Server  LOG      ✓ Ready in 5.7s
-[00:01:14.024] Server  LOG      ○ Compiling / ...
-[00:01:27.767] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:27.889] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:27.889] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:01:27.889] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764704918681}
-[00:03:14.694] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/car-hire color: rgb(120, 120, 120) color: inherit {"dp":"/services/car-hire","o":"http://localhost:3000/services/car-hire","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764705025503}
-[00:03:29.397] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/school-runs color: rgb(120, 120, 120) color: inherit {"dp":"/services/school-runs","o":"http://localhost:3000/services/school-runs","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764705040222}
-[00:06:56.867] Server  LOG      ✓ Compiled in 520ms
-[00:08:57.349] Server  LOG      ✓ Compiled in 413ms
-[00:08:58.105] Server  LOG      ✓ Compiled in 217ms
-[00:09:09.185] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:09.641] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:03.470] Server  LOG      ✓ Ready in 2.4s
+[00:00:06.550] Server  LOG      ○ Compiling / ...
+[00:00:28.047] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-%s%s https://react.dev/link/hydration-mismatch 
+[00:00:28.049] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
 
-  ...
-    <LoadingBoundary name="school-runs/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/services/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="services/s...">
-                <SegmentTrieNode>
-                <ClientPageRoot Component={function SchoolRunsPage} serverProvidedParams={{...}}>
-                  <SchoolRunsPage params={Promise} searchParams={Promise}>
-                    <div className="min-h-scre...">
-                      <nav className="fixed top-...">
-                        <div className="max-w-7xl ...">
-                          <LinkComponent>
-                          <div className="hidden md:...">
-                            <LinkComponent>
-                            <div>
-                            <LinkComponent>
-                            <LinkComponent>
-                            <LinkComponent>
-                            <Button onClick={function scrollToForm} className="bg-[#A4C63...">
-                              <button
-                                data-slot="button"
-                                className={"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm f..."}
-                                onClick={function scrollToForm}
--                               fdprocessedid="x8k15c"
-                              >
-+                               Get a Quote
-                      <section className="relative m...">
-                        <div>
-                        <div className="relative z...">
-                          <div>
-                          <h1>
-                          <p>
-                          <div className="flex flex-...">
-                            <Button onClick={function scrollToForm} className="h-14 px-8 ...">
-                              <button
-                                data-slot="button"
-                                className={"inline-flex items-center justify-center gap-2 whitespace-nowrap font-medi..."}
-                                onClick={function scrollToForm}
--                               fdprocessedid="prnw1"
-                              >
-+                               Enquire Now
-                            <LinkComponent href="https://wa...">
-                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                                <Button variant="outline" className="h-14 px-8 ...">
-                                  <button
-                                    data-slot="button"
-                                    className={"inline-flex items-center justify-center gap-2 whitespace-nowrap font-..."}
--                                   fdprocessedid="03mpcu"
-                                  >
-                      <section>
-                      <section>
-                      <section>
-                      ...
-                        <div className="max-w-6xl ...">
-                          <div>
-                          <div className="lg:w-1/2 w...">
-                            <div className="bg-white p...">
-                              <h3>
-                              <form className="space-y-4">
-                                <div className="grid md:gr...">
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <Input id="name" placeholder="John Doe" className="bg-gray-50...">
-                                      <input
-                                        type={undefined}
-                                        data-slot="input"
-                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
-                                        id="name"
-                                        placeholder="John Doe"
--                                       fdprocessedid="dna4nc"
-                                      >
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <Input id="phone" placeholder="082 123 4567" className="bg-gray-50...">
-                                      <input
-                                        type={undefined}
-                                        data-slot="input"
-                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
-                                        id="phone"
-                                        placeholder="082 123 4567"
--                                       fdprocessedid="1vf5w4"
-                                      >
-                                <div className="space-y-2">
-                                  <Label>
-                                  <Input id="email" type="email" placeholder="john@examp..." className="bg-gray-50...">
-                                    <input
-                                      type="email"
-                                      data-slot="input"
-                                      className="file:text-foreground placeholder:text-muted-foreground selection:bg-p..."
-                                      id="email"
-                                      placeholder="john@example.com"
--                                     fdprocessedid="o6p0r"
-                                    >
-                                <div className="space-y-2">
-                                  <Label>
-                                  <Input id="pickup" placeholder="e.g. Midra..." className="bg-gray-50...">
-                                    <input
-                                      type={undefined}
-                                      data-slot="input"
-                                      className="file:text-foreground placeholder:text-muted-foreground selection:bg-p..."
-                                      id="pickup"
-                                      placeholder="e.g. Midrand, Vorna Valley"
--                                     fdprocessedid="bxzc9f"
-                                    >
-                                <div className="space-y-2">
-                                  <Label>
-                                  <Input id="school" placeholder="e.g. Curro..." className="bg-gray-50...">
-                                    <input
-                                      type={undefined}
-                                      data-slot="input"
-                                      className="file:text-foreground placeholder:text-muted-foreground selection:bg-p..."
-                                      id="school"
-                                      placeholder="e.g. Curro Waterfall"
--                                     fdprocessedid="205edf"
-                                    >
-                                <div className="grid md:gr...">
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <select
-                                      className="w-full h-10 px-3 rounded-md border border-gray-200 bg-gray-50 text-sm"
--                                     fdprocessedid="0k2iwb"
-                                    >
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <select
-                                      className="w-full h-10 px-3 rounded-md border border-gray-200 bg-gray-50 text-sm"
--                                     fdprocessedid="auhklh"
-                                    >
-                                <div>
-                                <Button className="w-full h-1...">
-                                  <button
-                                    data-slot="button"
-                                    className={"inline-flex items-center justify-center gap-2 whitespace-nowrap font-..."}
--                                   fdprocessedid="73zht8"
-                                  >
-                                ...
-              ...
-            ...
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
 
-[00:09:09.704] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:09:09.704] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/services/school-runs","route":"/services/school-runs"}
-[00:09:09.704] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/school-runs color: rgb(120, 120, 120) color: inherit {"dp":"/services/school-runs","o":"http://localhost:3000/services/school-runs","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764705380498}
-[00:11:54.217] Server  LOG      ✓ Compiled in 350ms
-[00:12:49.769] Server  LOG      ✓ Compiled in 211ms
-[00:14:21.792] Server  LOG      ✓ Compiled in 155ms
-[00:14:44.398] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/city-to-city color: rgb(120, 120, 120) color: inherit {"dp":"/services/city-to-city","o":"http://localhost:3000/services/city-to-city","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764705715215}
-[00:14:48.252] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/airport color: rgb(120, 120, 120) color: inherit {"dp":"/services/airport","o":"http://localhost:3000/services/airport","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764705719073}
-[00:14:58.265] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764705729078}
-[00:15:08.717] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/delivery color: rgb(120, 120, 120) color: inherit {"dp":"/services/delivery","o":"http://localhost:3000/services/delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764705739471}
-[00:16:51.682] Server  LOG      ✓ Compiled in 309ms
-[00:17:13.256] Server  LOG      ✓ Compiled in 216ms
-[00:17:20.355] Server  LOG      ✓ Compiled in 210ms
-[00:17:37.765] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/cbd-errands color: rgb(120, 120, 120) color: inherit {"dp":"/services/cbd-errands","o":"http://localhost:3000/services/cbd-errands","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764705888513}
-[00:18:50.573] Server  LOG      ✓ Compiled in 271ms
-[00:20:37.471] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/school-runs color: rgb(120, 120, 120) color: inherit {"dp":"/services/school-runs","o":"http://localhost:3000/services/school-runs","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764706068253}
-[00:28:07.526] Server  LOG      ✓ Compiled in 158ms
-[00:28:27.324] Server  LOG      ✓ Compiled in 284ms
-[00:30:23.061] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/delivery color: rgb(120, 120, 120) color: inherit {"dp":"/services/delivery","o":"http://localhost:3000/services/delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764706653842}
-[00:37:24.668] Server  LOG      ✓ Compiled in 169ms
-[00:37:26.872] Server  LOG      ✓ Compiled in 333ms
-[00:37:28.411] Server  LOG      ✓ Compiled in 245ms
-[00:39:04.230] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/cbd-errands color: rgb(120, 120, 120) color: inherit {"dp":"/services/cbd-errands","o":"http://localhost:3000/services/cbd-errands","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707174979}
-[00:42:24.288] Server  LOG      ✓ Compiled in 219ms
-[00:42:26.221] Server  LOG      ✓ Compiled in 223ms
-[00:47:11.588] Server  LOG      ✓ Compiled in 177ms
-[00:47:14.402] Server  LOG      ✓ Compiled in 161ms
-[00:47:26.941] Server  LOG      ✓ Compiled in 148ms
-[00:48:08.898] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707719686}
-[00:48:12.627] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:48:13.015] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
+[00:00:28.050] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
 
-%s%s https://react.dev/link/hydration-mismatch 
 
-  ...
-    <LoadingBoundary name="taxi/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/services/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="services/t...">
-                <SegmentTrieNode>
-                <ClientPageRoot Component={function SchoolRunsPage} serverProvidedParams={{...}}>
-                  <SchoolRunsPage params={Promise} searchParams={Promise}>
-                    <div className="min-h-scre...">
-                      <nav className="fixed top-...">
-                        <div className="max-w-7xl ...">
-                          <LinkComponent>
-                          <div className="hidden md:...">
-                            <LinkComponent>
-                            <div>
-                            <LinkComponent>
-                            <LinkComponent>
-                            <LinkComponent>
-                            <Button onClick={function scrollToForm} className="bg-[#A4C63...">
-                              <button
-                                data-slot="button"
-                                className={"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm f..."}
-                                onClick={function scrollToForm}
--                               fdprocessedid="lr6am"
-                              >
-+                               Get a Quote
-                      <section>
-                      <section>
-                      <section>
-                      <section>
-                      <section>
-                      ...
-                        <div className="max-w-6xl ...">
-                          <div>
-                          <div className="lg:w-1/2 w...">
-                            <div className="bg-white p...">
-                              <h3>
-                              <form className="space-y-4">
-                                <div className="grid md:gr...">
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <Input id="name" placeholder="John Doe" className="bg-[#F5F5F...">
-                                      <input
-                                        type={undefined}
-                                        data-slot="input"
-                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
-                                        id="name"
-                                        placeholder="John Doe"
--                                       fdprocessedid="xshxg6"
-                                      >
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <Input id="phone" placeholder="082 123 4567" className="bg-[#F5F5F...">
-                                      <input
-                                        type={undefined}
-                                        data-slot="input"
-                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
-                                        id="phone"
-                                        placeholder="082 123 4567"
--                                       fdprocessedid="1f4ajo"
-                                      >
-                                <div className="space-y-2">
-                                  <Label>
-                                  <Input id="pickup" placeholder="e.g. 12 Ma..." className="bg-[#F5F5F...">
-                                    <input
-                                      type={undefined}
-                                      data-slot="input"
-                                      className="file:text-foreground placeholder:text-muted-foreground selection:bg-p..."
-                                      id="pickup"
-                                      placeholder="e.g. 12 Main St, Midrand"
--                                     fdprocessedid="7ps5tn"
-                                    >
-                                <div className="space-y-2">
-                                  <Label>
-                                  <Input id="school" placeholder="e.g. Curro..." className="bg-[#F5F5F...">
-                                    <input
-                                      type={undefined}
-                                      data-slot="input"
-                                      className="file:text-foreground placeholder:text-muted-foreground selection:bg-p..."
-                                      id="school"
-                                      placeholder="e.g. Curro Waterfall"
--                                     fdprocessedid="ihor69"
-                                    >
-                                <div className="grid md:gr...">
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <select
-                                      className="w-full h-12 px-3 rounded-xl border-transparent bg-[#F5F5F0] text-sm f..."
--                                     fdprocessedid="l082qi"
-                                    >
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <select
-                                      className="w-full h-12 px-3 rounded-xl border-transparent bg-[#F5F5F0] text-sm f..."
--                                     fdprocessedid="v0g5cs"
-                                    >
-                                <div>
-                                <Button className="w-full h-1...">
-                                  <button
-                                    data-slot="button"
-                                    className={"inline-flex items-center justify-center gap-2 whitespace-nowrap trans..."}
--                                   fdprocessedid="hnohxn"
-                                  >
-              ...
-            ...
+[00:00:28.051] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
 
-[00:48:13.015] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:48:13.015] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/services/taxi","route":"/services/taxi"}
-[00:48:13.015] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707723840}
-[00:48:54.320] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:48:54.594] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+[00:00:29.660] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
 
-%s%s https://react.dev/link/hydration-mismatch 
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
 
-  ...
-    <LoadingBoundary name="taxi/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/services/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="services/t...">
-                <SegmentTrieNode>
-                <ClientPageRoot Component={function SchoolRunsPage} serverProvidedParams={{...}}>
-                  <SchoolRunsPage params={Promise} searchParams={Promise}>
-                    <div className="min-h-scre...">
-                      <nav className="fixed top-...">
-                        <div className="max-w-7xl ...">
-                          <LinkComponent>
-                          <div className="hidden md:...">
-                            <LinkComponent>
-                            <div>
-                            <LinkComponent>
-                            <LinkComponent>
-                            <LinkComponent>
-                            <Button onClick={function scrollToForm} className="bg-[#A4C63...">
-                              <button
-                                data-slot="button"
-                                className={"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm f..."}
-                                onClick={function scrollToForm}
--                               fdprocessedid="bphhms"
-                              >
-+                               Get a Quote
-                      <section>
-                      <section>
-                      <section>
-                      <section>
-                      <section>
-                      ...
-                        <div className="max-w-6xl ...">
-                          <div>
-                          <div className="lg:w-1/2 w...">
-                            <div className="bg-white p...">
-                              <h3>
-                              <form className="space-y-4">
-                                <div className="grid md:gr...">
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <Input id="name" placeholder="John Doe" className="bg-[#F5F5F...">
-                                      <input
-                                        type={undefined}
-                                        data-slot="input"
-                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
-                                        id="name"
-                                        placeholder="John Doe"
--                                       fdprocessedid="ftd1bfd"
-                                      >
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <Input id="phone" placeholder="082 123 4567" className="bg-[#F5F5F...">
-                                      <input
-                                        type={undefined}
-                                        data-slot="input"
-                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
-                                        id="phone"
-                                        placeholder="082 123 4567"
--                                       fdprocessedid="15ubw8"
-                                      >
-                                <div className="space-y-2">
-                                  <Label>
-                                  <Input id="pickup" placeholder="e.g. 12 Ma..." className="bg-[#F5F5F...">
-                                    <input
-                                      type={undefined}
-                                      data-slot="input"
-                                      className="file:text-foreground placeholder:text-muted-foreground selection:bg-p..."
-                                      id="pickup"
-                                      placeholder="e.g. 12 Main St, Midrand"
--                                     fdprocessedid="xo1kag"
-                                    >
-                                <div className="space-y-2">
-                                  <Label>
-                                  <Input id="school" placeholder="e.g. Curro..." className="bg-[#F5F5F...">
-                                    <input
-                                      type={undefined}
-                                      data-slot="input"
-                                      className="file:text-foreground placeholder:text-muted-foreground selection:bg-p..."
-                                      id="school"
-                                      placeholder="e.g. Curro Waterfall"
--                                     fdprocessedid="3ip8o"
-                                    >
-                                <div className="grid md:gr...">
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <select
-                                      className="w-full h-12 px-3 rounded-xl border-transparent bg-[#F5F5F0] text-sm f..."
--                                     fdprocessedid="njy8qv"
-                                    >
-                                  <div className="space-y-2">
-                                    <Label>
-                                    <select
-                                      className="w-full h-12 px-3 rounded-xl border-transparent bg-[#F5F5F0] text-sm f..."
--                                     fdprocessedid="37p63"
-                                    >
-                                <div>
-                                <Button className="w-full h-1...">
-                                  <button
-                                    data-slot="button"
-                                    className={"inline-flex items-center justify-center gap-2 whitespace-nowrap trans..."}
--                                   fdprocessedid="ba0yc"
-                                  >
-              ...
-            ...
 
-[00:48:54.594] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:48:54.594] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/services/taxi","route":"/services/taxi"}
-[00:48:54.594] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707765416}
-[00:48:57.039] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707767711}
-[00:49:00.579] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/school-runs color: rgb(120, 120, 120) color: inherit {"dp":"/services/school-runs","o":"http://localhost:3000/services/school-runs","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707771369}
-[00:49:03.685] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/city-to-city color: rgb(120, 120, 120) color: inherit {"dp":"/services/city-to-city","o":"http://localhost:3000/services/city-to-city","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707774503}
-[00:49:07.499] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/cbd-errands color: rgb(120, 120, 120) color: inherit {"dp":"/services/cbd-errands","o":"http://localhost:3000/services/cbd-errands","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707778324}
-[00:49:10.328] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/car-hire color: rgb(120, 120, 120) color: inherit {"dp":"/services/car-hire","o":"http://localhost:3000/services/car-hire","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707781149}
-[00:49:12.916] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707783706}
-[00:49:31.632] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/services/taxi/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:49:31.637] Server  LOG      ✓ Compiled in 243ms
-[00:49:32.918] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:49:33.623] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:49:33.623] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/services/taxi","route":"/services/taxi"}
-[00:49:33.623] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707804053}
-[00:49:33.791] Browser WARN    Image with src "/UberHero.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:50:03.345] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/city-to-city color: rgb(120, 120, 120) color: inherit {"dp":"/services/city-to-city","o":"http://localhost:3000/services/city-to-city","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707834167}
-[00:50:16.912] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707847735}
-[00:50:31.979] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/city-to-city color: rgb(120, 120, 120) color: inherit {"dp":"/services/city-to-city","o":"http://localhost:3000/services/city-to-city","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707862800}
-[00:50:51.733] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764707882407}
-[00:55:55.607] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/services/taxi/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:55:55.611] Server  LOG      ✓ Compiled in 554ms
-[00:55:56.729] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:55:57.966] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:29.662] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:00:29.662] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:00:29.663] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:00:29.701] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:30.437] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -492,7 +120,7 @@ It can also happen if the client has a browser extension installed which messes 
                             <div className="relative" onMouseEnter={function onMouseEnter} ...>
                               <button
                                 className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1"
--                               fdprocessedid="87m9c"
+-                               fdprocessedid="5w30hc"
                               >
                             <a>
                             <a>
@@ -503,7 +131,7 @@ It can also happen if the client has a browser extension installed which messes 
                                   <button
                                     data-slot="button"
                                     className={"inline-flex items-center justify-center gap-2 whitespace-nowrap text-..."}
--                                   fdprocessedid="pg48z"
+-                                   fdprocessedid="59e01t"
                                   >
 +                                   Book Online
                       ...
@@ -518,27 +146,31 @@ It can also happen if the client has a browser extension installed which messes 
                                   <button
                                     data-slot="button"
                                     className={"inline-flex items-center justify-center gap-2 whitespace-nowrap font-..."}
--                                   fdprocessedid="m84jc"
+-                                   fdprocessedid="e1zxg"
                                   >
 +                                   View Our Fleet
                             <div className="bg-white/9...">
                               <h2>
                               <form className="space-y-3">
-                                <Input placeholder="Full Name" className="bg-gray-50...">
+                                <Input placeholder="Full Name" className="bg-gray-50..." value="" ...>
                                   <input
                                     type={undefined}
                                     data-slot="input"
                                     className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
                                     placeholder="Full Name"
--                                   fdprocessedid="d1zdc9"
+                                    value=""
+                                    onChange={function onChange}
+-                                   fdprocessedid="rhviix"
                                   >
-                                <Input placeholder="Phone Number" type="tel" className="bg-gray-50...">
+                                <Input placeholder="Phone Number" type="tel" className="bg-gray-50..." value="" ...>
                                   <input
                                     type="tel"
                                     data-slot="input"
                                     className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
                                     placeholder="Phone Number"
--                                   fdprocessedid="w5j65"
+                                    value=""
+                                    onChange={function onChange}
+-                                   fdprocessedid="e1o5l9"
                                   >
                                 ...
                                   <Slot ref={function}>
@@ -547,7 +179,7 @@ It can also happen if the client has a browser extension installed which messes 
                                         <button
                                           type="button"
                                           role="combobox"
-                                          aria-controls="radix-_R_3l2indlb_"
+                                          aria-controls="radix-_R_3l2inelb_"
                                           aria-expanded={false}
                                           aria-required={undefined}
                                           aria-autocomplete="none"
@@ -563,26 +195,27 @@ It can also happen if the client has a browser extension installed which messes 
                                           onPointerDown={function handleEvent}
                                           onKeyDown={function handleEvent}
                                           ref={function}
--                                         fdprocessedid="xj14j9"
+-                                         fdprocessedid="iqeev"
                                         >
-                                <Input placeholder="Pickup Loc..." className="bg-gray-50...">
+                                <Input placeholder="Pickup Loc..." className="bg-gray-50..." value="" ...>
                                   <input
                                     type={undefined}
                                     data-slot="input"
                                     className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
                                     placeholder="Pickup Location"
--                                   fdprocessedid="o9ko8v"
+                                    value=""
+                                    onChange={function onChange}
+-                                   fdprocessedid="4kd71v"
                                   >
-                                <LinkComponent href="/booking">
-                                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                                    <Button type="button" className="w-full bg-...">
-                                      <button
-                                        data-slot="button"
-                                        className={"inline-flex items-center justify-center gap-2 whitespace-nowrap t..."}
-                                        type="button"
--                                       fdprocessedid="iov40a"
-                                      >
-+                                       Get My Quote
+                                <Button type="button" className="w-full bg-..." onClick={function handleQuoteSubmit}>
+                                  <button
+                                    data-slot="button"
+                                    className={"inline-flex items-center justify-center gap-2 whitespace-nowrap trans..."}
+                                    type="button"
+                                    onClick={function handleQuoteSubmit}
+-                                   fdprocessedid="85vmlp"
+                                  >
++                                   Get My Quote
                       <section id="services" className="py-20 bg-w...">
                         <div className="max-w-7xl ...">
                           <div>
@@ -593,7 +226,7 @@ It can also happen if the client has a browser extension installed which messes 
                                   <button
                                     data-slot="button"
                                     className={"inline-flex items-center justify-center gap-2 whitespace-nowrap text-..."}
--                                   fdprocessedid="i6gzyd"
+-                                   fdprocessedid="59ef2a"
                                   >
 +                                   Read More
                             ...
@@ -602,7 +235,7 @@ It can also happen if the client has a browser extension installed which messes 
                                   <button
                                     data-slot="button"
                                     className={"inline-flex items-center justify-center gap-2 whitespace-nowrap text-..."}
--                                   fdprocessedid="o8hlxb"
+-                                   fdprocessedid="w2gxt"
                                   >
 +                                   Read More
                             ...
@@ -611,7 +244,7 @@ It can also happen if the client has a browser extension installed which messes 
                                   <button
                                     data-slot="button"
                                     className={"inline-flex items-center justify-center gap-2 whitespace-nowrap text-..."}
--                                   fdprocessedid="6v9irqi"
+-                                   fdprocessedid="exujl"
                                   >
 +                                   Read More
                             ...
@@ -620,7 +253,7 @@ It can also happen if the client has a browser extension installed which messes 
                                   <button
                                     data-slot="button"
                                     className={"inline-flex items-center justify-center gap-2 whitespace-nowrap text-..."}
--                                   fdprocessedid="zf4gq"
+-                                   fdprocessedid="l6y5gq"
                                   >
 +                                   Read More
                           ...
@@ -629,7 +262,7 @@ It can also happen if the client has a browser extension installed which messes 
                                 <button
                                   data-slot="button"
                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap font-me..."}
--                                 fdprocessedid="js40d3"
+-                                 fdprocessedid="9kpkon"
                                 >
 +                                 Book A Service
                       <section>
@@ -637,118 +270,2171 @@ It can also happen if the client has a browser extension installed which messes 
                       <section>
                       <section>
                       <section>
-                      ...
-                        <div data-slot="card" className="bg-card te...">
-                          <CardContent className="p-8">
-                            <div data-slot="card-content" className="p-8">
-                              <form className="space-y-6">
-                                <div className="grid md:gr...">
-                                  <div className="space-y-2">
-                                    <label>
-                                    <Input placeholder="John Doe" className="rounded-xl">
-                                      <input
-                                        type={undefined}
-                                        data-slot="input"
-                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
-                                        placeholder="John Doe"
--                                       fdprocessedid="pzb9e"
-                                      >
-                                  <div className="space-y-2">
-                                    <label>
-                                    <Input type="email" placeholder="john@examp..." className="rounded-xl">
-                                      <input
-                                        type="email"
-                                        data-slot="input"
-                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
-                                        placeholder="john@example.com"
--                                       fdprocessedid="xytdji"
-                                      >
-                                <div className="grid md:gr...">
-                                  <div className="space-y-2">
-                                    <label>
-                                    <Input type="tel" placeholder="+27 123 45..." className="rounded-xl">
-                                      <input
-                                        type="tel"
-                                        data-slot="input"
-                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
-                                        placeholder="+27 123 456 7890"
--                                       fdprocessedid="g39zw"
-                                      >
-                                  ...
-                                    <Slot ref={function}>
-                                      <SlotClone ref={function}>
-                                        <Primitive.button type="button" role="combobox" aria-controls="radix-_R_5..." ...>
-                                          <button
-                                            type="button"
-                                            role="combobox"
-                                            aria-controls="radix-_R_559indlb_"
-                                            aria-expanded={false}
-                                            aria-required={undefined}
-                                            aria-autocomplete="none"
-                                            dir="ltr"
-                                            data-state="closed"
-                                            disabled={false}
-                                            data-disabled={undefined}
-                                            data-placeholder=""
-                                            data-slot="select-trigger"
-                                            data-size="default"
-                                            className={"border-input data-[placeholder]:text-muted-foreground [&_svg:..."}
-                                            onClick={function handleEvent}
-                                            onPointerDown={function handleEvent}
-                                            onKeyDown={function handleEvent}
-                                            ref={function}
--                                           fdprocessedid="cqnbyc"
-                                          >
-                                <div className="grid md:gr...">
-                                  <div className="space-y-2">
-                                    <label>
-                                    <Input placeholder="Enter pick..." className="rounded-xl">
-                                      <input
-                                        type={undefined}
-                                        data-slot="input"
-                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
-                                        placeholder="Enter pickup address"
--                                       fdprocessedid="ejqg9"
-                                      >
-                                  <div className="space-y-2">
-                                    <label>
-                                    <Input placeholder="Enter dest..." className="rounded-xl">
-                                      <input
-                                        type={undefined}
-                                        data-slot="input"
-                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
-                                        placeholder="Enter destination"
--                                       fdprocessedid="nyfz7g"
-                                      >
-                                <div>
-                                <div>
-                                <Button type="button" size="lg" className="w-full bg-..." onClick={function onClick}>
-                                  <button
-                                    data-slot="button"
-                                    className={"inline-flex items-center justify-center gap-2 whitespace-nowrap font-..."}
-                                    type="button"
-                                    onClick={function onClick}
--                                   fdprocessedid="nyzy3q"
-                                  >
-                                ...
+                      <section id="booking-cta" className="py-20 bg-w...">
+                        <div className="max-w-4xl ...">
+                          <h2>
+                          <p>
+                          <LinkComponent href="/booking">
+                            <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                              <Button size="lg" className="bg-[#A4C63...">
+                                <button
+                                  data-slot="button"
+                                  className={"inline-flex items-center justify-center gap-2 whitespace-nowrap font-me..."}
+-                                 fdprocessedid="g2i6zd"
+                                >
++                                 Book Now
                       ...
               ...
             ...
 
-[00:55:57.966] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:55:57.966] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:55:57.966] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764708188229}
-[00:56:05.811] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764708196614}
-[00:58:42.085] Server  LOG      ✓ Compiled in 377ms
-[01:01:00.277] Server  LOG      ✓ Compiled in 197ms
-[01:05:37.383] Server  LOG      ✓ Compiled in 222ms
-[01:06:14.748] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764708805362}
-[01:06:46.610] Server  LOG      ✓ Compiled in 358ms
-[01:06:53.885] Server  LOG      ✓ Compiled in 223ms
-[01:09:11.181] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/car-hire color: rgb(120, 120, 120) color: inherit {"dp":"/services/car-hire","o":"http://localhost:3000/services/car-hire","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764708981981}
-[01:09:18.401] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/airport color: rgb(120, 120, 120) color: inherit {"dp":"/services/airport","o":"http://localhost:3000/services/airport","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764708989228}
-[01:09:26.574] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/school-runs color: rgb(120, 120, 120) color: inherit {"dp":"/services/school-runs","o":"http://localhost:3000/services/school-runs","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764708997397}
-[01:09:32.006] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/cbd-errands color: rgb(120, 120, 120) color: inherit {"dp":"/services/cbd-errands","o":"http://localhost:3000/services/cbd-errands","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764709002832}
-[01:09:50.315] Server  LOG      ✓ Compiled in 160ms
-[01:10:00.668] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/car-hire color: rgb(120, 120, 120) color: inherit {"dp":"/services/car-hire","o":"http://localhost:3000/services/car-hire","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764709031491}
-[01:10:05.376] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764709036126}
+[00:00:30.580] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:30.580] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:30.580] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764774557505}
+[00:00:47.671] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:00:47.673] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:00:47.674] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:00:47.676] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:00:48.193] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/car-hire color: rgb(120, 120, 120) color: inherit {"dp":"/services/car-hire","o":"http://localhost:3000/services/car-hire","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764774575102}
+[00:01:00.287] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:01:00.290] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:01:00.291] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:01:00.292] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:01:00.698] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/booking?service=Car+Hire color: rgb(120, 120, 120) color: inherit {"dp":"/booking","o":"http://localhost:3000/booking?service=Car+Hire","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764774587498}
+[00:01:27.433] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:01:27.434] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:01:27.435] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:01:27.436] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:01:27.843] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764774614627}
+[00:01:41.511] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:01:41.512] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:01:41.512] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:01:41.513] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:01:41.700] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/car-hire color: rgb(120, 120, 120) color: inherit {"dp":"/services/car-hire","o":"http://localhost:3000/services/car-hire","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764774628616}
+[00:01:46.398] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:01:46.399] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:01:46.400] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:01:46.401] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:01:46.720] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/booking?service=Car+Hire&vehicle=suv color: rgb(120, 120, 120) color: inherit {"dp":"/booking","o":"http://localhost:3000/booking?service=Car+Hire&vehicle=suv","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764774633519}
+[00:01:50.739] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:01:50.740] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:01:50.741] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:01:50.742] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:01:51.043] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/taxi color: rgb(120, 120, 120) color: inherit {"dp":"/services/taxi","o":"http://localhost:3000/services/taxi","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764774637946}
+[00:02:08.550] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:02:08.551] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:02:08.552] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:02:08.553] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:02:08.767] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/car-hire color: rgb(120, 120, 120) color: inherit {"dp":"/services/car-hire","o":"http://localhost:3000/services/car-hire","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764774655692}
+[00:02:15.961] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:02:15.962] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:02:15.963] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:02:15.964] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:02:16.360] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/school-runs color: rgb(120, 120, 120) color: inherit {"dp":"/services/school-runs","o":"http://localhost:3000/services/school-runs","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764774663285}
+[00:11:28.314] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:11:28.318] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:11:28.319] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:11:28.320] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:11:28.740] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764775215537}
+[00:15:34.585] Server  LOG      ✓ Compiled in 2.6s
+[00:15:34.720] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:34.721] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:34.722] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:34.722] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.120] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[root-of-the-server]__f1627132._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.127] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.158] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\node_modules_next_dist_179b90d2._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.345] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.347] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.374] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.382] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.385] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.386] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.391] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.394] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.404] Server  ERROR    ⨯ ReferenceError: Button is not defined
+[00:15:35.417] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[root-of-the-server]__f1627132._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.420] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.421] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\node_modules_next_dist_179b90d2._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.426] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.428] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.431] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.432] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.434] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.436] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.438] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.439] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.444] Server  ERROR    ⨯ ReferenceError: Button is not defined
+[00:15:35.450] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.453] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.456] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.458] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.460] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.461] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.464] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.465] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.467] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.469] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.471] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.472] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.474] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.476] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.477] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.479] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.481] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.482] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.483] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.486] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.548] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.549] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.550] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.552] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.605] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[root-of-the-server]__f1627132._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.605] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.606] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\node_modules_next_dist_179b90d2._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.609] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.610] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.612] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.614] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.615] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.616] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.617] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.617] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.618] Server  ERROR    ⨯ ReferenceError: Button is not defined
+[00:15:35.620] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[root-of-the-server]__f1627132._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.621] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.622] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\node_modules_next_dist_179b90d2._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.625] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.626] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.628] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.630] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.631] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.632] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.633] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.635] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:15:35.636] Server  ERROR    ⨯ ReferenceError: Button is not defined
+[00:15:35.637] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.638] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.638] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.639] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.640] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.641] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.641] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.642] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.643] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.644] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.645] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.646] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.647] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.648] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.650] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.651] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.652] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.653] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:35.654] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:35.655] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:39.689] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:39.691] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:39.692] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:39.694] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:39.695] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:39.696] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:39.697] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:39.698] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:39.699] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:39.700] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:39.701] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:39.702] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:39.703] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:39.705] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:39.717] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:39.719] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:39.721] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:39.723] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:39.725] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:15:39.728] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:15:39.733] Browser ERROR   uncaughtError: ReferenceError: Button is not defined
+[00:15:54.499] Server  LOG      ✓ Compiled in 230ms
+[00:15:56.700] Server  LOG      ✓ Compiled in 322ms
+[00:20:46.468] Server  LOG      ✓ Compiled in 242ms
+[00:20:46.614] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:46.615] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:46.617] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:46.618] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:46.880] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[root-of-the-server]__f1627132._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.885] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.915] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\node_modules_next_dist_179b90d2._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.922] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.925] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.928] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.930] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.933] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.936] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.938] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.941] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.943] Server  ERROR    ⨯ ReferenceError: Button is not defined
+[00:20:46.952] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[root-of-the-server]__f1627132._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.954] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.957] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\.next\dev\server\chunks\ssr\node_modules_next_dist_179b90d2._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.983] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.988] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.992] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.994] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.996] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.998] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:46.999] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:47.001] Server  ERROR   C:\Users\austi\OneDrive\Desktop\mr-float-redesign\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:47.003] Server  ERROR    ⨯ ReferenceError: Button is not defined
+[00:20:47.005] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.006] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.007] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.008] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.010] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.010] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.011] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.013] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.014] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.016] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.017] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.019] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.021] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.022] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.023] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.024] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.026] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.027] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.028] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.029] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.534] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.536] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.538] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.539] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.541] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.543] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.545] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.547] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.549] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.551] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.553] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.555] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.557] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.559] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.560] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.562] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.563] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.565] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.567] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:20:47.570] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:20:47.573] Browser ERROR   uncaughtError: ReferenceError: Button is not defined
+[00:20:59.786] Server  LOG      ✓ Compiled in 203ms
+[00:21:26.058] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.061] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:26.065] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.072] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:26.962] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.964] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:26.965] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.966] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:26.967] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.968] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:26.969] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.970] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:26.972] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.973] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:26.974] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.975] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:26.976] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.978] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:26.979] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.982] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:26.984] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.985] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:26.988] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:26.991] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:27.131] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:27.591] Browser WARN    Image with src "/SchoolkidHero.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:21:27.591] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/services/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+        <SegmentViewNode type="page" pagePath="services/s...">
+          <SegmentTrieNode>
+          <ClientPageRoot Component={function SchoolRunsPage} serverProvidedParams={{...}}>
+            <SchoolRunsPage params={Promise} searchParams={Promise}>
+              <div className="min-h-scre...">
+                <nav>
+                <section>
+                <section>
+                <section>
+                <section>
+                <section>
+                <section id="enquiry-form" className="py-20 bg-w...">
+                  <div className="container ...">
+                    <div className="max-w-6xl ...">
+                      <div>
+                      <div className="lg:w-1/2 w...">
+                        <div className="bg-white p...">
+                          <h3>
+                          <form className="space-y-4" onSubmit={function onSubmit}>
+                            <div className="grid md:gr...">
+                              <div className="space-y-2">
+                                <Label>
+                                <Input id="name" placeholder="John Doe" value="" onChange={function onChange} ...>
+                                  <input
+                                    type={undefined}
+                                    data-slot="input"
+                                    className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
+                                    id="name"
+                                    placeholder="John Doe"
+                                    value=""
+                                    onChange={function onChange}
+-                                   fdprocessedid="f6vbi9"
+                                  >
+                              <div className="space-y-2">
+                                <Label>
+                                <Input id="phone" placeholder="082 123 4567" value="" onChange={function onChange} ...>
+                                  <input
+                                    type={undefined}
+                                    data-slot="input"
+                                    className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
+                                    id="phone"
+                                    placeholder="082 123 4567"
+                                    value=""
+                                    onChange={function onChange}
+-                                   fdprocessedid="13b95"
+                                  >
+                            <div className="space-y-2">
+                              <Label>
+                              <Input id="pickup" placeholder="e.g. 12 Ma..." value="" onChange={function onChange} ...>
+                                <input
+                                  type={undefined}
+                                  data-slot="input"
+                                  className="file:text-foreground placeholder:text-muted-foreground selection:bg-prima..."
+                                  id="pickup"
+                                  placeholder="e.g. 12 Main St, Midrand"
+                                  value=""
+                                  onChange={function onChange}
+-                                 fdprocessedid="dw079"
+                                >
+                            <div className="space-y-2">
+                              <Label>
+                              <Input id="school" placeholder="e.g. Curro..." value="" onChange={function onChange} ...>
+                                <input
+                                  type={undefined}
+                                  data-slot="input"
+                                  className="file:text-foreground placeholder:text-muted-foreground selection:bg-prima..."
+                                  id="school"
+                                  placeholder="e.g. Curro Waterfall"
+                                  value=""
+                                  onChange={function onChange}
+-                                 fdprocessedid="hbm9om"
+                                >
+                            <div className="grid md:gr...">
+                              <div className="space-y-2">
+                                <Label>
+                                <select
+                                  value="Return Trip"
+                                  onChange={function onChange}
+                                  className="w-full h-12 px-3 rounded-xl border-transparent bg-[#F5F5F0] text-sm focus..."
+-                                 fdprocessedid="crr3a"
+                                >
+                              <div className="space-y-2">
+                                <Label>
+                                <select
+                                  value="1 Child"
+                                  onChange={function onChange}
+                                  className="w-full h-12 px-3 rounded-xl border-transparent bg-[#F5F5F0] text-sm focus..."
+-                                 fdprocessedid="hrujd7"
+                                >
+                            <div>
+                            <Button onClick={function handleEnquirySubmit} className="w-full h-1...">
+                              <button
+                                data-slot="button"
+                                className={"inline-flex items-center justify-center gap-2 whitespace-nowrap transitio..."}
+                                onClick={function handleEnquirySubmit}
+-                               fdprocessedid="dzpehe"
+                              >
+        ...
+      ...
+
+[00:21:27.718] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:21:27.718] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/services/school-runs","route":"/services/school-runs"}
+[00:21:27.718] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/school-runs color: rgb(120, 120, 120) color: inherit {"dp":"/services/school-runs","o":"http://localhost:3000/services/school-runs","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764775814643}
+[00:21:34.602] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:34.603] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:34.604] Server  WARN     ⚠ [next]/internal/font/google/geist_a7695b8e.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a7695b8e.module.css
+    [next]/internal/font/google/geist_a7695b8e.js
+    ./app/layout.tsx
+
+
+[00:21:34.605] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_354fc78.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_354fc78.module.css
+    [next]/internal/font/google/geist_mono_354fc78.js
+    ./app/layout.tsx
+
+
+[00:21:35.493] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764775822272}
+[00:32:27.207] Server  LOG      ✓ Compiled in 2.1s
+[00:35:36.500] Server  LOG      ✓ Compiled in 760ms

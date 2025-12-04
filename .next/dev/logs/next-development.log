@@ -1,7 +1,1056 @@
-[00:00:05.725] Server  LOG      ✓ Ready in 3.8s
-[00:00:08.784] Server  LOG      ○ Compiling / ...
-[00:00:15.008] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.530] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:15.530] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:15.530] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764785086367}
-[00:00:39.809] Server  LOG      ✓ Compiled in 218ms
+[00:00:03.633] Server  LOG      ✓ Ready in 2.3s
+[00:00:06.715] Server  LOG      ○ Compiling / ...
+[00:00:10.486] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.734] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.088] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:11.088] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:11.088] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764860531988}
+[00:00:11.876] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <DevRootHTTPAccessFallbackBoundary>
+      <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <Head>
+              <__next_root_layout_boundary__>
+                <SegmentViewNode type="layout" pagePath="layout.tsx">
+                  <SegmentTrieNode>
+                  <link>
+                  <script>
+                  <script>
+                  <script>
+                  <RootLayout>
+                    <html lang="en">
+                      <body className="font-sans ...">
+                        <Fe>
+                        <Navbar>
+                          <header className="fixed top-...">
+                            <nav className="flex items...">
+                              <div>
+                              <div className="hidden md:...">
+                                <LinkComponent>
+                                <div className="relative" onMouseEnter={function onMouseEnter} ...>
+                                  <button
+                                    className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1"
+-                                   fdprocessedid="78iz4p"
+                                  >
+                                <LinkComponent>
+                                <LinkComponent>
+                                <LinkComponent>
+                                <LinkComponent href="/booking">
+                                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                    <button
+                                      className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl"
+-                                     fdprocessedid="rr7zbh"
+                                    >
++                                     Book Online
+                              ...
+                        ...
+                          <div className="min-h-scre...">
+                            ...
+                              <div className="relative g...">
+                                <div>
+                                  <h1>
+                                  <p>
+                                  <LinkComponent href="#fleet">
+                                    <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                      <button
+                                        className="bg-white hover:bg-[#A4C639] hover:text-white text-black px-8 py-4 r..."
+-                                       fdprocessedid="tzpvd"
+                                      >
++                                       View Our Fleet
+                                <div className="bg-white/9...">
+                                  <h2>
+                                  <form className="space-y-3">
+                                    <Input placeholder="Full Name" className="bg-gray-50..." value="" ...>
+                                      <input
+                                        type={undefined}
+                                        data-slot="input"
+                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
+                                        placeholder="Full Name"
+                                        value=""
+                                        onChange={function onChange}
+-                                       fdprocessedid="01jens"
+                                      >
+                                    <Input placeholder="Phone Number" type="tel" className="bg-gray-50..." value="" ...>
+                                      <input
+                                        type="tel"
+                                        data-slot="input"
+                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
+                                        placeholder="Phone Number"
+                                        value=""
+                                        onChange={function onChange}
+-                                       fdprocessedid="6kfvu6"
+                                      >
+                                    ...
+                                      <Slot ref={function}>
+                                        <SlotClone ref={function}>
+                                          <Primitive.button type="button" role="combobox" aria-controls="radix-_R_7..." ...>
+                                            <button
+                                              type="button"
+                                              role="combobox"
+                                              aria-controls="radix-_R_7a35erlb_"
+                                              aria-expanded={false}
+                                              aria-required={undefined}
+                                              aria-autocomplete="none"
+                                              dir="ltr"
+                                              data-state="closed"
+                                              disabled={false}
+                                              data-disabled={undefined}
+                                              data-placeholder=""
+                                              data-slot="select-trigger"
+                                              data-size="default"
+                                              className={"data-[placeholder]:text-muted-foreground [&_svg:not([class*..."}
+                                              onClick={function handleEvent}
+                                              onPointerDown={function handleEvent}
+                                              onKeyDown={function handleEvent}
+                                              ref={function}
+-                                             fdprocessedid="1mfdm"
+                                            >
+                                    <Input placeholder="Pickup Loc..." className="bg-gray-50..." value="" ...>
+                                      <input
+                                        type={undefined}
+                                        data-slot="input"
+                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
+                                        placeholder="Pickup Location"
+                                        value=""
+                                        onChange={function onChange}
+-                                       fdprocessedid="kgimv"
+                                      >
+                                    <button
+                                      type="button"
+                                      className="w-full bg-black hover:bg-gray-800 text-white py-5 rounded-lg text-bas..."
+                                      onClick={function handleQuoteSubmit}
+-                                     fdprocessedid="f6541h"
+                                    >
++                                     Get My Quote
+                            <section>
+                            <section id="services" className="py-20 bg-w...">
+                              <div className="max-w-7xl ...">
+                                <div>
+                                <div className="grid md:gr...">
+                                  ...
+                                    <LinkComponent href="/services/...">
+                                      <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                        <button
+                                          className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                         fdprocessedid="2gu7un"
+                                        >
++                                         Read More
+                                  ...
+                                    <LinkComponent href="/services/...">
+                                      <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                        <button
+                                          className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                         fdprocessedid="imilr"
+                                        >
++                                         Read More
+                                  ...
+                                    <LinkComponent href="/services/...">
+                                      <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                        <button
+                                          className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                         fdprocessedid="p1pjor"
+                                        >
++                                         Read More
+                                  ...
+                                    <LinkComponent href="/services/...">
+                                      <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                        <button
+                                          className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                         fdprocessedid="f0oons"
+                                        >
++                                         Read More
+                                <div className="text-cente...">
+                                  <LinkComponent href="/services">
+                                    <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                      <button
+                                        className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-8 py-4 rounded-xl tex..."
+-                                       fdprocessedid="kndlem"
+                                      >
++                                       Book A Service
+                            <section>
+                            <section>
+                            <section>
+                            <section>
+                            <section>
+                            ...
+                              <LinkComponent href="/booking">
+                                <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                  <button
+                                    className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
+-                                   fdprocessedid="1gj1w"
+                                  >
++                                   Book Now
+                            ...
+                        ...
+              ...
+
+[00:00:11.876] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:11.876] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:11.876] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764860532306}
+[00:08:50.242] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:50.688] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function MRFloatLanding} serverProvidedParams={{...}}>
+                <MRFloatLanding params={Promise} searchParams={Promise}>
+                  <div className="min-h-scre...">
+                    <section id="home" className="relative m...">
+                      <div className="container ...">
+                        <div className="relative w...">
+                          <div>
+                          <div className="relative g...">
+                            <div>
+                            <div className="bg-white/9...">
+                              <h2>
+                              <form className="space-y-3">
+                                <Input>
+                                <Input>
+                                <Select>
+                                <Input placeholder="Pickup Loc..." className="bg-gray-50..." value="" ...>
+                                  <input
+                                    type={undefined}
+                                    data-slot="input"
+                                    className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
+                                    placeholder="Pickup Location"
+                                    value=""
+                                    onChange={function onChange}
+-                                   fdprocessedid="fcraa"
+                                  >
+                                <button
+                                  type="button"
+                                  className="w-full bg-black hover:bg-gray-800 text-white py-5 rounded-lg text-base fo..."
+                                  onClick={function handleQuoteSubmit}
+-                                 fdprocessedid="8q480a"
+                                >
++                                 Get My Quote
+                    <section>
+                    <section id="services" className="py-20 bg-w...">
+                      <div className="max-w-7xl ...">
+                        <div>
+                        <div className="grid md:gr...">
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="uuhvu"
+                                >
++                                 Read More
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="kagm36"
+                                >
++                                 Read More
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="h3wwza"
+                                >
++                                 Read More
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="gx47f"
+                                >
++                                 Read More
+                        <div className="text-cente...">
+                          <LinkComponent href="/services">
+                            <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                              <button
+                                className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-8 py-4 rounded-xl text-lg"
+-                               fdprocessedid="5xt14"
+                              >
++                               Book A Service
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section id="booking-cta" className="py-20 bg-w...">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <p>
+                        <LinkComponent href="/booking">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                            <button
+                              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
+-                             fdprocessedid="7ujt6a"
+                            >
++                             Book Now
+                    ...
+            ...
+          ...
+
+[00:08:50.846] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:50.846] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:08:50.846] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764861051748}
+[00:19:40.801] Server  LOG      ✓ Compiled in 683ms
+[00:19:44.551] Server  LOG      ○ Compiling /_not-found/page ...
+[00:19:47.565] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:48.020] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function MRFloatLanding} serverProvidedParams={{...}}>
+                <MRFloatLanding params={Promise} searchParams={Promise}>
+                  <div className="min-h-scre...">
+                    <section id="home" className="relative m...">
+                      <div className="container ...">
+                        <div className="relative w...">
+                          <div>
+                          <div className="relative g...">
+                            <div>
+                            <div className="bg-white/9...">
+                              <h2>
+                              <form className="space-y-3">
+                                <Input>
+                                <Input>
+                                ...
+                                  <Slot ref={function}>
+                                    <SlotClone ref={function}>
+                                      <Primitive.button type="button" role="combobox" aria-controls="radix-_R_7..." ...>
+                                        <button
+                                          type="button"
+                                          role="combobox"
+                                          aria-controls="radix-_R_7a35erlb_"
+                                          aria-expanded={false}
+                                          aria-required={undefined}
+                                          aria-autocomplete="none"
+                                          dir="ltr"
+                                          data-state="closed"
+                                          disabled={false}
+                                          data-disabled={undefined}
+                                          data-placeholder=""
+                                          data-slot="select-trigger"
+                                          data-size="default"
+                                          className={"data-[placeholder]:text-muted-foreground [&_svg:not([class*='te..."}
+                                          onClick={function handleEvent}
+                                          onPointerDown={function handleEvent}
+                                          onKeyDown={function handleEvent}
+                                          ref={function}
+-                                         fdprocessedid="elf0ku"
+                                        >
+                                <Input placeholder="Pickup Loc..." className="bg-gray-50..." value="" ...>
+                                  <input
+                                    type={undefined}
+                                    data-slot="input"
+                                    className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
+                                    placeholder="Pickup Location"
+                                    value=""
+                                    onChange={function onChange}
+-                                   fdprocessedid="f3w2bd"
+                                  >
+                                <button
+                                  type="button"
+                                  className="w-full bg-black hover:bg-gray-800 text-white py-5 rounded-lg text-base fo..."
+                                  onClick={function handleQuoteSubmit}
+-                                 fdprocessedid="b58djc"
+                                >
++                                 Get My Quote
+                    <section>
+                    <section id="services" className="py-20 bg-w...">
+                      <div className="max-w-7xl ...">
+                        <div>
+                        <div className="grid md:gr...">
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="3d59"
+                                >
++                                 Read More
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="2kjdrq"
+                                >
++                                 Read More
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="8jteng"
+                                >
++                                 Read More
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="fmgt3m"
+                                >
++                                 Read More
+                        <div className="text-cente...">
+                          <LinkComponent href="/services">
+                            <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                              <button
+                                className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-8 py-4 rounded-xl text-lg"
+-                               fdprocessedid="d29joh"
+                              >
++                               Book A Service
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section id="booking-cta" className="py-20 bg-w...">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <p>
+                        <LinkComponent href="/booking">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                            <button
+                              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
+-                             fdprocessedid="u1jilu"
+                            >
++                             Book Now
+                    ...
+            ...
+          ...
+
+[00:19:48.189] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:19:48.189] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:19:48.189] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764861709083}
+[00:19:54.291] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:54.682] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:19:54.682] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:19:54.682] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764861715583}
+[00:22:47.342] Server  LOG      ✓ Compiled in 155ms
+[00:22:50.429] Server  LOG      ✓ Compiled in 394ms
+[00:22:55.752] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:56.204] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:22:56.204] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:22:56.204] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764861897097}
+[00:23:04.999] Server  LOG      ✓ Compiled in 187ms
+[00:23:15.324] Server  LOG      ✓ Compiled in 361ms
+[00:23:17.903] Server  LOG      ✓ Compiled in 288ms
+[00:23:32.357] Server  LOG      ✓ Compiled in 141ms
+[00:23:35.079] Server  LOG      ✓ Compiled in 190ms
+[00:23:48.137] Server  LOG      ✓ Compiled in 350ms
+[00:23:58.598] Server  LOG      ✓ Compiled in 140ms
+[00:24:13.007] Server  LOG      ✓ Compiled in 193ms
+[00:24:20.431] Server  LOG      ✓ Compiled in 238ms
+[00:24:20.867] Browser ERROR   ./components/ui/Navbar.tsx:25:17
+Parsing ecmascript source code failed
+  23 |                 width={200} // Adjust width as needed
+  24 |                 height={} // Adjust height as needed
+> 25 |                 className="h-10 w-auto" // Optional: Tailwind classes for fine-tuning size
+     |                 ^^^^^^^^^
+  26 |               />
+  27 |             </Link>
+  28 |           </div>
+
+Expected '</', got 'className'
+
+Import trace:
+  Server Component:
+    ./components/ui/Navbar.tsx
+    ./app/layout.tsx
+[00:24:26.232] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:26.639] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function MRFloatLanding} serverProvidedParams={{...}}>
+                <MRFloatLanding params={Promise} searchParams={Promise}>
+                  <div className="min-h-scre...">
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section id="booking-cta" className="py-20 bg-w...">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <p>
+                        <LinkComponent href="/booking">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                            <button
+                              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
+-                             fdprocessedid="rnwso"
+                            >
++                             Book Now
+                    ...
+            ...
+          ...
+
+[00:24:26.784] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:24:26.784] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:24:26.784] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764861987679}
+[00:24:37.002] Server  LOG      ✓ Compiled in 131ms
+[00:26:44.712] Server  LOG      ✓ Compiled in 143ms
+[00:30:44.408] Server  LOG      ✓ Compiled in 198ms
+[00:30:59.267] Server  LOG      ✓ Compiled in 162ms
+[00:32:58.828] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:59.420] Browser WARN    Image with src "http://localhost:3000/FloatLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:32:59.420] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:32:59.420] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:32:59.420] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764862500317}
+[00:33:56.040] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:56.569] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function MRFloatLanding} serverProvidedParams={{...}}>
+                <MRFloatLanding params={Promise} searchParams={Promise}>
+                  <div className="min-h-scre...">
+                    <section>
+                    <section>
+                    <section id="services" className="py-20 bg-w...">
+                      <div className="max-w-7xl ...">
+                        <div>
+                        ...
+                          <div data-slot="card-content" className="p-6 flex f...">
+                            <div>
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="hslwyn"
+                                >
++                                 Read More
+                        <div className="text-cente...">
+                          <LinkComponent href="/services">
+                            <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                              <button
+                                className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-8 py-4 rounded-xl text-lg"
+-                               fdprocessedid="vp0pp"
+                              >
++                               Book A Service
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section id="booking-cta" className="py-20 bg-w...">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <p>
+                        <LinkComponent href="/booking">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                            <button
+                              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
+-                             fdprocessedid="xv9aqb"
+                            >
++                             Book Now
+                    ...
+            ...
+          ...
+
+[00:33:56.569] Browser WARN    Image with src "http://localhost:3000/FloatLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:33:56.569] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:33:56.569] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:33:56.569] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764862557471}
+[00:34:21.998] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:22.611] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function MRFloatLanding} serverProvidedParams={{...}}>
+                <MRFloatLanding params={Promise} searchParams={Promise}>
+                  <div className="min-h-scre...">
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section id="booking-cta" className="py-20 bg-w...">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <p>
+                        <LinkComponent href="/booking">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                            <button
+                              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
+-                             fdprocessedid="iobjnc"
+                            >
++                             Book Now
+                    ...
+            ...
+          ...
+
+[00:34:22.611] Browser WARN    Image with src "http://localhost:3000/FloatLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:34:22.611] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:34:22.611] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:34:22.611] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764862583508}
+[00:34:25.645] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:25.962] Browser WARN    Image with src "http://localhost:3000/FloatLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:34:25.962] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:34:25.962] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:34:25.962] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764862586866}
+[00:34:29.555] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:30.037] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function MRFloatLanding} serverProvidedParams={{...}}>
+                <MRFloatLanding params={Promise} searchParams={Promise}>
+                  <div className="min-h-scre...">
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section id="booking-cta" className="py-20 bg-w...">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <p>
+                        <LinkComponent href="/booking">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                            <button
+                              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
+-                             fdprocessedid="tx6to"
+                            >
++                             Book Now
+                    ...
+            ...
+          ...
+
+[00:34:30.037] Browser WARN    Image with src "http://localhost:3000/FloatLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:34:30.037] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:34:30.037] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:34:30.037] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764862590935}
+[00:34:57.281] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:57.745] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function MRFloatLanding} serverProvidedParams={{...}}>
+                <MRFloatLanding params={Promise} searchParams={Promise}>
+                  <div className="min-h-scre...">
+                    <section id="home" className="relative m...">
+                      <div className="container ...">
+                        <div className="relative w...">
+                          <div>
+                          <div className="relative g...">
+                            <div>
+                            <div className="bg-white/9...">
+                              <h2>
+                              <form className="space-y-3">
+                                <Input>
+                                <Input>
+                                <Select>
+                                <Input placeholder="Pickup Loc..." className="bg-gray-50..." value="" ...>
+                                  <input
+                                    type={undefined}
+                                    data-slot="input"
+                                    className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
+                                    placeholder="Pickup Location"
+                                    value=""
+                                    onChange={function onChange}
+-                                   fdprocessedid="ha33wa"
+                                  >
+                                <button
+                                  type="button"
+                                  className="w-full bg-black hover:bg-gray-800 text-white py-5 rounded-lg text-base fo..."
+                                  onClick={function handleQuoteSubmit}
+-                                 fdprocessedid="hz8lmw"
+                                >
++                                 Get My Quote
+                    <section>
+                    <section id="services" className="py-20 bg-w...">
+                      <div className="max-w-7xl ...">
+                        <div>
+                        <div className="grid md:gr...">
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="l8s039"
+                                >
++                                 Read More
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="ciin5a"
+                                >
++                                 Read More
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="7bvv3"
+                                >
++                                 Read More
+                          ...
+                            <LinkComponent href="/services/...">
+                              <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                <button
+                                  className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                 fdprocessedid="v05g4p"
+                                >
++                                 Read More
+                        <div className="text-cente...">
+                          <LinkComponent href="/services">
+                            <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                              <button
+                                className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-8 py-4 rounded-xl text-lg"
+-                               fdprocessedid="6punq"
+                              >
++                               Book A Service
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section>
+                    <section id="booking-cta" className="py-20 bg-w...">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <p>
+                        <LinkComponent href="/booking">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                            <button
+                              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
+-                             fdprocessedid="8ttld"
+                            >
++                             Book Now
+                    ...
+            ...
+          ...
+
+[00:34:57.745] Browser WARN    Image with src "http://localhost:3000/FloatLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:34:57.745] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:34:57.745] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:34:57.745] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764862618640}
+[00:41:53.095] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:53.753] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <DevRootHTTPAccessFallbackBoundary>
+      <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <Head>
+              <__next_root_layout_boundary__>
+                <SegmentViewNode type="layout" pagePath="layout.tsx">
+                  <SegmentTrieNode>
+                  <link>
+                  <script>
+                  <script>
+                  <script>
+                  <RootLayout>
+                    <html lang="en">
+                      <body className="font-sans ...">
+                        <Fe>
+                        <Navbar>
+                          <header className="fixed top-...">
+                            <nav className="flex items...">
+                              <div>
+                              <div className="hidden md:...">
+                                <LinkComponent>
+                                <div className="relative" onMouseEnter={function onMouseEnter} ...>
+                                  <button
+                                    className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1"
+-                                   fdprocessedid="2pre"
+                                  >
+                                <LinkComponent>
+                                <LinkComponent>
+                                <LinkComponent>
+                                <LinkComponent href="/booking">
+                                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                    <button
+                                      className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl"
+-                                     fdprocessedid="424rg"
+                                    >
++                                     Book Online
+                              ...
+                        ...
+                          <div className="min-h-scre...">
+                            ...
+                              <div className="relative g...">
+                                <div>
+                                  <h1>
+                                  <p>
+                                  <LinkComponent href="#fleet">
+                                    <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                      <button
+                                        className="bg-white hover:bg-[#A4C639] hover:text-white text-black px-8 py-4 r..."
+-                                       fdprocessedid="b647t"
+                                      >
++                                       View Our Fleet
+                                <div className="bg-white/9...">
+                                  <h2>
+                                  <form className="space-y-3">
+                                    <Input placeholder="Full Name" className="bg-gray-50..." value="" ...>
+                                      <input
+                                        type={undefined}
+                                        data-slot="input"
+                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
+                                        placeholder="Full Name"
+                                        value=""
+                                        onChange={function onChange}
+-                                       fdprocessedid="sz5gv"
+                                      >
+                                    <Input placeholder="Phone Number" type="tel" className="bg-gray-50..." value="" ...>
+                                      <input
+                                        type="tel"
+                                        data-slot="input"
+                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
+                                        placeholder="Phone Number"
+                                        value=""
+                                        onChange={function onChange}
+-                                       fdprocessedid="c4nr8q"
+                                      >
+                                    ...
+                                      <Slot ref={function}>
+                                        <SlotClone ref={function}>
+                                          <Primitive.button type="button" role="combobox" aria-controls="radix-_R_7..." ...>
+                                            <button
+                                              type="button"
+                                              role="combobox"
+                                              aria-controls="radix-_R_7a35erlb_"
+                                              aria-expanded={false}
+                                              aria-required={undefined}
+                                              aria-autocomplete="none"
+                                              dir="ltr"
+                                              data-state="closed"
+                                              disabled={false}
+                                              data-disabled={undefined}
+                                              data-placeholder=""
+                                              data-slot="select-trigger"
+                                              data-size="default"
+                                              className={"data-[placeholder]:text-muted-foreground [&_svg:not([class*..."}
+                                              onClick={function handleEvent}
+                                              onPointerDown={function handleEvent}
+                                              onKeyDown={function handleEvent}
+                                              ref={function}
+-                                             fdprocessedid="f89g9"
+                                            >
+                                    <Input placeholder="Pickup Loc..." className="bg-gray-50..." value="" ...>
+                                      <input
+                                        type={undefined}
+                                        data-slot="input"
+                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
+                                        placeholder="Pickup Location"
+                                        value=""
+                                        onChange={function onChange}
+-                                       fdprocessedid="o18jjw"
+                                      >
+                                    <button
+                                      type="button"
+                                      className="w-full bg-black hover:bg-gray-800 text-white py-5 rounded-lg text-bas..."
+                                      onClick={function handleQuoteSubmit}
+-                                     fdprocessedid="vhya6"
+                                    >
++                                     Get My Quote
+                            <section>
+                            <section id="services" className="py-20 bg-w...">
+                              <div className="max-w-7xl ...">
+                                <div>
+                                <div className="grid md:gr...">
+                                  ...
+                                    <LinkComponent href="/services/...">
+                                      <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                        <button
+                                          className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                         fdprocessedid="fwj4t"
+                                        >
++                                         Read More
+                                  ...
+                                    <LinkComponent href="/services/...">
+                                      <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                        <button
+                                          className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                         fdprocessedid="fnso8u"
+                                        >
++                                         Read More
+                                  ...
+                                    <LinkComponent href="/services/...">
+                                      <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                        <button
+                                          className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                         fdprocessedid="9o0g7a"
+                                        >
++                                         Read More
+                                  ...
+                                    <LinkComponent href="/services/...">
+                                      <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                        <button
+                                          className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl"
+-                                         fdprocessedid="1nw41p"
+                                        >
++                                         Read More
+                                <div className="text-cente...">
+                                  <LinkComponent href="/services">
+                                    <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                      <button
+                                        className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-8 py-4 rounded-xl tex..."
+-                                       fdprocessedid="u6i5wo"
+                                      >
++                                       Book A Service
+                            <section>
+                            <section>
+                            <section>
+                            <section>
+                            <section>
+                            ...
+                              <LinkComponent href="/booking">
+                                <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
+                                  <button
+                                    className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6"
+-                                   fdprocessedid="srsunj"
+                                  >
++                                   Book Now
+                            ...
+                        ...
+              ...
+
+[00:41:53.753] Browser WARN    Image with src "http://localhost:3000/FloatLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:53.753] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:41:53.753] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:41:53.753] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1764863034655}

@@ -1,18 +1,33 @@
-"use client"
-import { useRouter } from "next/navigation"
-import { useState } from "react"
-import Link from "next/link"
-import { Car, Package, CreditCard, MessageCircle, Mail, Phone, Smartphone, UserCheck } from "lucide-react"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent } from "@/components/ui/card"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+"use client";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import Link from "next/link";
+import {
+  Car,
+  Luggage,
+  CreditCard,
+  MessageCircle,
+  Mail,
+  Phone,
+  Smartphone,
+  UserCheck,
+} from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function MRFloatLanding() {
-  const [name, setName] = useState("")
-  const [phone, setPhone] = useState("")
-  const [service, setService] = useState("")
-  const [pickup, setPickup] = useState("")
-  const router = useRouter()
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [service, setService] = useState("");
+  const [pickup, setPickup] = useState("");
+  const router = useRouter();
 
   const handleQuoteSubmit = () => {
     const query = new URLSearchParams({
@@ -26,7 +41,6 @@ export default function MRFloatLanding() {
 
   return (
     <div className="min-h-screen bg-white">
-
       {/* Hero Section - Desktop Version */}
       <section
         id="home"
@@ -324,7 +338,6 @@ export default function MRFloatLanding() {
       </section>
 
       {/* Our Fleet Section */}
-      {/* Our Fleet Section */}
       <section id="fleet" className="py-20 bg-[#F5F5F0]">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-12">
@@ -352,7 +365,7 @@ export default function MRFloatLanding() {
                     <Car className="w-4 h-4" /> 5 seats
                   </span>
                   <span className="flex items-center gap-1">
-                    <Package className="w-4 h-4" /> 2–3 bags
+                    <Luggage className="w-4 h-4" /> 2–3 bags
                   </span>
                 </div>
               </CardContent>
@@ -375,7 +388,7 @@ export default function MRFloatLanding() {
                     <Car className="w-4 h-4" /> 5 seats
                   </span>
                   <span className="flex items-center gap-1">
-                    <Package className="w-4 h-4" /> 3–4 bags
+                    <Luggage className="w-4 h-4" /> 3–4 bags
                   </span>
                 </div>
               </CardContent>
@@ -398,7 +411,7 @@ export default function MRFloatLanding() {
                     <Car className="w-4 h-4" /> 5 seats
                   </span>
                   <span className="flex items-center gap-1">
-                    <Package className="w-4 h-4" /> 3–4 bags
+                    <Luggage className="w-4 h-4" /> 3–4 bags
                   </span>
                 </div>
               </CardContent>
@@ -406,6 +419,7 @@ export default function MRFloatLanding() {
           </div>
         </div>
       </section>
+
       {/* About Section */}
       <section id="about" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
@@ -606,7 +620,10 @@ export default function MRFloatLanding() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <a href="tel:+263785953345" className="block hover:scale-105 transition-transform">
+            <a
+              href="tel:+263785953345"
+              className="block hover:scale-105 transition-transform"
+            >
               <Card className="rounded-3xl border-0 shadow-md text-center h-full">
                 <CardContent className="p-8">
                   <div className="w-16 h-16 bg-[#A4C639] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -618,7 +635,10 @@ export default function MRFloatLanding() {
               </Card>
             </a>
 
-            <a href="mailto:aaronphiri707@gmail.com" className="block hover:scale-105 transition-transform">
+            <a
+              href="mailto:aaronphiri707@gmail.com"
+              className="block hover:scale-105 transition-transform"
+            >
               <Card className="rounded-3xl border-0 shadow-md text-center h-full">
                 <CardContent className="p-8">
                   <div className="w-16 h-16 bg-[#A4C639] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -630,7 +650,12 @@ export default function MRFloatLanding() {
               </Card>
             </a>
 
-            <a href="https://wa.me/263785953345" target="_blank" rel="noopener noreferrer" className="block hover:scale-105 transition-transform">
+            <a
+              href="https://wa.me/263785953345"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block hover:scale-105 transition-transform"
+            >
               <Card className="rounded-3xl border-0 shadow-md text-center h-full">
                 <CardContent className="p-8">
                   <div className="w-16 h-16 bg-[#A4C639] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -753,8 +778,19 @@ export default function MRFloatLanding() {
             <div>
               <h4 className="font-bold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="tel:+263785953345" className="hover:text-[#A4C639]">+263 78 595 3345</a></li>
-                <li><a href="mailto:aaronphiri707@gmail.com" className="hover:text-[#A4C639]">aaronphiri707@gmail.com</a></li>
+                <li>
+                  <a href="tel:+263785953345" className="hover:text-[#A4C639]">
+                    +263 78 595 3345
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:aaronphiri707@gmail.com"
+                    className="hover:text-[#A4C639]"
+                  >
+                    aaronphiri707@gmail.com
+                  </a>
+                </li>
                 <li>Bulawayo, Zimbabwe</li>
               </ul>
             </div>

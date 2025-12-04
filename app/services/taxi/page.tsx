@@ -62,7 +62,7 @@ export default function TaxiPage() {
           <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light">
             From quick local taxi runs to private inter-city travel.
             <br className="hidden md:block" />
-            Book direct or find us on InDrive & Bolt.
+            Book direct or find us on InDrive.
           </p>
 
           <a href="#fleet">
@@ -102,7 +102,7 @@ export default function TaxiPage() {
               </div>
               <h3 className="font-bold text-xl mb-2">App Friendly</h3>
               <p className="text-gray-600">
-                Available on InDrive & Bolt, or book direct to save fees.
+                Available on InDrive, or book direct to save fees.
               </p>
             </div>
 

@@ -50,7 +50,7 @@ export default function MRFloatLanding() {
           <div className="relative w-full bg-gradient-to-br from-gray-50 togray-100 rounded-[2.5rem] overflow-hidden shadow-2xl min-h-[85vh]">
             <div className="absolute inset-0">
               <img
-                src="/HeroBlue.png"
+                src="/HeroBluecrop.webp"
                 alt="City transport"
                 className="w-full h-full object-cover"
               />
@@ -135,7 +135,7 @@ export default function MRFloatLanding() {
           <div className="relative w-full bg-gradient-to-br from-gray-50 to-gray-100 rounded-[2rem] overflow-hidden shadow-lg min-h-[80vh] flex flex-col">
             <div className="absolute inset-0">
               <img
-                src="/HeroBlue.png"
+                src="/HeroBlue.webp"
                 alt="City transport"
                 className="w-full h-full object-cover"
               />

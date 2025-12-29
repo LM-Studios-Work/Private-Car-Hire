@@ -60,7 +60,7 @@ export default function AirportServicePage() {
           <p className="text-lg text-gray-700 leading-relaxed text-center">
             Avoid the chaos of airport parking and the uncertainty of
             ride-hailing apps. MR FLOAT offers a seamless Meet & Greet service
-            for OR Tambo and Lanseria. We monitor your flight schedule manually,
+            for Harare airport and Bulawayo airport. We monitor your flight schedule manually,
             ensuring your driver is waiting at arrivals whether you land early
             or delayed.
           </p>

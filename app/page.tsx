@@ -427,7 +427,7 @@ export default function MRFloatLanding() {
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
             MR FLOAT is your trusted transport partner, providing safe,
             reliable, and professional rides and delivery services across
-            Johannesburg and beyond. Our mission is to make city travel
+            Zimbabwe and beyond. Our mission is to make city travel
             seamless, comfortable, and convenient for every client, whether for
             daily commutes, airport transfers, school runs, or deliveries.
           </p>

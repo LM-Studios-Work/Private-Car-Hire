@@ -19,7 +19,7 @@ export default function CBDErrandsPage() {
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <Image
-          src="/CbdHero.png" // Ensure you have a relevant city image
+          src="/CbdHero.webp" // Ensure you have a relevant city image
           alt="CBD Errands"
           fill
           className="object-cover"

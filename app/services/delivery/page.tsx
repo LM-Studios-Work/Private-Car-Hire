@@ -19,7 +19,7 @@ export default function DeliveryPage() {
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <Image
-          src="/DeliveryHero.png" // Ensure you have a relevant delivery image
+          src="/DeliveryHero.webp" // Ensure you have a relevant delivery image
           alt="Delivery Service"
           fill
           className="object-cover"

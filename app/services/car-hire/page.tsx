@@ -40,7 +40,7 @@ export default function CarHirePage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/HeroHire.png"
+            src="/HeroHire.webp"
             alt="Luxury Car Hire"
             fill
             className="object-cover"

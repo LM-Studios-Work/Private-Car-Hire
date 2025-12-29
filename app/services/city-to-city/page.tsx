@@ -28,7 +28,7 @@ export default function InterCityPage() {
 
         {/* Background Image */}
         <Image
-          src="/Intercity.png"
+          src="/Intercity.webp"
           alt="Transport Services"
           fill
           className="object-cover"

@@ -228,7 +228,6 @@ export default function MRFloatLanding() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Car Hire */}
-            {/* Car Hire */}
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0 h-full flex flex-col">
               <div className="aspect-video md:h-48 w-full overflow-hidden">
                 <img
@@ -257,7 +256,7 @@ export default function MRFloatLanding() {
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0 h-full flex flex-col">
               <div className="aspect-video md:h-48 w-full overflow-hidden">
                 <img
-                  src="/Uber.jpeg"
+                  src="/Uber.webp"
                   alt="Taxi rides"
                   className="w-full h-full object-cover object-top"
                 />
@@ -282,7 +281,7 @@ export default function MRFloatLanding() {
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0 h-full flex flex-col">
               <div className="aspect-video md:h-48 w-full overflow-hidden">
                 <img
-                  src="/Airport.jpeg"
+                  src="/Airport.webp"
                   alt="Airport shuttle"
                   className="w-full h-full object-cover object-top"
                 />
@@ -306,7 +305,7 @@ export default function MRFloatLanding() {
             <Card className="overflow-hidden hover:shadow-xl transition-shadow rounded-3xl border-0 h-full flex flex-col">
               <div className="aspect-video md:h-48 w-full overflow-hidden">
                 <img
-                  src="/Courier.jpeg"
+                  src="/Courier.webp"
                   alt="Delivery service"
                   className="w-full h-full object-cover object-top"
                 />
@@ -427,9 +426,9 @@ export default function MRFloatLanding() {
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
             MR FLOAT is your trusted transport partner, providing safe,
             reliable, and professional rides and delivery services across
-            Zimbabwe and beyond. Our mission is to make city travel
-            seamless, comfortable, and convenient for every client, whether for
-            daily commutes, airport transfers, school runs, or deliveries.
+            Zimbabwe and beyond. Our mission is to make city travel seamless,
+            comfortable, and convenient for every client, whether for daily
+            commutes, airport transfers, school runs, or deliveries.
           </p>
         </div>
       </section>

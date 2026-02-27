@@ -5,48 +5,98 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { Navbar } from "@/components/ui/Navbar";
 
-// Note: Ensure these custom fonts are set up correctly in your project.
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
 
 export const metadata: Metadata = {
-  title: "Mr Float Holdings",
-  description: "Mr Float",
+  metadataBase: new URL("https://mrfloat.com"),
+  title: {
+    default: "Mr Float Holdings - Reliable Transport Services in Zimbabwe",
+    template: "%s | Mr Float Holdings",
+  },
+  description:
+    "Professional taxi rides, airport transfers, car hire, school runs, and delivery services across Bulawayo and Zimbabwe.",
+  keywords: [
+    "Taxi",
+    "Car Hire",
+    "Airport Shuttle",
+    "School Runs",
+    "Delivery",
+    "Zimbabwe",
+    "Bulawayo",
+    "Transport",
+  ],
+  authors: [{ name: "Mr Float Holdings" }],
+  creator: "Mr Float Holdings",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://mrfloat.com",
+    siteName: "Mr Float Holdings",
+    title: "Mr Float Holdings - Reliable Transport Services",
+    description:
+      "Professional taxi rides, airport transfers, car hire, school runs, and delivery services across Bulawayo and Zimbabwe.",
+    images: [
+      {
+        url: "/MainHero2.png",
+        width: 1200,
+        height: 630,
+        alt: "Mr Float Holdings",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mr Float Holdings - Reliable Transport Services",
+    description:
+      "Professional taxi rides, airport transfers, car hire, school runs, and delivery services across Bulawayo and Zimbabwe.",
+    images: ["/MainHero2.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "./",
+  },
   generator: "v0.app",
   icons: {
     icon: [
-      // Standard browser tab size (16x16)
-      // Browser will use /FloatLogo.png and scale it down to 16x16.
       {
         url: "/faviconFloat.png",
         sizes: "16x16",
         media: "(prefers-color-scheme: light)",
       },
-      // Standard desktop/taskbar size (32x32)
       {
         url: "/FloatLogo.png",
-        sizes: "16x16",
+        sizes: "32x32",
         media: "(prefers-color-scheme: light)",
       },
-      // High-resolution icon for desktop shortcuts, etc. (512x512)
       {
         url: "/faviconFloat.png",
         type: "image/png",
         sizes: "512x512",
       },
-      // Dark mode icons using the same file (32x32)
       {
         url: "/faviconFloat.png",
         sizes: "16x16",
         media: "(prefers-color-scheme: dark)",
       },
     ],
-    // Apple Touch Icon for iOS 'Add to Home Screen' (180x180)
     apple: { url: "/faviconFloat.png", sizes: "180x180" },
-
-    // Optional: Recommended manifest for PWA/Android support
-    // Ensure you have this file in your public directory if using.
-    // manifest: "/site.webmanifest",
   },
 };
 
@@ -57,7 +107,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body
+        className={`${geist.variable} ${geistMono.variable} font-sans antialiased`}
+      >
         <Toaster />
         <Navbar />
         {children}

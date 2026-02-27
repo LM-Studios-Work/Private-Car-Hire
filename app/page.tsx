@@ -67,10 +67,10 @@ export default function MRFloatLanding() {
                   Professional taxi rides, airport transfers, car hire and more
                   across the city and beyond.
                 </p>
-                <Link href="#fleet">
-                  <button className="bg-white hover:bg-[#A4C639] hover:text-white text-black px-8 py-4 rounded-xl text-lg shadow-xl transition-colors">
+                <Link href="#fleet" aria-label="View our fleet of vehicles">
+                  <span className="inline-block bg-white hover:bg-[#A4C639] hover:text-white text-black px-8 py-4 rounded-xl text-lg shadow-xl transition-colors cursor-pointer">
                     View Our Fleet
-                  </button>
+                  </span>
                 </Link>
               </div>
               <div className="bg-white/98 backdrop-blur-md rounded-2xl p-6 shadow-2xl max-w-md ml-auto">
@@ -79,12 +79,14 @@ export default function MRFloatLanding() {
                 </h2>
                 <form className="space-y-3">
                   <Input
+                    aria-label="Full Name"
                     placeholder="Full Name"
                     className="bg-gray-50 border-gray-200 rounded-lg h-11"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
                   <Input
+                    aria-label="Phone Number"
                     placeholder="Phone Number"
                     type="tel"
                     className="bg-gray-50 border-gray-200 rounded-lg h-11"
@@ -92,7 +94,7 @@ export default function MRFloatLanding() {
                     onChange={(e) => setPhone(e.target.value)}
                   />
                   <Select onValueChange={setService} value={service}>
-                    <SelectTrigger className="bg-gray-50 border-gray-200 rounded-lg h-11">
+                    <SelectTrigger aria-label="Select Service" className="bg-gray-50 border-gray-200 rounded-lg h-11">
                       <SelectValue placeholder="Select Service" />
                     </SelectTrigger>
                     <SelectContent>
@@ -106,6 +108,7 @@ export default function MRFloatLanding() {
                     </SelectContent>
                   </Select>
                   <Input
+                    aria-label="Pickup Location"
                     placeholder="Pickup Location"
                     className="bg-gray-50 border-gray-200 rounded-lg h-11"
                     value={pickup}
@@ -155,10 +158,10 @@ export default function MRFloatLanding() {
                   across the city and beyond.
                 </p>
                 <div className="w-fit">
-                  <Link href="#fleet">
-                    <button className="bg-white hover:bg-[#A4C639] hover:text-white text-black px-6 py-2.5 rounded-xl text-sm shadow-lg transition-colors font-medium">
+                  <Link href="#fleet" aria-label="View our fleet of vehicles">
+                    <span className="inline-block bg-white hover:bg-[#A4C639] hover:text-white text-black px-6 py-2.5 rounded-xl text-sm shadow-lg transition-colors font-medium cursor-pointer">
                       View Our Fleet
-                    </button>
+                    </span>
                   </Link>
                 </div>
               </div>
@@ -170,12 +173,14 @@ export default function MRFloatLanding() {
                 </h2>
                 <form className="space-y-3">
                   <Input
+                    aria-label="Full Name"
                     placeholder="Full Name"
                     className="bg-gray-50 border-gray-200 rounded-xl h-10 text-sm"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
                   <Input
+                    aria-label="Phone Number"
                     placeholder="Phone Number"
                     type="tel"
                     className="bg-gray-50 border-gray-200 rounded-xl h-10 text-sm"
@@ -183,7 +188,7 @@ export default function MRFloatLanding() {
                     onChange={(e) => setPhone(e.target.value)}
                   />
                   <Select onValueChange={setService} value={service}>
-                    <SelectTrigger className="bg-gray-50 border-gray-200 rounded-xl h-10 text-sm">
+                    <SelectTrigger aria-label="Select Service" className="bg-gray-50 border-gray-200 rounded-xl h-10 text-sm">
                       <SelectValue placeholder="Select Service" />
                     </SelectTrigger>
                     <SelectContent>
@@ -197,6 +202,7 @@ export default function MRFloatLanding() {
                     </SelectContent>
                   </Select>
                   <Input
+                    aria-label="Pickup Location"
                     placeholder="Pickup Location"
                     className="bg-gray-50 border-gray-200 rounded-xl h-10 text-sm"
                     value={pickup}
@@ -244,10 +250,10 @@ export default function MRFloatLanding() {
                     fuel-efficient vehicles.
                   </p>
                 </div>
-                <Link href="/services/car-hire">
-                  <button className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl">
+                <Link href="/services/car-hire" aria-label="Read more about Car Hire">
+                  <span className="inline-block bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl cursor-pointer">
                     Read More
-                  </button>
+                  </span>
                 </Link>
               </CardContent>
             </Card>
@@ -269,10 +275,10 @@ export default function MRFloatLanding() {
                     needs.
                   </p>
                 </div>
-                <Link href="/services/taxi">
-                  <button className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl">
+                <Link href="/services/taxi" aria-label="Read more about Taxi and City Rides">
+                  <span className="inline-block bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl cursor-pointer">
                     Read More
-                  </button>
+                  </span>
                 </Link>
               </CardContent>
             </Card>
@@ -293,10 +299,10 @@ export default function MRFloatLanding() {
                     Reliable on-time airport transfers with flight tracking.
                   </p>
                 </div>
-                <Link href="/services/airport">
-                  <button className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl">
+                <Link href="/services/airport" aria-label="Read more about Airport Shuttle">
+                  <span className="inline-block bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl cursor-pointer">
                     Read More
-                  </button>
+                  </span>
                 </Link>
               </CardContent>
             </Card>
@@ -317,20 +323,20 @@ export default function MRFloatLanding() {
                     Quick and secure package delivery across the city.
                   </p>
                 </div>
-                <Link href="/services/delivery">
-                  <button className="bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl">
+                <Link href="/services/delivery" aria-label="Read more about Dial-a-Delivery">
+                  <span className="inline-block bg-black hover:bg-black/90 text-white w-fit px-4 py-2 rounded-xl cursor-pointer">
                     Read More
-                  </button>
+                  </span>
                 </Link>
               </CardContent>
             </Card>
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/services">
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-8 py-4 rounded-xl text-lg">
+            <Link href="/services" aria-label="Book a service">
+              <span className="inline-block bg-[#A4C639] hover:bg-[#8FB02F] text-white px-8 py-4 rounded-xl text-lg cursor-pointer">
                 Book A Service
-              </button>
+              </span>
             </Link>
           </div>
         </div>
@@ -676,10 +682,10 @@ export default function MRFloatLanding() {
           <p className="text-gray-600 text-lg mb-8">
             Click the button below to book your ride in just a few clicks.
           </p>
-          <Link href="/booking">
-            <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6">
+          <Link href="/booking" aria-label="Book your ride now">
+            <span className="inline-block bg-[#A4C639] hover:bg-[#8FB02F] text-white rounded-xl text-lg px-10 py-6 cursor-pointer">
               Book Now
-            </button>
+            </span>
           </Link>
         </div>
       </section>
@@ -688,6 +694,7 @@ export default function MRFloatLanding() {
         href="https://wa.me/263785953345"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Contact us on WhatsApp"
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 hover:rotate-3"
       >
         {/* Official WhatsApp SVG Logo */}

@@ -103,13 +103,17 @@ export function Navbar() {
               Contact
             </Link>
             <Link href="/booking">
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
+              <span className="inline-block bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
                 Book Online
-              </button>
+              </span>
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open Mobile Menu"
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black rounded-sm"
+            >
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -135,7 +139,11 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close Mobile Menu"
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black rounded-sm"
+            >
               <X className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -228,9 +236,9 @@ export function Navbar() {
               Contact
             </Link>
             <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4">
+              <span className="block text-center bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4">
                 Book Online
-              </button>
+              </span>
             </Link>
           </div>
         </div>

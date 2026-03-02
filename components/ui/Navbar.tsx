@@ -103,13 +103,17 @@ export function Navbar() {
               Contact
             </Link>
             <Link href="/booking">
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
+              <span className="inline-block bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl cursor-pointer">
                 Book Online
-              </button>
+              </span>
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open menu"
+              className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#A4C639] outline-none rounded-sm"
+            >
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -135,7 +139,11 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close menu"
+              className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#A4C639] outline-none rounded-sm"
+            >
               <X className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -150,6 +158,7 @@ export function Navbar() {
             <div className="relative">
               <button
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                aria-expanded={servicesDropdownOpen}
                 className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 w-full"
               >
                 Services{" "}
@@ -228,9 +237,9 @@ export function Navbar() {
               Contact
             </Link>
             <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4">
+              <span className="inline-block bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4 text-center cursor-pointer">
                 Book Online
-              </button>
+              </span>
             </Link>
           </div>
         </div>

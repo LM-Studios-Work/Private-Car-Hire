@@ -189,6 +189,7 @@ function BookingForm() {
             <form className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Input
+                  aria-label="Full Name"
                   placeholder="Full Name"
                   className="bg-gray-50 border-gray-200 rounded-lg"
                   value={fullName}
@@ -196,6 +197,7 @@ function BookingForm() {
                   required
                 />
                 <Input
+                  aria-label="# of passengers"
                   placeholder="# of passengers"
                   type="number"
                   min="1"
@@ -208,6 +210,7 @@ function BookingForm() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Input
+                  aria-label="Phone"
                   placeholder="Phone"
                   type="tel"
                   className="bg-gray-50 border-gray-200 rounded-lg"
@@ -216,6 +219,7 @@ function BookingForm() {
                   required
                 />
                 <Input
+                  aria-label="Email"
                   placeholder="Email"
                   type="email"
                   className="bg-gray-50 border-gray-200 rounded-lg"
@@ -227,7 +231,7 @@ function BookingForm() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Select value={service} onValueChange={setService}>
-                  <SelectTrigger className="bg-gray-50 border-gray-200 rounded-lg">
+                  <SelectTrigger aria-label="Select service type" className="bg-gray-50 border-gray-200 rounded-lg">
                     <SelectValue placeholder="Select service type" />
                   </SelectTrigger>
                   <SelectContent>
@@ -247,7 +251,7 @@ function BookingForm() {
                   </SelectContent>
                 </Select>
                 <Select value={vehicle} onValueChange={setVehicle}>
-                  <SelectTrigger className="bg-gray-50 border-gray-200 rounded-lg">
+                  <SelectTrigger aria-label="Select vehicle" className="bg-gray-50 border-gray-200 rounded-lg">
                     <SelectValue placeholder="Select vehicle" />
                   </SelectTrigger>
                   <SelectContent>
@@ -262,15 +266,16 @@ function BookingForm() {
               {service === "School Runs" && (
                 <div className="space-y-4">
                   <Input
-                    placeholder="School Name"
+                  aria-label="School Name"
+                  placeholder="School Name"
                     className="bg-gray-50 border-gray-200 rounded-lg"
                     value={schoolName}
                     onChange={(e) => setSchoolName(e.target.value)}
                     required
                   />
                   <Select value={tripType} onValueChange={setTripType}>
-                    <SelectTrigger className="bg-gray-50 border-gray-200 rounded-lg">
-                      <SelectValue placeholder="Select trip type" />
+                    <SelectTrigger aria-label="Select trip type" className="bg-gray-50 border-gray-200 rounded-lg">
+                    <SelectValue placeholder="Select trip type" />
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="Return Trip">Return Trip</SelectItem>
@@ -284,7 +289,8 @@ function BookingForm() {
               )}
 
               <Input
-                placeholder="Pick-up location"
+                  aria-label="Pick-up location"
+                  placeholder="Pick-up location"
                 className="bg-gray-50 border-gray-200 rounded-lg"
                 value={pickupLocation}
                 onChange={(e) => setPickupLocation(e.target.value)}
@@ -294,7 +300,8 @@ function BookingForm() {
               {service !== "School Runs" && (
                 <>
                   <Input
-                    placeholder="Drop-off location"
+                  aria-label="Drop-off location"
+                  placeholder="Drop-off location"
                     className="bg-gray-50 border-gray-200 rounded-lg"
                     value={dropoffLocation}
                     onChange={(e) => setDropoffLocation(e.target.value)}
@@ -342,6 +349,7 @@ function BookingForm() {
               {/* Conditional Fields for CBD Errands */}
               {service === "CBD Errands" && (
                 <Input
+                  aria-label="Number of hours for errands"
                   placeholder="Number of hours for errands"
                   type="number"
                   min="1"
@@ -392,6 +400,7 @@ function BookingForm() {
               )}
 
               <Textarea
+                aria-label="Additional Notes"
                 placeholder="Additional Notes"
                 className="bg-gray-50 border-gray-200 rounded-lg min-h-[80px]"
                 value={notes}
@@ -522,6 +531,7 @@ function BookingForm() {
         href="https://wa.me/263785953345"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Contact us on WhatsApp"
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110"
       >
         <MessageCircle className="w-8 h-8" />

@@ -1,9 +1,124 @@
-[00:00:05.488] Server  LOG     ✓ Ready in 3.8s
-[00:00:11.007] Server  LOG     ○ Compiling / ...
-[00:00:20.330] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:21.478] Browser WARN    Image with src "http://localhost:3000/FloatLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:23.670] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:23.670] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:23.670] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767003119952}
-[00:00:38.743] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services/car-hire color: rgb(120, 120, 120) color: inherit {"dp":"/services/car-hire","o":"http://localhost:3000/services/car-hire","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767003135015}
-[00:07:31.040] Server  LOG     ✓ Compiled in 309ms
+[00:00:01.045] Server  LOG     ✓ Ready in 676ms
+[00:00:32.118] Server  LOG     ○ Compiling / ...
+[00:00:34.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:34.944] Browser WARN    Image with src "http://localhost:3000/FloatLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:35.569] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:35.569] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:35.569] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1772893363332} /_vercel/insights/view
+[00:00:36.950] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:37.405] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+        <SegmentViewNode type="page" pagePath="/page.tsx">
+          <SegmentTrieNode>
+          <ClientPageRoot Component={function MRFloatLanding} serverProvidedParams={{...}}>
+            <MRFloatLanding params={Promise} searchParams={Promise}>
+              <div className="min-h-scre...">
+                <section id="home" className="relative m...">
+                  <div className="container ...">
+                    <div className="relative w...">
+                      <div>
+                      <div className="relative g...">
+                        <div>
+                        <div className="bg-white/9...">
+                          <h2>
+                          <form className="space-y-3">
+                            <Input aria-label="Full Name" placeholder="Full Name" className="bg-gray-50..." value="" ...>
+                              <input
+                                type={undefined}
+                                data-slot="input"
+                                className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary..."
+                                aria-label="Full Name"
+                                placeholder="Full Name"
+                                value=""
+                                onChange={function onChange}
+-                               style={{caret-color:"transparent"}}
+                              >
+                            <Input aria-label="Phone Number" placeholder="Phone Number" type="tel" ...>
+                              <input
+                                type="tel"
+                                data-slot="input"
+                                className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary..."
+                                aria-label="Phone Number"
+                                placeholder="Phone Number"
+                                value=""
+                                onChange={function onChange}
+-                               style={{caret-color:"transparent"}}
+                              >
+                            <Select>
+                            <Input aria-label="Pickup Loc..." placeholder="Pickup Loc..." className="bg-gray-50..." ...>
+                              <input
+                                type={undefined}
+                                data-slot="input"
+                                className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary..."
+                                aria-label="Pickup Location"
+                                placeholder="Pickup Location"
+                                value=""
+                                onChange={function onChange}
+-                               style={{caret-color:"transparent"}}
+                              >
+                            ...
+                <section id="home" className="relative b...">
+                  <div className="w-full px-4">
+                    <div className="relative w...">
+                      <div>
+                      <div className="relative f...">
+                        <div>
+                        <div className="bg-white/9...">
+                          <h2>
+                          <form className="space-y-3">
+                            <Input aria-label="Full Name" placeholder="Full Name" className="bg-gray-50..." value="" ...>
+                              <input
+                                type={undefined}
+                                data-slot="input"
+                                className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary..."
+                                aria-label="Full Name"
+                                placeholder="Full Name"
+                                value=""
+                                onChange={function onChange}
+-                               style={{caret-color:"transparent"}}
+                              >
+                            <Input aria-label="Phone Number" placeholder="Phone Number" type="tel" ...>
+                              <input
+                                type="tel"
+                                data-slot="input"
+                                className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary..."
+                                aria-label="Phone Number"
+                                placeholder="Phone Number"
+                                value=""
+                                onChange={function onChange}
+-                               style={{caret-color:"transparent"}}
+                              >
+                            <Select>
+                            <Input aria-label="Pickup Loc..." placeholder="Pickup Loc..." className="bg-gray-50..." ...>
+                              <input
+                                type={undefined}
+                                data-slot="input"
+                                className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary..."
+                                aria-label="Pickup Location"
+                                placeholder="Pickup Location"
+                                value=""
+                                onChange={function onChange}
+-                               style={{caret-color:"transparent"}}
+                              >
+                            ...
+                ...
+        ...
+      ...
+
+[00:00:37.405] Browser WARN    Image with src "http://localhost:3000/FloatLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:37.544] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:37.544] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:37.544] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1772893365308} /_vercel/insights/view

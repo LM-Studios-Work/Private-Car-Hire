@@ -1,82 +1,81 @@
-import asyncio
-from playwright.async_api import async_playwright
+from playwright.sync_api import sync_playwright
 
-async def run():
-    async with async_playwright() as p:
-        browser = await p.chromium.launch()
-        page = await browser.new_page()
+def verify_navbar_accessibility():
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        # Create a new context with desktop viewport to test desktop menu
+        desktop_context = browser.new_context(viewport={'width': 1280, 'height': 720})
+        desktop_page = desktop_context.new_page()
 
-        # Navigate to the page
-        await page.goto("http://localhost:3000")
+        try:
+            print("Navigating to local server...")
+            desktop_page.goto("http://localhost:3000")
 
-        # Verify Floating WhatsApp Button
-        whatsapp_link = page.locator('a[aria-label="Contact us on WhatsApp"]')
-        if await whatsapp_link.count() > 0:
-            print("WhatsApp button found with correct aria-label")
-        else:
-            print("WhatsApp button NOT found or missing aria-label")
+            print("Taking screenshot of desktop navbar...")
+            # Wait for the navbar to be visible
+            desktop_page.wait_for_selector('nav')
+            desktop_page.screenshot(path="desktop_navbar_verification.png")
 
-        # Verify Quote Form Inputs
-        # Since there are two forms (desktop/mobile), we expect multiple elements.
-        # We can just verify at least one exists or iterate.
-        inputs = page.locator('input[aria-label="Full Name"]')
-        count = await inputs.count()
-        if count >= 2:
-             print(f"Found {count} 'Full Name' inputs with correct aria-label (Desktop & Mobile)")
-        else:
-             print(f"WARNING: Found only {count} 'Full Name' inputs")
+            # Find the Services button
+            print("Checking desktop Services button attributes...")
+            services_btn = desktop_page.locator('button', has_text="Services").first
 
-        inputs = page.locator('input[aria-label="Phone Number"]')
-        count = await inputs.count()
-        if count >= 2:
-             print(f"Found {count} 'Phone Number' inputs with correct aria-label")
+            # Verify aria attributes
+            aria_expanded = services_btn.get_attribute("aria-expanded")
+            aria_haspopup = services_btn.get_attribute("aria-haspopup")
+            print(f"Services button aria-expanded: {aria_expanded}")
+            print(f"Services button aria-haspopup: {aria_haspopup}")
 
-        # Verify Select Trigger
-        triggers = page.locator('button[aria-label="Select Service"]')
-        count = await triggers.count()
-        if count >= 2:
-             print(f"Found {count} 'Select Service' triggers with correct aria-label")
+            # Click the services button to verify focus and dropdown
+            print("Clicking Services button to verify focus and dropdown...")
+            services_btn.click()
+            desktop_page.wait_for_timeout(500) # Wait for animation/state change
+            desktop_page.screenshot(path="desktop_services_dropdown_verification.png")
 
-        inputs = page.locator('input[aria-label="Pickup Location"]')
-        count = await inputs.count()
-        if count >= 2:
-             print(f"Found {count} 'Pickup Location' inputs with correct aria-label")
+        finally:
+            desktop_context.close()
 
+        # Create a new context with mobile viewport to test mobile menu
+        mobile_context = browser.new_context(viewport={'width': 375, 'height': 667})
+        mobile_page = mobile_context.new_page()
 
-        # Verify Service Cards Links (checking a few examples)
-        # These are unique per card, so count should be 1
-        car_hire_link = page.locator('a[href="/services/car-hire"][aria-label="Read more about Car Hire"]')
-        if await car_hire_link.count() > 0:
-             print("Car Hire link found with correct aria-label")
-             # Verify it contains a span, not a button
-             span_count = await car_hire_link.locator('span').count()
-             button_count = await car_hire_link.locator('button').count()
-             if span_count > 0 and button_count == 0:
-                 print("Car Hire link correctly contains span and NO button")
-             else:
-                 print(f"Car Hire link structure INCORRECT: spans={span_count}, buttons={button_count}")
-        else:
-             print("Car Hire link NOT found with correct aria-label")
+        try:
+            print("Navigating to local server (mobile view)...")
+            mobile_page.goto("http://localhost:3000")
 
-        # Fleet link appears twice (Desktop/Mobile hero)
-        fleet_link = page.locator('a[href="#fleet"][aria-label="View our fleet of vehicles"]')
-        count = await fleet_link.count()
-        if count >= 2:
-             print(f"Found {count} 'View Fleet' links with correct aria-label")
-             # Check first one
-             first_link = fleet_link.first
-             span_count = await first_link.locator('span').count()
-             button_count = await first_link.locator('button').count()
-             if span_count > 0 and button_count == 0:
-                 print("First View Fleet link correctly contains span and NO button")
-        else:
-             print(f"WARNING: Found only {count} 'View Fleet' links")
+            # Find the mobile menu open button
+            print("Checking mobile menu open button attributes...")
+            # Use aria-label to find the new button
+            menu_btn = mobile_page.locator('button[aria-label="Open mobile menu"]').first
 
-        # Take a screenshot
-        await page.screenshot(path="verification_screenshot.png", full_page=True)
-        print("Screenshot saved to verification_screenshot.png")
+            aria_label = menu_btn.get_attribute("aria-label")
+            aria_expanded = menu_btn.get_attribute("aria-expanded")
+            print(f"Mobile menu button aria-label: {aria_label}")
+            print(f"Mobile menu button aria-expanded: {aria_expanded}")
 
-        await browser.close()
+            # Take screenshot before opening
+            mobile_page.screenshot(path="mobile_navbar_closed_verification.png")
+
+            # Open mobile menu
+            print("Opening mobile menu...")
+            menu_btn.click()
+            mobile_page.wait_for_timeout(500) # Wait for animation
+            mobile_page.screenshot(path="mobile_navbar_opened_verification.png")
+
+            # Check mobile close button
+            print("Checking mobile menu close button attributes...")
+            close_btn = mobile_page.locator('button[aria-label="Close mobile menu"]').first
+            aria_label_close = close_btn.get_attribute("aria-label")
+            print(f"Mobile close button aria-label: {aria_label_close}")
+
+            print("Verification script completed successfully.")
+        finally:
+            mobile_context.close()
+            browser.close()
 
 if __name__ == "__main__":
-    asyncio.run(run())
+    import time
+    # Wait a few seconds for the dev server to start
+    print("Waiting for dev server to be ready...")
+    time.sleep(5)
+    verify_navbar_accessibility()

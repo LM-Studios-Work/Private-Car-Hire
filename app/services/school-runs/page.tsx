@@ -18,6 +18,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import toast from "react-hot-toast";
+import { ServiceJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function SchoolRunsPage() {
   const [parentName, setParentName] = useState("");
@@ -62,6 +63,19 @@ export default function SchoolRunsPage() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
+      <ServiceJsonLd
+        name="School Runs & Child Transport"
+        description="Safe and reliable school transport in Bulawayo, Zimbabwe. Vetted drivers, scheduled pickups, and real-time tracking to keep your children safe."
+        url="/services/school-runs"
+        imageUrl="/SchoolkidHero.webp"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "School Runs", url: "/services/school-runs" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-black/50 z-10" />

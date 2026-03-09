@@ -21,6 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { LocalBusinessJsonLd } from "@/components/JsonLd";
 
 export default function MRFloatLanding() {
   const [name, setName] = useState("");
@@ -41,6 +42,7 @@ export default function MRFloatLanding() {
 
   return (
     <div className="min-h-screen bg-white">
+      <LocalBusinessJsonLd />
       {/* Hero Section - Desktop Version */}
       <section
         id="home"

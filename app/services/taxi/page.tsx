@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { ServiceJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function TaxiPage() {
   const router = useRouter();
@@ -38,6 +39,19 @@ export default function TaxiPage() {
 
   return (
     <div className="min-h-screen bg-white font-sans scroll-smooth">
+      <ServiceJsonLd
+        name="Taxi & E-Hailing Service"
+        description="Quick and reliable taxi and e-hailing rides in Bulawayo, Zimbabwe. Professional drivers available 24/7 for city travel and inter-city transport."
+        url="/services/taxi"
+        imageUrl="/UberHero.png"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Taxi & E-Hailing", url: "/services/taxi" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         {/* Dark Overlay */}

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ShoppingBag, Timer, Smartphone, Award } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { ServiceJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function CBDErrandsPage() {
   const router = useRouter();
@@ -15,12 +16,25 @@ export default function CBDErrandsPage() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
+      <ServiceJsonLd
+        name="CBD Errands Service"
+        description="Let us handle your CBD errands in Bulawayo, Zimbabwe — document delivery, bill payments, personal shopping, and office supplies."
+        url="/services/cbd-errands"
+        imageUrl="/CbdHero.webp"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "CBD Errands", url: "/services/cbd-errands" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <Image
-          src="/CbdHero.webp" // Ensure you have a relevant city image
-          alt="CBD Errands"
+          src="/CbdHero.webp"
+          alt="CBD Errands in Bulawayo"
           fill
           className="object-cover"
         />

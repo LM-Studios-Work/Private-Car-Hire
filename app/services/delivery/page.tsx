@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Package, MapPin, CalendarClock, Zap } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { ServiceJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function DeliveryPage() {
   const router = useRouter();
@@ -15,11 +16,24 @@ export default function DeliveryPage() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
+      <ServiceJsonLd
+        name="Dial-a-Delivery Service"
+        description="Fast and secure package delivery across Bulawayo, Zimbabwe. Same-day delivery, real-time tracking, and reliable couriers for personal and business needs."
+        url="/services/delivery"
+        imageUrl="/DeliveryHero.webp"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Dial-a-Delivery", url: "/services/delivery" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <Image
-          src="/DeliveryHero.webp" // Ensure you have a relevant delivery image
+          src="/DeliveryHero.webp"
           alt="Delivery Service"
           fill
           className="object-cover"

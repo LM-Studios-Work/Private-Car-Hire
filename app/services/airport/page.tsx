@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { ServiceJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function AirportServicePage() {
   const router = useRouter();
@@ -34,6 +35,19 @@ export default function AirportServicePage() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
+      <ServiceJsonLd
+        name="Airport Shuttle & Transfer Service"
+        description="Reliable and punctual airport shuttle transfers in Bulawayo, Zimbabwe. Flight tracking, professional drivers, and 24/7 availability."
+        url="/services/airport"
+        imageUrl="/AirportHero.png"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Airport Shuttle", url: "/services/airport" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-black/50 z-10" />

@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { ServiceJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function CarHirePage() {
   const router = useRouter();
@@ -35,6 +36,19 @@ export default function CarHirePage() {
 
   return (
     <div className="min-h-screen bg-white font-sans scroll-smooth">
+      <ServiceJsonLd
+        name="Car Hire in Bulawayo"
+        description="Affordable and flexible car hire in Bulawayo, Zimbabwe with fuel-efficient vehicles including Mazda Demio and Honda Fit hybrids. Daily, weekly, and monthly rates available."
+        url="/services/car-hire"
+        imageUrl="/HeroHire.png"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Car Hire", url: "/services/car-hire" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Background Image */}

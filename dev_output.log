@@ -1,0 +1,21 @@
+
+> my-v0-project@0.1.0 dev /app
+> next dev
+
+▲ Next.js 16.1.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+
+✓ Starting...
+✓ Ready in 769ms
+○ Compiling / ...
+`legacyBehavior` is deprecated and will be removed in a future release. A codemod is available to upgrade your components:
+
+npx @next/codemod@latest new-link .
+
+Learn more: https://nextjs.org/docs/app/building-your-application/upgrading/codemods#remove-a-tags-from-link-components
+ GET / 200 in 6.4s (compile: 5.7s, render: 685ms)
+ GET / 200 in 140ms (compile: 7ms, render: 132ms)
+ GET / 200 in 106ms (compile: 4ms, render: 102ms)
+ GET / 200 in 440ms (compile: 81ms, render: 359ms)
+ GET / 200 in 97ms (compile: 4ms, render: 93ms)

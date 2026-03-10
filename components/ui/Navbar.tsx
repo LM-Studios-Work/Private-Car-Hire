@@ -40,11 +40,19 @@ export function Navbar() {
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
             >
-              <button className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1">
+              <button
+                aria-expanded={servicesDropdownOpen}
+                aria-haspopup="true"
+                aria-controls="desktop-services-menu"
+                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1"
+              >
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 mt-0 bg-white shadow-lg rounded-xl py-2 min-w-[200px] border border-gray-100">
+                <div
+                  id="desktop-services-menu"
+                  className="absolute top-full left-0 mt-0 bg-white shadow-lg rounded-xl py-2 min-w-[200px] border border-gray-100"
+                >
                   <Link
                     href="/services/car-hire"
                     className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
@@ -102,14 +110,17 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking">
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
-                Book Online
-              </button>
+            <Link href="/booking" className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
+              Book Online
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button
+              aria-label="Toggle mobile menu"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
+              onClick={() => setIsMobileMenuOpen(true)}
+            >
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -118,7 +129,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-white flex flex-col p-4 md:hidden">
+        <div id="mobile-menu" className="fixed inset-0 z-50 bg-white flex flex-col p-4 md:hidden">
           <div className="flex justify-between items-center mb-8">
             {/* Mobile Logo Section */}
             <div className="flex items-center">
@@ -135,7 +146,7 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button aria-label="Close mobile menu" onClick={() => setIsMobileMenuOpen(false)}>
               <X className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -149,6 +160,9 @@ export function Navbar() {
             </Link>
             <div className="relative">
               <button
+                aria-expanded={servicesDropdownOpen}
+                aria-haspopup="true"
+                aria-controls="mobile-services-menu"
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                 className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 w-full"
               >
@@ -160,7 +174,7 @@ export function Navbar() {
                 />
               </button>
               {servicesDropdownOpen && (
-                <div className="mt-2 pl-4 flex flex-col gap-4">
+                <div id="mobile-services-menu" className="mt-2 pl-4 flex flex-col gap-4">
                   <Link
                     href="/services/car-hire"
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -227,10 +241,12 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4">
-                Book Online
-              </button>
+            <Link
+              href="/booking"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4 text-center block"
+            >
+              Book Online
             </Link>
           </div>
         </div>

@@ -102,10 +102,8 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking">
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
-                Book Online
-              </button>
+            <Link href="/booking" className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl text-center">
+              Book Online
             </Link>
           </div>
           <div className="md:hidden">
@@ -227,10 +225,8 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4">
-                Book Online
-              </button>
+            <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)} className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4 text-center block">
+              Book Online
             </Link>
           </div>
         </div>

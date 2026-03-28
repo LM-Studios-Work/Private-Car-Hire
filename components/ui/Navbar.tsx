@@ -109,7 +109,13 @@ export function Navbar() {
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open mobile menu"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
+              className="focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md"
+            >
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -118,7 +124,10 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-white flex flex-col p-4 md:hidden">
+        <div
+          id="mobile-menu"
+          className="fixed inset-0 z-50 bg-white flex flex-col p-4 md:hidden"
+        >
           <div className="flex justify-between items-center mb-8">
             {/* Mobile Logo Section */}
             <div className="flex items-center">
@@ -135,7 +144,12 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close mobile menu"
+              aria-controls="mobile-menu"
+              className="focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md"
+            >
               <X className="w-6 h-6 text-black" />
             </button>
           </div>

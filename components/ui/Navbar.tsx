@@ -109,7 +109,7 @@ export function Navbar() {
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button aria-label="Open mobile menu" onClick={() => setIsMobileMenuOpen(true)}>
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -135,7 +135,7 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button aria-label="Close mobile menu" onClick={() => setIsMobileMenuOpen(false)}>
               <X className="w-6 h-6 text-black" />
             </button>
           </div>

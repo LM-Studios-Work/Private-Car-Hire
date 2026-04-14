@@ -1,5 +1,3 @@
-# Palette's Journal
-
-## 2025-02-12 - Initial Setup
-**Learning:** This repository lacked a `eslint.config.js` making linting impossible out of the box.
-**Action:** In future projects, always check for linter configuration existence before relying on `pnpm lint`. For this session, I will rely on `pnpm build` for verification.
+## 2024-04-14 - Floating Button Accessibility
+**Learning:** Icon-only floating buttons (like a fixed WhatsApp contact button) often lack `aria-label` attributes and focus visibility, making them inaccessible to screen readers and keyboard users. Using Tailwind `focus-visible` classes combined with ring offset is highly effective on colored backgrounds (like the green WhatsApp color).
+**Action:** When adding global/floating interactive elements, verify an `aria-label` is present if the inner content is non-text (e.g. SVG). Always pair this with `focus-visible:ring-2 focus-visible:ring-offset-2` to ensure keyboard navigability.

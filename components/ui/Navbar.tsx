@@ -31,7 +31,7 @@ export function Navbar() {
           <div className="hidden md:flex gap-8 items-center text-gray-700">
             <Link
               href="/#home"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1"
             >
               Home
             </Link>
@@ -39,45 +39,55 @@ export function Navbar() {
               className="relative"
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget)) {
+                  setServicesDropdownOpen(false);
+                }
+              }}
             >
-              <button className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1">
+              <button
+                aria-haspopup="true"
+                aria-expanded={servicesDropdownOpen}
+                onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1"
+              >
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesDropdownOpen && (
                 <div className="absolute top-full left-0 mt-0 bg-white shadow-lg rounded-xl py-2 min-w-[200px] border border-gray-100">
                   <Link
                     href="/services/car-hire"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none"
                   >
                     Car Hire
                   </Link>
                   <Link
                     href="/services/taxi"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none"
                   >
                     Taxi / E-Hailing
                   </Link>
                   <Link
                     href="/services/airport"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none"
                   >
                     Airport Shuttle
                   </Link>
                   <Link
                     href="/services/school-runs"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none"
                   >
                     School Runs
                   </Link>
                   <Link
                     href="/services/delivery"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none"
                   >
                     Dial-a-Delivery
                   </Link>
                   <Link
                     href="/services/cbd-errands"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none"
                   >
                     CBD Errands
                   </Link>
@@ -86,30 +96,35 @@ export function Navbar() {
             </div>
             <Link
               href="/#fleet"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1"
             >
               Fleet
             </Link>
             <Link
               href="/#about"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1"
             >
               About
             </Link>
             <Link
               href="/#contact"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1"
             >
               Contact
             </Link>
-            <Link href="/booking">
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
-                Book Online
-              </button>
+            <Link
+              href="/booking"
+              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none inline-block"
+            >
+              Book Online
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open mobile menu"
+              className="focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md"
+            >
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -135,7 +150,11 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close mobile menu"
+              className="focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md"
+            >
               <X className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -143,14 +162,16 @@ export function Navbar() {
             <Link
               href="/#home"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1 w-fit"
             >
               Home
             </Link>
             <div className="relative">
               <button
+                aria-haspopup="true"
+                aria-expanded={servicesDropdownOpen}
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 w-full"
+                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 w-fit focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1"
               >
                 Services{" "}
                 <ChevronDown
@@ -164,42 +185,42 @@ export function Navbar() {
                   <Link
                     href="/services/car-hire"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block hover:text-[#A4C639]"
+                    className="block hover:text-[#A4C639] focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1 w-fit"
                   >
                     Car Hire
                   </Link>
                   <Link
                     href="/services/taxi"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block hover:text-[#A4C639]"
+                    className="block hover:text-[#A4C639] focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1 w-fit"
                   >
                     Taxi / E-Hailing
                   </Link>
                   <Link
                     href="/services/airport"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block hover:text-[#A4C639]"
+                    className="block hover:text-[#A4C639] focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1 w-fit"
                   >
                     Airport Shuttle
                   </Link>
                   <Link
                     href="/services/school-runs"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block hover:text-[#A4C639]"
+                    className="block hover:text-[#A4C639] focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1 w-fit"
                   >
                     School Runs
                   </Link>
                   <Link
                     href="/services/delivery"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block hover:text-[#A4C639]"
+                    className="block hover:text-[#A4C639] focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1 w-fit"
                   >
                     Dial-a-Delivery
                   </Link>
                   <Link
                     href="/services/cbd-errands"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block hover:text-[#A4C639]"
+                    className="block hover:text-[#A4C639] focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1 w-fit"
                   >
                     CBD Errands
                   </Link>
@@ -209,28 +230,30 @@ export function Navbar() {
             <Link
               href="/#fleet"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1 w-fit"
             >
               Fleet
             </Link>
             <Link
               href="/#about"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1 w-fit"
             >
               About
             </Link>
             <Link
               href="/#contact"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none rounded-md px-1 w-fit"
             >
               Contact
             </Link>
-            <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4">
-                Book Online
-              </button>
+            <Link
+              href="/booking"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4 text-center focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none block"
+            >
+              Book Online
             </Link>
           </div>
         </div>

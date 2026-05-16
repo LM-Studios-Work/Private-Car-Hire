@@ -227,7 +227,7 @@ function BookingForm() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Select value={service} onValueChange={setService}>
-                  <SelectTrigger className="bg-gray-50 border-gray-200 rounded-lg">
+                  <SelectTrigger aria-label="Select service type" className="bg-gray-50 border-gray-200 rounded-lg">
                     <SelectValue placeholder="Select service type" />
                   </SelectTrigger>
                   <SelectContent>
@@ -247,7 +247,7 @@ function BookingForm() {
                   </SelectContent>
                 </Select>
                 <Select value={vehicle} onValueChange={setVehicle}>
-                  <SelectTrigger className="bg-gray-50 border-gray-200 rounded-lg">
+                  <SelectTrigger aria-label="Select vehicle" className="bg-gray-50 border-gray-200 rounded-lg">
                     <SelectValue placeholder="Select vehicle" />
                   </SelectTrigger>
                   <SelectContent>
@@ -269,7 +269,7 @@ function BookingForm() {
                     required
                   />
                   <Select value={tripType} onValueChange={setTripType}>
-                    <SelectTrigger className="bg-gray-50 border-gray-200 rounded-lg">
+                    <SelectTrigger aria-label="Select trip type" className="bg-gray-50 border-gray-200 rounded-lg">
                       <SelectValue placeholder="Select trip type" />
                     </SelectTrigger>
                     <SelectContent>
@@ -415,7 +415,7 @@ function BookingForm() {
 
               <Button
                 type="button"
-                className="w-full bg-black hover:bg-gray-800 text-white py-6 rounded-lg text-lg"
+                className="w-full bg-black hover:bg-gray-800 text-white py-6 rounded-lg text-lg focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black outline-none"
                 onClick={handleBookingSubmit}
                 disabled={!agreed}
               >

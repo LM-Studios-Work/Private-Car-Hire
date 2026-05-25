@@ -39,45 +39,56 @@ export function Navbar() {
               className="relative"
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget)) {
+                  setServicesDropdownOpen(false);
+                }
+              }}
             >
-              <button className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1">
+              <button
+                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:ring-offset-2 rounded-sm"
+                onFocus={() => setServicesDropdownOpen(true)}
+                onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                aria-expanded={servicesDropdownOpen}
+                aria-haspopup="true"
+              >
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesDropdownOpen && (
                 <div className="absolute top-full left-0 mt-0 bg-white shadow-lg rounded-xl py-2 min-w-[200px] border border-gray-100">
                   <Link
                     href="/services/car-hire"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:outline-none"
                   >
                     Car Hire
                   </Link>
                   <Link
                     href="/services/taxi"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:outline-none"
                   >
                     Taxi / E-Hailing
                   </Link>
                   <Link
                     href="/services/airport"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:outline-none"
                   >
                     Airport Shuttle
                   </Link>
                   <Link
                     href="/services/school-runs"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:outline-none"
                   >
                     School Runs
                   </Link>
                   <Link
                     href="/services/delivery"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:outline-none"
                   >
                     Dial-a-Delivery
                   </Link>
                   <Link
                     href="/services/cbd-errands"
-                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639]"
+                    className="block px-4 py-2 hover:bg-gray-50 hover:text-[#A4C639] focus-visible:bg-gray-50 focus-visible:text-[#A4C639] focus-visible:outline-none rounded-b-xl"
                   >
                     CBD Errands
                   </Link>
@@ -102,14 +113,20 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking">
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
-                Book Online
-              </button>
+            <Link
+              href="/booking"
+              className="inline-block bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            >
+              Book Online
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open mobile menu"
+              aria-expanded={isMobileMenuOpen}
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:ring-offset-2 rounded-sm"
+            >
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -135,7 +152,11 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close mobile menu"
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:ring-offset-2 rounded-sm"
+            >
               <X className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -150,7 +171,9 @@ export function Navbar() {
             <div className="relative">
               <button
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 w-full"
+                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:ring-offset-2 rounded-sm"
+                aria-expanded={servicesDropdownOpen}
+                aria-haspopup="true"
               >
                 Services{" "}
                 <ChevronDown
@@ -227,10 +250,12 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4">
-                Book Online
-              </button>
+            <Link
+              href="/booking"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-center bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            >
+              Book Online
             </Link>
           </div>
         </div>

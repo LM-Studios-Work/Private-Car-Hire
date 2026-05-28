@@ -39,8 +39,19 @@ export function Navbar() {
               className="relative"
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget)) {
+                  setServicesDropdownOpen(false);
+                }
+              }}
             >
-              <button className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1">
+              <button
+                onFocus={() => setServicesDropdownOpen(true)}
+                onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                aria-expanded={servicesDropdownOpen}
+                aria-haspopup="true"
+                className="hover:text-[#A4C639] focus-visible:text-[#A4C639] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm transition-colors font-medium flex items-center gap-1"
+              >
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesDropdownOpen && (
@@ -109,7 +120,12 @@ export function Navbar() {
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open mobile menu"
+              aria-expanded={isMobileMenuOpen}
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-md p-1"
+            >
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -135,7 +151,11 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close mobile menu"
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-md p-1"
+            >
               <X className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -150,7 +170,9 @@ export function Navbar() {
             <div className="relative">
               <button
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 w-full"
+                aria-expanded={servicesDropdownOpen}
+                aria-controls="mobile-services-menu"
+                className="hover:text-[#A4C639] focus-visible:text-[#A4C639] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm transition-colors font-medium flex items-center gap-1 w-full"
               >
                 Services{" "}
                 <ChevronDown
@@ -160,7 +182,7 @@ export function Navbar() {
                 />
               </button>
               {servicesDropdownOpen && (
-                <div className="mt-2 pl-4 flex flex-col gap-4">
+                <div id="mobile-services-menu" className="mt-2 pl-4 flex flex-col gap-4">
                   <Link
                     href="/services/car-hire"
                     onClick={() => setIsMobileMenuOpen(false)}

@@ -39,8 +39,18 @@ export function Navbar() {
               className="relative"
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget)) {
+                  setServicesDropdownOpen(false);
+                }
+              }}
             >
-              <button className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1">
+              <button
+                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:ring-offset-2 rounded-sm"
+                onFocus={() => setServicesDropdownOpen(true)}
+                aria-haspopup="true"
+                aria-expanded={servicesDropdownOpen}
+              >
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesDropdownOpen && (
@@ -102,14 +112,20 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking">
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
-                Book Online
-              </button>
+            <Link
+              href="/booking"
+              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl inline-block text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:ring-offset-2"
+            >
+              Book Online
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open main menu"
+              aria-expanded={isMobileMenuOpen}
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm"
+            >
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -135,7 +151,11 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close main menu"
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm"
+            >
               <X className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -150,7 +170,9 @@ export function Navbar() {
             <div className="relative">
               <button
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 w-full"
+                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm"
+                aria-haspopup="true"
+                aria-expanded={servicesDropdownOpen}
               >
                 Services{" "}
                 <ChevronDown
@@ -227,10 +249,12 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4">
-                Book Online
-              </button>
+            <Link
+              href="/booking"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4 block text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:ring-offset-2"
+            >
+              Book Online
             </Link>
           </div>
         </div>

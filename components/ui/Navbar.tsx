@@ -39,8 +39,18 @@ export function Navbar() {
               className="relative"
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget)) {
+                  setServicesDropdownOpen(false);
+                }
+              }}
             >
-              <button className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1">
+              <button
+                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:outline-none rounded-md"
+                onFocus={() => setServicesDropdownOpen(true)}
+                aria-haspopup="true"
+                aria-expanded={servicesDropdownOpen}
+              >
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesDropdownOpen && (
@@ -102,14 +112,21 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking">
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
-                Book Online
-              </button>
+            <Link
+              href="/booking"
+              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl inline-block focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:ring-offset-2 focus-visible:ring-offset-white focus-visible:outline-none"
+            >
+              Book Online
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open main menu"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
+              className="focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:outline-none rounded-md p-1"
+            >
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -118,7 +135,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-white flex flex-col p-4 md:hidden">
+        <div id="mobile-menu" className="fixed inset-0 z-50 bg-white flex flex-col p-4 md:hidden">
           <div className="flex justify-between items-center mb-8">
             {/* Mobile Logo Section */}
             <div className="flex items-center">
@@ -135,7 +152,13 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close main menu"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
+              className="focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:outline-none rounded-md p-1"
+            >
               <X className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -227,10 +250,12 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4">
-                Book Online
-              </button>
+            <Link
+              href="/booking"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4 text-center block focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:ring-offset-2 focus-visible:ring-offset-white focus-visible:outline-none"
+            >
+              Book Online
             </Link>
           </div>
         </div>

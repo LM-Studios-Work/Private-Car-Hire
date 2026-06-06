@@ -39,8 +39,19 @@ export function Navbar() {
               className="relative"
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
+              onFocus={() => setServicesDropdownOpen(true)}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget)) {
+                  setServicesDropdownOpen(false);
+                }
+              }}
             >
-              <button className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1">
+              <button
+                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded px-2 py-1 -ml-2"
+                onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                aria-expanded={servicesDropdownOpen}
+                aria-haspopup="menu"
+              >
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesDropdownOpen && (

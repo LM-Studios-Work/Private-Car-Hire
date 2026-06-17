@@ -31,7 +31,7 @@ export function Navbar() {
           <div className="hidden md:flex gap-8 items-center text-gray-700">
             <Link
               href="/#home"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none"
             >
               Home
             </Link>
@@ -39,8 +39,19 @@ export function Navbar() {
               className="relative"
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget)) {
+                  setServicesDropdownOpen(false);
+                }
+              }}
             >
-              <button className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1">
+              <button
+                onFocus={() => setServicesDropdownOpen(true)}
+                onClick={() => setServicesDropdownOpen(true)}
+                aria-expanded={servicesDropdownOpen}
+                aria-haspopup="true"
+                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none"
+              >
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesDropdownOpen && (
@@ -86,30 +97,37 @@ export function Navbar() {
             </div>
             <Link
               href="/#fleet"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none"
             >
               Fleet
             </Link>
             <Link
               href="/#about"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none"
             >
               About
             </Link>
             <Link
               href="/#contact"
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none"
             >
               Contact
             </Link>
-            <Link href="/booking">
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
+            <Link
+              href="/booking"
+              className="focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-xl outline-none inline-block"
+            >
+              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl w-full h-full">
                 Book Online
               </button>
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open mobile menu"
+              className="focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none"
+            >
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -135,7 +153,11 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close mobile menu"
+              className="focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none"
+            >
               <X className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -143,14 +165,16 @@ export function Navbar() {
             <Link
               href="/#home"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none w-max"
             >
               Home
             </Link>
             <div className="relative">
               <button
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 w-full"
+                aria-expanded={servicesDropdownOpen}
+                aria-haspopup="true"
+                className="hover:text-[#A4C639] transition-colors font-medium flex items-center gap-1 w-max focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none"
               >
                 Services{" "}
                 <ChevronDown
@@ -209,26 +233,30 @@ export function Navbar() {
             <Link
               href="/#fleet"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none w-max"
             >
               Fleet
             </Link>
             <Link
               href="/#about"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none w-max"
             >
               About
             </Link>
             <Link
               href="/#contact"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-[#A4C639] transition-colors font-medium"
+              className="hover:text-[#A4C639] transition-colors font-medium focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-sm outline-none w-max"
             >
               Contact
             </Link>
-            <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4">
+            <Link
+              href="/booking"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="mt-4 focus-visible:ring-2 focus-visible:ring-[#A4C639] rounded-xl outline-none block"
+            >
+              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full h-full">
                 Book Online
               </button>
             </Link>

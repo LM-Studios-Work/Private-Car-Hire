@@ -102,14 +102,20 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking">
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-2 rounded-xl">
-                Book Online
-              </button>
+            <Link
+              href="/booking"
+              className="bg-[#A4C639] hover:bg-[#8FB02F] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#A4C639] text-white px-6 py-2 rounded-xl inline-block"
+            >
+              Book Online
             </Link>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open mobile menu"
+              aria-expanded="false"
+              className="p-1 rounded-md hover:bg-gray-100 focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:outline-none"
+            >
               <Menu className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -135,7 +141,12 @@ export function Navbar() {
             </div>
             {/* End Mobile Logo Section */}
 
-            <button onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close mobile menu"
+              aria-expanded="true"
+              className="p-1 rounded-md hover:bg-gray-100 focus-visible:ring-2 focus-visible:ring-[#A4C639] focus-visible:outline-none"
+            >
               <X className="w-6 h-6 text-black" />
             </button>
           </div>
@@ -227,10 +238,12 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-[#A4C639] hover:bg-[#8FB02F] text-white px-6 py-3 rounded-xl w-full mt-4">
-                Book Online
-              </button>
+            <Link
+              href="/booking"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="bg-[#A4C639] hover:bg-[#8FB02F] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#A4C639] text-white px-6 py-3 rounded-xl w-full mt-4 text-center block"
+            >
+              Book Online
             </Link>
           </div>
         </div>

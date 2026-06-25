@@ -1,0 +1,17 @@
+💡 What:
+- Fixed a semantic HTML bug where a `<button>` was incorrectly nested inside Next.js `<Link>` components for the "Book Online" CTAs, moving styling classes to the `Link` itself.
+- Added `focus-visible` utility classes for clear keyboard focus indicators across the Navbar.
+- Enabled keyboard navigation for the "Services" dropdowns using `onFocus` and `onBlur`.
+
+🎯 Why:
+- Next.js 13+ App Router `<Link>` components render as anchor tags (`<a>`), making nested buttons invalid HTML and causing hydration and accessibility errors.
+- Hover-only dropdown menus completely block keyboard-only users from accessing sub-pages (e.g., specific services).
+- Missing focus rings cause users navigating via the `Tab` key to lose track of their position on the page.
+
+📸 Before/After:
+Before: The "Services" menu only opened on mouse hover. Focus rings were invisible.
+After: The "Services" menu seamlessly opens when tabbed into, and all buttons feature a high-contrast `#A4C639` focus ring.
+
+♿ Accessibility:
+- Added `aria-label` to mobile `Menu` and `X` (close) buttons.
+- Added `aria-haspopup="true"` and `aria-expanded` dynamic properties to the "Services" triggers to indicate dropdown availability and state to screen readers.

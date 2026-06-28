@@ -1,0 +1,15 @@
+## 💡 What
+Added full keyboard accessibility and screen reader support to the main navigation menu (desktop dropdown and mobile trigger).
+
+## 🎯 Why
+Previously, the "Services" dropdown was only accessible via mouse hover, making it impossible for keyboard users to view or select services. The mobile menu buttons also lacked focus states and screen reader labels. This update ensures equitable access to core site navigation.
+
+## 📸 Before/After
+**Before:** No focus ring, dropdown couldn't be opened with Tab/Enter.
+**After:** Clear `#A4C639` focus ring on all interactive menu elements. Dropdown opens smoothly on focus and stays open while tabbing through its internal links.
+
+## ♿ Accessibility
+- Added `aria-expanded` and `aria-haspopup` to Services triggers to announce their interactive state.
+- Added `aria-label` to mobile `Menu` and `X` (close) buttons.
+- Applied `focus-visible:ring-2 focus-visible:ring-[#A4C639] outline-none` to provide a distinct, brand-aligned visual focus indicator.
+- Implemented `onFocus`/`onBlur` event logic with `!e.currentTarget.contains(e.relatedTarget)` to ensure the dropdown remains open while navigating its sub-items and closes appropriately when focus leaves the component tree.

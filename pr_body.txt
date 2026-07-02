@@ -1,0 +1,8 @@
+💡 What: Added ARIA attributes, missing aria labels, and focus-visible keyboard navigation to Navbar buttons and Services dropdown.
+🎯 Why: To ensure the navigation menu is accessible for screen readers and keyboard users.
+📸 Before/After: See focus rings in local testing.
+♿ Accessibility:
+- Added `aria-label` to mobile menu open/close buttons.
+- Hid decorative icons from screen readers using `aria-hidden="true"`.
+- Implemented keyboard accessibility for the Services dropdown using `onFocus` and `onBlur` events.
+- Replaced default focus rings with clear `focus-visible:ring-2` styling.

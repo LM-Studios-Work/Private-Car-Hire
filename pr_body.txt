@@ -1,0 +1,15 @@
+💡 What:
+Added comprehensive accessibility attributes (`aria-label`, `aria-expanded`, `aria-controls`, `aria-haspopup`) to the mobile navigation toggle buttons (hamburger and close) as well as the "Services" dropdown buttons in `Navbar.tsx`. I also added `aria-hidden="true"` to the inner Lucide React icons (`<Menu>`, `<X>`, `<ChevronDown>`) and applied `focus-visible:ring-2` styling for keyboard navigation clarity.
+
+🎯 Why:
+The mobile menu toggles and services dropdown were entirely inaccessible to screen readers because they were icon-only buttons without semantic labels. Additionally, keyboard users had no visual indicator of focus when navigating through the primary header. These changes ensure proper screen reader announcements and visible focus states, significantly enhancing the inclusive experience.
+
+📸 Before/After:
+Before: Icon-only buttons with no focus rings and no screen-reader context.
+After: Buttons announce their state correctly and feature the brand's primary color (`#A4C639`) as a focus ring. (Verified via Playwright testing).
+
+♿ Accessibility:
+- Added `aria-label` to clarify button intent.
+- Added `aria-expanded` and `aria-controls` to link triggers to their respective panels.
+- Hid decorative SVGs using `aria-hidden="true"`.
+- Enhanced keyboard navigation visibility using `focus-visible:ring-2 focus-visible:ring-[#A4C639]`.
